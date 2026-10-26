@@ -1,0 +1,31 @@
+diff --git a/starlette/datastructures.py b/starlette/datastructures.py
+index 8d7a104..c19f442 100644
+--- a/starlette/datastructures.py
++++ b/starlette/datastructures.py
+@@ -192,6 +192,10 @@ class URLPath(str):
+     def make_absolute_url(self, base_url: str | URL) -> URL:
+         base_url = URL(base_url)
+         return base_url.replace(path=str(base_url.path).rstrip("/") + str(self))
++
++    def make_relative_url(self, root_path: str = "") -> str:
++        prefix = str(root_path).rstrip("/")
++        return f"{prefix}{str(self)}" if prefix else str(self)
+ 
+ 
+ class Secret:
+diff --git a/starlette/requests.py b/starlette/requests.py
+index 4f21b19..9b30e15 100644
+--- a/starlette/requests.py
++++ b/starlette/requests.py
+@@ -184,6 +184,11 @@ class HTTPConnection(Mapping[str, Any]):
+         url_path_provider: Router | Starlette = self.scope.get("router") or self.scope["app"]
+         return url_path_provider.url_path_for(name, **path_params).make_absolute_url(base_url=self.base_url)
+ 
++    def path_for(self, __name: str, **path_params: Any) -> str:
++        url_path_provider: Router | Starlette = self.scope.get("router") or self.scope["app"]
++        root_path = self.scope.get("root_path", "")
++        return url_path_provider.url_path_for(__name, **path_params).make_relative_url(root_path=root_path)
++
+ 
+ def empty_receive() -> NoReturn:
+     raise RuntimeError("Receive channel has not been made available")

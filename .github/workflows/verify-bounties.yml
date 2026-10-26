@@ -1,0 +1,44 @@
+name: Verify Bounty Fixes & Etiquette Gates
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-dossiers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout WholeTroutMedia/open-source-bounties
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run all standalone bounty verification harnesses
+        run: |
+          set -e
+          for test_file in bounties/*/verify_fix.py; do
+            if [ -f "$test_file" ]; then
+              echo "=== Running $test_file ==="
+              python3 "$test_file"
+            fi
+          done
+
+      - name: Verify Zero Em-Dashes and Attribution Footer in PR Drafts
+        run: |
+          python3 -c '
+          import glob, sys
+          for path in glob.glob("bounties/*/PR_DRAFT.md"):
+              text = open(path, encoding="utf-8").read()
+              if "\u2014" in text or "\u2013" in text:
+                  print(f"FAIL: Em-dash or en-dash found in {path}")
+                  sys.exit(1)
+              if "submitted on behalf of jaharoni@gmail.com" not in text.lower():
+                  print(f"FAIL: Missing human review attribution footer in {path}")
+                  sys.exit(1)
+              print(f"PASS: Etiquette & human-voice check verified for {path}")
+          '

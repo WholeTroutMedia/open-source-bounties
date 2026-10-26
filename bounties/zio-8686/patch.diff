@@ -1,0 +1,14 @@
+diff --git a/streams/shared/src/main/scala/zio/stream/ZStream.scala b/streams/shared/src/main/scala/zio/stream/ZStream.scala
+index 3e18a21..b7492c0 100644
+--- a/streams/shared/src/main/scala/zio/stream/ZStream.scala
++++ b/streams/shared/src/main/scala/zio/stream/ZStream.scala
+@@ -1148,7 +1148,12 @@ abstract class ZStream[-R, +E, +O] extends Serializable { self =>
+               case Left(ex) =>
+                 // Schedule timer completed: interrupt blocked empty-chunk pull and flush accumulated state
+-                sinkRace.set(false) *> ZTransducer.Push.emit(currentAcc)
++                pullFiber.interrupt *>
++                  sinkRace.set(false) *>
++                  emitAndResetAccumulator(currentAcc)
+               case Right(chunk) if chunk.isEmpty =>
++                // Avoid starving schedule timer when upstream produces continuous empty filtered chunks
+                 ZIO.yieldNow *> loop(currentAcc, scheduleFiber, pullFiber)

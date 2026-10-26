@@ -2,11 +2,11 @@
 
 - **Upstream Target**: [`zio/zio#8686`](https://github.com/zio/zio/issues/8686)
 - **Audit Classification**: **`EXTEND_STALLED`**
-- **Audit Summary**: 0 open PRs; 3 prior unmerged/closed attempt(s) by @DenisKusakin (#8873), @DenisKusakin (#9113), @argofowl (#10917) - safe to build on and credit prior findings
+- **Audit Summary**: Issue remains OPEN with 0 open PRs; 3 historical PR ref(s) by @DenisKusakin (#8873), @DenisKusakin (#9113), @argofowl (#10917) - safe to build on and credit prior findings
 - **Open Competing PRs**: `0`
 - **Active Assignees**: `0`
 - **WholeTroutMedia Fork**: [`WholeTroutMedia/zio`](https://github.com/WholeTroutMedia/zio)
-- **Audited At**: `2026-10-26T13:42:44.374005+00:00`
+- **Audited At**: `2026-10-26T13:47:39.338615+00:00`
 
 ## Prior Unmerged / Closed PR Attempts
 - PR `#8873` (`CLOSED`, `merged=False`) by `@DenisKusakin`: [WIP] ZStream.groupedWithin works in unexpected way for infinite stream #8686

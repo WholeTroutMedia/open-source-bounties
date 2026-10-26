@@ -1,0 +1,40 @@
+diff --git a/starlette/routing.py b/starlette/routing.py
+index 9a18e4d..2c85b90 100644
+--- a/starlette/routing.py
++++ b/starlette/routing.py
+@@ -1,5 +1,6 @@
+ from __future__ import annotations
+ 
++from contextlib import AsyncExitStack, asynccontextmanager
+ import functools
+ import inspect
+@@ -642,10 +643,23 @@ class Router:
+         self,
+         routes: Sequence[BaseRoute] | None = None,
+         redirect_slashes: bool = True,
+         default: ASGIApp | None = None,
+         on_startup: Sequence[ typing.Callable[[], typing.Any] ] | None = None,
+         on_shutdown: Sequence[ typing.Callable[[], typing.Any] ] | None = None,
+         lifespan: Lifespan[typing.Any] | None = None,
++        propagate_lifespan: bool = False,
+     ) -> None:
+         self.routes = [] if routes is None else list(routes)
+         self.redirect_slashes = redirect_slashes
+         self.default = self.not_found if default is None else default
+         self.on_startup = [] if on_startup is None else list(on_startup)
+         self.on_shutdown = [] if on_shutdown is None else list(on_shutdown)
++        self.propagate_lifespan = propagate_lifespan
++        base_lifespan = lifespan or _DefaultLifespan(self)
++
++        @asynccontextmanager
++        async def _composed_lifespan(app: typing.Any) -> typing.AsyncIterator[typing.Any]:
++            async with AsyncExitStack() as stack:
++                state = await stack.enter_async_context(base_lifespan(app))
++                if self.propagate_lifespan:
++                    for route in self.routes:
++                        sub_router = getattr(getattr(route, "app", None), "router", None)
++                        if sub_router is not None and hasattr(sub_router, "lifespan_context"):
++                            await stack.enter_async_context(sub_router.lifespan_context(route.app))
++                yield state
++
++        self.lifespan_context = _composed_lifespan

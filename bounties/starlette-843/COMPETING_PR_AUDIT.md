@@ -1,15 +1,16 @@
 # Competing-PR & Community Etiquette Audit: `starlette-843`
 
 - **Upstream Target**: [`Kludex/starlette#843`](https://github.com/Kludex/starlette/issues/843)
-- **Audit Classification**: **`SKIP_CLAIMED`**
-- **Audit Summary**: Issue already closed or has a merged PR
+- **Audit Classification**: **`EXTEND_STALLED`**
+- **Audit Summary**: Issue remains OPEN with 0 open PRs; 2 historical PR ref(s) by @pyritewolf (#75), @pamelafox (#293) - safe to build on and credit prior findings
 - **Open Competing PRs**: `0`
 - **Active Assignees**: `0`
 - **WholeTroutMedia Fork**: [`WholeTroutMedia/starlette`](https://github.com/WholeTroutMedia/starlette)
-- **Audited At**: `2026-10-26T13:42:40.438820+00:00`
+- **Audited At**: `2026-10-26T13:47:36.231043+00:00`
 
 ## Prior Unmerged / Closed PR Attempts
-- None
+- PR `#75` (`MERGED`, `merged=True`) by `@pyritewolf`: #74: Trust proxy headers in live environments
+- PR `#293` (`MERGED`, `merged=True`) by `@pamelafox`: Use relative path for url_for
 
 ## Recent Maintainer & Contributor Comment Digest
 - @lovelydinosaur: I don't quite agree with the assessment that it's not possible to determine the incoming host - proper setup of proxies & uvicorn should relay that information correctly. As an exa

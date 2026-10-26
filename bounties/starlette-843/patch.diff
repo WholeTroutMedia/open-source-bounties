@@ -29,3 +29,26 @@ index 4f21b19..9b30e15 100644
  
  def empty_receive() -> NoReturn:
      raise RuntimeError("Receive channel has not been made available")
+diff --git a/tests/test_requests.py b/tests/test_requests.py
+index 7a11c30..e49b218 100644
+--- a/tests/test_requests.py
++++ b/tests/test_requests.py
+@@ -495,6 +495,21 @@ def test_request_url_for(test_client_factory: TestClientFactory) -> None:
+     assert response.json() == {"url": "https://example.org:123/users/tomchristie"}
+ 
+ 
++def test_request_path_for(test_client_factory: TestClientFactory) -> None:
++    async def homepage(request: Request) -> JSONResponse:
++        return JSONResponse(
++            {
++                "user_path": request.path_for("user", username="ada"),
++                "static_path": request.path_for("static", path="app.css"),
++            }
++        )
++
++    async def user(request: Request) -> PlainTextResponse:
++        return PlainTextResponse(request.path_params["username"])
++
++    app = Starlette(routes=[Route("/", homepage), Route("/users/{username}", user, name="user"), Mount("/static", app=PlainTextResponse("css"), name="static")])
++    client = test_client_factory(app, base_url="https://example.org:123/submount")
++    assert client.get("/").json() == {"user_path": "/submount/users/ada", "static_path": "/submount/static/app.css"}

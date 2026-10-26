@@ -49,14 +49,14 @@ class HTTPConnection:
         netloc = host if port in (80, 443) else f"{host}:{port}"
         return f"{scheme}://{netloc}{root_path}"
 
-    def url_for(self, name: str, **path_params: str) -> str:
-        router = self.scope["router"]
-        return router.url_path_for(name, **path_params).make_absolute_url(base_url=self.base_url)
+    def url_for(self, __name: str, **path_params: str) -> str:
+        url_path_provider = self.scope.get("router") or self.scope["app"]
+        return url_path_provider.url_path_for(__name, **path_params).make_absolute_url(base_url=self.base_url)
 
-    def path_for(self, name: str, **path_params: str) -> str:
-        router = self.scope["router"]
+    def path_for(self, __name: str, **path_params: str) -> str:
+        url_path_provider = self.scope.get("router") or self.scope["app"]
         root_path = self.scope.get("root_path", "")
-        return router.url_path_for(name, **path_params).make_relative_url(root_path=root_path)
+        return url_path_provider.url_path_for(__name, **path_params).make_relative_url(root_path=root_path)
 
 
 def main() -> int:
@@ -75,7 +75,13 @@ def main() -> int:
         {"scheme": "http", "server": ("10.0.0.12", 8000), "root_path": "/v1/", "router": router}
     )
     assert mounted.path_for("user_profile", username="ada") == "/v1/users/ada"
-    print("[PASS] Kludex/starlette#843 verification suite passed (3/3 assertions, exit code 0).")
+
+    # 4. Fallback to scope["app"] when scope["router"] is absent and root_path="/" normalization
+    app_Scoped = HTTPConnection(
+        {"scheme": "http", "server": ("10.0.0.12", 8000), "root_path": "/", "app": router}
+    )
+    assert app_Scoped.path_for("user_profile", username="ada") == "/users/ada"
+    print("[PASS] Kludex/starlette#843 verification suite passed (4/4 assertions, exit code 0).")
     return 0
 
 

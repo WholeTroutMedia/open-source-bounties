@@ -1,0 +1,38 @@
+name: Verify Sealed Zero-Knowledge Bounty Commitments & Anti-Leak Gate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-sealed-commitments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout WholeTroutMedia/open-source-bounties
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Enforce Anti-Leak Firewall (Zero Plaintext patch.diff, verify_fix.py, or PR_DRAFT.md in Public Repo)
+        run: |
+          set -e
+          for forbidden in bounties/*/patch.diff bounties/*/verify_fix.py bounties/*/PR_DRAFT.md; do
+            if [ -f "$forbidden" ]; then
+              echo "FAIL: Unsealed plaintext file leaked in public repo: $forbidden"
+              exit 1
+            fi
+          done
+          echo "[PASS] Zero plaintext patches or solution code exposed in public repository."
+
+      - name: Run all Zero-Knowledge Commitment Verifiers (verify_commitment.py)
+        run: |
+          set -e
+          for verifier in bounties/*/verify_commitment.py; do
+            echo "=== Running $verifier ==="
+            python3 "$verifier"
+          done

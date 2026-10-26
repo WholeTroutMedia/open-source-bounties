@@ -1,0 +1,631 @@
+{
+  "updated_at": "2026-10-26T15:07:37.155613+00:00",
+  "beacon_count": 7,
+  "overlapping_bot_targets": {
+    "UnsafeLabs/Bounty-Hunters": [
+      "@fangjian-bit",
+      "@Krusheek"
+    ],
+    "auscaster/frantic-board": [
+      "@fangjian-bit",
+      "@BP202302"
+    ],
+    "claude-builders-bounty/claude-builders-bounty": [
+      "@Krusheek",
+      "@BP202302"
+    ],
+    "limitlessprojects/Go-Hybrid": [
+      "@fangjian-bit",
+      "@livastic-vm1-primary"
+    ],
+    "relayhop/sn-monetization-runtime": [
+      "@fangjian-bit",
+      "@Madatest"
+    ]
+  },
+  "beacons": [
+    {
+      "username": "fangjian-bit",
+      "github_id": 172339967,
+      "created_at": "2024-06-11T01:06:11Z",
+      "followers": 0,
+      "public_repos": 7,
+      "bot_probability_score": 100,
+      "classification": "AUTOMATED_SLOP_BOT",
+      "forensic_indicators": [
+        "Triggered known honeypot/bot-bait traps (UnsafeLabs/Bounty-Hunters, relayhop/sn-monetization-runtime)",
+        "High cross-repo comment velocity (28 comments across 14 repos)",
+        "Zero code PushEvents/PullRequestEvents despite cross-repo issue commenting",
+        "Hardcoded Expensify/Upwork LLM prompt template detected (12 hits)"
+      ],
+      "honeypot_hits": [
+        "UnsafeLabs/Bounty-Hunters",
+        "relayhop/sn-monetization-runtime"
+      ],
+      "distinct_repos_targeted": [
+        "Expensify/App",
+        "UnsafeLabs/Bounty-Hunters",
+        "auscaster/frantic-board",
+        "commonworld-one/commonworld",
+        "jadolg/elodin",
+        "limitlessprojects/Go-Hybrid",
+        "lizTheDeveloper/privacy-the-game",
+        "mautic/mautic",
+        "microg/GmsCore",
+        "paraloom-labs/paraloom-core",
+        "paraspell/xcm-tools",
+        "relayhop/sn-monetization-runtime",
+        "twentyhq/twenty",
+        "worknenjoy/gitpay"
+      ],
+      "recent_targets": [
+        {
+          "timestamp": "2026-10-26T14:56:17Z",
+          "repo": "lizTheDeveloper/privacy-the-game",
+          "issue_number": 411,
+          "issue_title": "[find opt-out] Statara Solutuions LLC: find the official opt-out route"
+        },
+        {
+          "timestamp": "2026-10-26T14:38:18Z",
+          "repo": "auscaster/frantic-board",
+          "issue_number": 567,
+          "issue_title": "support: agent-20d2cc cannot read private task instructions"
+        },
+        {
+          "timestamp": "2026-10-26T14:32:40Z",
+          "repo": "commonworld-one/commonworld",
+          "issue_number": 150,
+          "issue_title": "[Bug bounty] Windows checkouts fail six platform tests because asserti"
+        },
+        {
+          "timestamp": "2026-10-26T13:33:56Z",
+          "repo": "relayhop/sn-monetization-runtime",
+          "issue_number": 1337,
+          "issue_title": "[radar] SN open bounty 2026-10-26T06:01"
+        },
+        {
+          "timestamp": "2026-10-26T13:31:18Z",
+          "repo": "mautic/mautic",
+          "issue_number": 17939,
+          "issue_title": "Add tabs UI component to the Privacy centre configuration screen"
+        },
+        {
+          "timestamp": "2026-10-26T13:19:16Z",
+          "repo": "jadolg/elodin",
+          "issue_number": 547,
+          "issue_title": "Replace thread-per-query handling with a non-blocking epoll event loop"
+        },
+        {
+          "timestamp": "2026-10-26T13:09:37Z",
+          "repo": "relayhop/sn-monetization-runtime",
+          "issue_number": 1338,
+          "issue_title": "[radar] SN open bounty 2026-10-26T12:48"
+        },
+        {
+          "timestamp": "2026-10-26T13:07:08Z",
+          "repo": "relayhop/sn-monetization-runtime",
+          "issue_number": 1339,
+          "issue_title": "[radar] SN open bounty 2026-10-26T12:48"
+        },
+        {
+          "timestamp": "2026-10-26T12:55:40Z",
+          "repo": "limitlessprojects/Go-Hybrid",
+          "issue_number": 1858,
+          "issue_title": "[soundness] Builtin operand omissions in builtins.rs: non-ordered bool"
+        },
+        {
+          "timestamp": "2026-10-26T12:53:09Z",
+          "repo": "limitlessprojects/Go-Hybrid",
+          "issue_number": 1851,
+          "issue_title": "Named arguments on Hybrid fn calls are silently ignored: accepted prog"
+        }
+      ],
+      "audited_at": "2026-10-26T15:07:29.336672+00:00"
+    },
+    {
+      "username": "Krusheek",
+      "github_id": 192689186,
+      "created_at": "2024-12-24T08:27:26Z",
+      "followers": 0,
+      "public_repos": 14,
+      "bot_probability_score": 80,
+      "classification": "AUTOMATED_SLOP_BOT",
+      "forensic_indicators": [
+        "Triggered known honeypot/bot-bait traps (Peter7896/TentOfTrials, UnsafeLabs/Bounty-Hunters, claude-builders-bounty/claude-builders-bounty, tine1117/oss-hunter-livefire)",
+        "High cross-repo comment velocity (8 comments across 6 repos)"
+      ],
+      "honeypot_hits": [
+        "Peter7896/TentOfTrials",
+        "UnsafeLabs/Bounty-Hunters",
+        "claude-builders-bounty/claude-builders-bounty",
+        "tine1117/oss-hunter-livefire"
+      ],
+      "distinct_repos_targeted": [
+        "Peter7896/TentOfTrials",
+        "UnsafeLabs/Bounty-Hunters",
+        "claude-builders-bounty/claude-builders-bounty",
+        "demetriodiazdeleon-pixel/morriganprueba",
+        "javelin-anticheat/py-workedtask",
+        "tine1117/oss-hunter-livefire"
+      ],
+      "recent_targets": [
+        {
+          "timestamp": "2026-10-02T18:44:09Z",
+          "repo": "claude-builders-bounty/claude-builders-bounty",
+          "issue_number": 4658,
+          "issue_title": "Add pre-tool-use safety hook"
+        },
+        {
+          "timestamp": "2026-10-02T18:44:06Z",
+          "repo": "Peter7896/TentOfTrials",
+          "issue_number": 36,
+          "issue_title": "Fix diagnostic path leaks and add redaction regression tests"
+        },
+        {
+          "timestamp": "2026-10-02T18:44:03Z",
+          "repo": "demetriodiazdeleon-pixel/morriganprueba",
+          "issue_number": 25,
+          "issue_title": "Fix suma() bug (Resolves #1)"
+        },
+        {
+          "timestamp": "2026-10-02T18:44:00Z",
+          "repo": "tine1117/oss-hunter-livefire",
+          "issue_number": 160,
+          "issue_title": "fix: add 'd' (days) unit support to parse_duration (fixes #1)"
+        },
+        {
+          "timestamp": "2026-10-02T18:43:57Z",
+          "repo": "javelin-anticheat/py-workedtask",
+          "issue_number": 60,
+          "issue_title": "feat: add SHA-256 integrity verification for Python script (fixes #4)"
+        },
+        {
+          "timestamp": "2026-10-02T09:45:46Z",
+          "repo": "UnsafeLabs/Bounty-Hunters",
+          "issue_number": 836,
+          "issue_title": "[ T3 Code ] Add container, CI, and WSL environment detection to client"
+        },
+        {
+          "timestamp": "2026-10-02T09:44:50Z",
+          "repo": "UnsafeLabs/Bounty-Hunters",
+          "issue_number": 827,
+          "issue_title": "[ T3 Code ] Add round-trip schema validation tests for all contract ty"
+        },
+        {
+          "timestamp": "2026-10-02T09:44:35Z",
+          "repo": "UnsafeLabs/Bounty-Hunters",
+          "issue_number": 828,
+          "issue_title": "[ T3 Code ] Fix turbo.json missing dependency graph for incremental bu"
+        }
+      ],
+      "audited_at": "2026-10-26T15:07:30.398325+00:00"
+    },
+    {
+      "username": "Madatest",
+      "github_id": 150419996,
+      "created_at": "2023-11-10T06:22:32Z",
+      "followers": 0,
+      "public_repos": 3,
+      "bot_probability_score": 80,
+      "classification": "AUTOMATED_SLOP_BOT",
+      "forensic_indicators": [
+        "Triggered known honeypot/bot-bait traps (alfrexo95/bounty-bot, amiller/bounty-arcade, relayhop/sn-monetization-runtime, zhangjiayang6835-cyber/bounty-plaza)",
+        "High cross-repo comment velocity (17 comments across 9 repos)"
+      ],
+      "honeypot_hits": [
+        "alfrexo95/bounty-bot",
+        "amiller/bounty-arcade",
+        "relayhop/sn-monetization-runtime",
+        "zhangjiayang6835-cyber/bounty-plaza"
+      ],
+      "distinct_repos_targeted": [
+        "BasedHardware/omi",
+        "SPLURT-Station/S.P.L.U.R.T-tg",
+        "alfrexo95/bounty-bot",
+        "amiller/bounty-arcade",
+        "dsect-net/quantum",
+        "jomaaabbe78-spec/bookningsapp",
+        "relayhop/sn-monetization-runtime",
+        "solana-foundation/program-examples",
+        "zhangjiayang6835-cyber/bounty-plaza"
+      ],
+      "recent_targets": [
+        {
+          "timestamp": "2026-10-26T05:13:05Z",
+          "repo": "zhangjiayang6835-cyber/bounty-plaza",
+          "issue_number": 4114,
+          "issue_title": "[Bounty] [STEAM VAULT] \ud83c\udfae Exchange 100,000 DOOM ($wDOOM) for a $10 Stea"
+        },
+        {
+          "timestamp": "2026-10-25T12:33:47Z",
+          "repo": "alfrexo95/bounty-bot",
+          "issue_number": 31,
+          "issue_title": "\ud83d\udcb0 Bounty Seguro (Ver enlace): \ud83d\udcb0 Bounty Seguro (Ver enlace): [ESCROW BO"
+        },
+        {
+          "timestamp": "2026-10-25T06:36:50Z",
+          "repo": "BasedHardware/omi",
+          "issue_number": 23294,
+          "issue_title": "[Bounty proposal] fix(goals): get_user_goals drops active goals by lim"
+        },
+        {
+          "timestamp": "2026-10-25T05:38:18Z",
+          "repo": "solana-foundation/program-examples",
+          "issue_number": 755,
+          "issue_title": "tokens/token-swap: add the native (Solana Native) flavor, example cur"
+        },
+        {
+          "timestamp": "2026-10-25T05:35:01Z",
+          "repo": "SPLURT-Station/S.P.L.U.R.T-tg",
+          "issue_number": 1327,
+          "issue_title": "[BOUNTY] Suggestion #1291"
+        },
+        {
+          "timestamp": "2026-10-25T04:33:24Z",
+          "repo": "relayhop/sn-monetization-runtime",
+          "issue_number": 1315,
+          "issue_title": "[radar] SN open bounty 2026-10-20T05:55"
+        },
+        {
+          "timestamp": "2026-10-23T09:04:31Z",
+          "repo": "amiller/bounty-arcade",
+          "issue_number": 7,
+          "issue_title": "[puzzle] Deadlock detection for boxes stuck in corners"
+        },
+        {
+          "timestamp": "2026-10-23T03:14:42Z",
+          "repo": "amiller/bounty-arcade",
+          "issue_number": 8,
+          "issue_title": "[puzzle] Persist progress and best scores per level"
+        },
+        {
+          "timestamp": "2026-10-22T23:52:11Z",
+          "repo": "amiller/bounty-arcade",
+          "issue_number": 9,
+          "issue_title": "[puzzle] Shareable replay links"
+        },
+        {
+          "timestamp": "2026-10-22T20:24:46Z",
+          "repo": "amiller/bounty-arcade",
+          "issue_number": 10,
+          "issue_title": "[routes] Segments and gaps"
+        }
+      ],
+      "audited_at": "2026-10-26T15:07:31.506017+00:00"
+    },
+    {
+      "username": "Jah-yee",
+      "github_id": 166608075,
+      "created_at": "2024-04-10T10:13:10Z",
+      "followers": 156,
+      "public_repos": 2973,
+      "bot_probability_score": 80,
+      "classification": "AUTOMATED_SLOP_BOT",
+      "forensic_indicators": [
+        "Triggered known honeypot/bot-bait traps (darpansanghani/swe-agent-playground)",
+        "High cross-repo comment velocity (18 comments across 18 repos)"
+      ],
+      "honeypot_hits": [
+        "darpansanghani/swe-agent-playground"
+      ],
+      "distinct_repos_targeted": [
+        "AdobeDocs/substance-3d-painter.en",
+        "Dorset-Council-UK/QGIS.Mosaic.Builder",
+        "Garados007/MaxLib.WebServer",
+        "KenyC/LingExRef",
+        "bugcrowd/HUNT",
+        "darpansanghani/swe-agent-playground",
+        "ditrit/ditrit.github.io",
+        "echo-mem/echo-mem",
+        "hrbolek/_uois",
+        "jenslaufer/fabrik-bot-smoke",
+        "marcoliv99/Active-Learning-Optimization",
+        "matys18/sublime_kattis",
+        "mxmssh/drltrace",
+        "prooheckcp/Roblox-Device-Detector",
+        "rakasiwimuhammad-alt/latihan-html-css",
+        "subratamondalnsec/StudyNotion",
+        "valenzano-lab/aegis",
+        "whatifrussian/website"
+      ],
+      "recent_targets": [
+        {
+          "timestamp": "2026-10-26T14:29:38Z",
+          "repo": "mxmssh/drltrace",
+          "issue_number": 38,
+          "issue_title": "fix: pass output_folder to create_html_page in gen_image"
+        },
+        {
+          "timestamp": "2026-10-26T14:29:32Z",
+          "repo": "KenyC/LingExRef",
+          "issue_number": 2,
+          "issue_title": "fix: add return in except ValueError branches (UnboundLocalError fix)"
+        },
+        {
+          "timestamp": "2026-10-26T14:29:28Z",
+          "repo": "marcoliv99/Active-Learning-Optimization",
+          "issue_number": 23,
+          "issue_title": "fix(plot): correct save_path separator and plt.show() argument"
+        },
+        {
+          "timestamp": "2026-10-26T14:29:26Z",
+          "repo": "matys18/sublime_kattis",
+          "issue_number": 8,
+          "issue_title": "fix: replace undefined res with response in Kattis submission error"
+        },
+        {
+          "timestamp": "2026-10-26T13:37:20Z",
+          "repo": "whatifrussian/website",
+          "issue_number": 812,
+          "issue_title": "Typo on page soul-mates"
+        },
+        {
+          "timestamp": "2026-10-26T12:54:21Z",
+          "repo": "echo-mem/echo-mem",
+          "issue_number": 150,
+          "issue_title": "Correct the CLI command count in the README"
+        },
+        {
+          "timestamp": "2026-10-26T12:17:10Z",
+          "repo": "valenzano-lab/aegis",
+          "issue_number": 19,
+          "issue_title": "fix: correct name Bernd Hartke \u2192 Bernd Senf in deploy.md"
+        },
+        {
+          "timestamp": "2026-10-26T12:17:08Z",
+          "repo": "Dorset-Council-UK/QGIS.Mosaic.Builder",
+          "issue_number": 51,
+          "issue_title": "fix: correct self.areaTools to self.areaTool typo in mosaic_builder.py"
+        },
+        {
+          "timestamp": "2026-10-26T12:17:06Z",
+          "repo": "rakasiwimuhammad-alt/latihan-html-css",
+          "issue_number": 11,
+          "issue_title": "fix: correct Indonesian typos in index.html"
+        },
+        {
+          "timestamp": "2026-10-26T12:17:03Z",
+          "repo": "hrbolek/_uois",
+          "issue_number": 14,
+          "issue_title": "fix: correct 'requets' to 'request' typo in server/main.py"
+        }
+      ],
+      "audited_at": "2026-10-26T15:07:33.467990+00:00"
+    },
+    {
+      "username": "livastic-vm1-primary",
+      "github_id": 327849920,
+      "created_at": "2026-09-11T07:31:14Z",
+      "followers": 0,
+      "public_repos": 31,
+      "bot_probability_score": 40,
+      "classification": "SUSPICIOUS_SCRAPER",
+      "forensic_indicators": [
+        "High cross-repo comment velocity (11 comments across 8 repos)"
+      ],
+      "honeypot_hits": [],
+      "distinct_repos_targeted": [
+        "causeway-services/.github",
+        "conclave-admin/conclave-main",
+        "dancaldera/creativelab",
+        "diogel-io/bancwr",
+        "fanout-web/fanout-contracts",
+        "limitlessprojects/Go-Hybrid",
+        "mushee-io/Symb-dex",
+        "shivasathvik44/pswdMngr"
+      ],
+      "recent_targets": [
+        {
+          "timestamp": "2026-10-26T12:37:01Z",
+          "repo": "limitlessprojects/Go-Hybrid",
+          "issue_number": 1870,
+          "issue_title": "fix(hy-check): reject multi-value calls in struct literal fields (fixe"
+        },
+        {
+          "timestamp": "2026-10-25T03:55:16Z",
+          "repo": "conclave-admin/conclave-main",
+          "issue_number": 25,
+          "issue_title": "Complete an independent encryption protocol and security review"
+        },
+        {
+          "timestamp": "2026-10-25T01:03:07Z",
+          "repo": "shivasathvik44/pswdMngr",
+          "issue_number": 7,
+          "issue_title": "Commission an Independent Security Assessment"
+        },
+        {
+          "timestamp": "2026-10-25T00:47:25Z",
+          "repo": "mushee-io/Symb-dex",
+          "issue_number": 9,
+          "issue_title": "Release blocker: commission independent AMM security audit and remedia"
+        },
+        {
+          "timestamp": "2026-10-24T23:49:17Z",
+          "repo": "dancaldera/creativelab",
+          "issue_number": 40,
+          "issue_title": "Commission an independent security review"
+        },
+        {
+          "timestamp": "2026-10-24T23:35:17Z",
+          "repo": "fanout-web/fanout-contracts",
+          "issue_number": 3,
+          "issue_title": "Commission an independent smart-contract security review"
+        },
+        {
+          "timestamp": "2026-10-24T23:22:13Z",
+          "repo": "diogel-io/bancwr",
+          "issue_number": 106,
+          "issue_title": "chore: commission an independent security review"
+        },
+        {
+          "timestamp": "2026-10-24T20:35:48Z",
+          "repo": "causeway-services/.github",
+          "issue_number": 8,
+          "issue_title": "[Bazaar seller] PaperPilot Tools: 5 USDC private offline invoice kit"
+        },
+        {
+          "timestamp": "2026-10-24T19:44:31Z",
+          "repo": "causeway-services/.github",
+          "issue_number": 8,
+          "issue_title": "[Bazaar seller] PaperPilot Tools: 5 USDC private offline invoice kit"
+        },
+        {
+          "timestamp": "2026-10-24T19:31:55Z",
+          "repo": "causeway-services/.github",
+          "issue_number": 8,
+          "issue_title": "[Bazaar seller] PaperPilot Tools: 5 USDC private offline invoice kit"
+        }
+      ],
+      "audited_at": "2026-10-26T15:07:34.961455+00:00"
+    },
+    {
+      "username": "aiautomationagentesting",
+      "github_id": 347778907,
+      "created_at": "2026-10-25T11:32:02Z",
+      "followers": 0,
+      "public_repos": 12,
+      "bot_probability_score": 80,
+      "classification": "AUTOMATED_SLOP_BOT",
+      "forensic_indicators": [
+        "Triggered known honeypot/bot-bait traps (Circadian-agent/agent-collective)",
+        "High cross-repo comment velocity (10 comments across 6 repos)"
+      ],
+      "honeypot_hits": [
+        "Circadian-agent/agent-collective"
+      ],
+      "distinct_repos_targeted": [
+        "Circadian-agent/agent-collective",
+        "OpsiMate/OpsiMate",
+        "X-lab2017/open-dipper",
+        "kanghyunsoon/duo",
+        "marcellosso/penciled",
+        "mermaid-js/zenuml-core"
+      ],
+      "recent_targets": [
+        {
+          "timestamp": "2026-10-26T12:18:13Z",
+          "repo": "kanghyunsoon/duo",
+          "issue_number": 102,
+          "issue_title": "docs(readme): describe the 0.4 launcher version checks in the Quick st"
+        },
+        {
+          "timestamp": "2026-10-26T11:31:03Z",
+          "repo": "Circadian-agent/agent-collective",
+          "issue_number": 1,
+          "issue_title": "Introductions: who you are, what you are selling, one thing you measur"
+        },
+        {
+          "timestamp": "2026-10-26T11:20:16Z",
+          "repo": "X-lab2017/open-dipper",
+          "issue_number": 19,
+          "issue_title": "[Starter \u00b7 Content] \u5171\u5efa\u9996\u6279 AI \u6765\u6e90\u4e0e\u60c5\u62a5\u6837\u520a\u6750\u6599"
+        },
+        {
+          "timestamp": "2026-10-26T10:41:43Z",
+          "repo": "OpsiMate/OpsiMate",
+          "issue_number": 1345,
+          "issue_title": "[FIX]: Cover missing Prometheus metric regressions"
+        },
+        {
+          "timestamp": "2026-10-26T10:39:51Z",
+          "repo": "mermaid-js/zenuml-core",
+          "issue_number": 622,
+          "issue_title": "refactor(test): shared openDiagram / lastContentChange Playwright help"
+        },
+        {
+          "timestamp": "2026-10-26T10:09:13Z",
+          "repo": "OpsiMate/OpsiMate",
+          "issue_number": 1316,
+          "issue_title": "Add tests for the Prometheus metrics nothing checks yet"
+        },
+        {
+          "timestamp": "2026-10-26T10:09:04Z",
+          "repo": "Circadian-agent/agent-collective",
+          "issue_number": 1,
+          "issue_title": "Introductions: who you are, what you are selling, one thing you measur"
+        },
+        {
+          "timestamp": "2026-10-26T10:03:44Z",
+          "repo": "mermaid-js/zenuml-core",
+          "issue_number": 628,
+          "issue_title": "refactor(test): share the XSS payload/position fixture between the HTM"
+        },
+        {
+          "timestamp": "2026-10-26T09:03:44Z",
+          "repo": "marcellosso/penciled",
+          "issue_number": 43,
+          "issue_title": "Docs: recipe for saving annotations to Supabase"
+        },
+        {
+          "timestamp": "2026-10-26T08:41:47Z",
+          "repo": "kanghyunsoon/duo",
+          "issue_number": 102,
+          "issue_title": "docs(readme): describe the 0.4 launcher version checks in the Quick st"
+        }
+      ],
+      "audited_at": "2026-10-26T15:07:36.043209+00:00"
+    },
+    {
+      "username": "BP202302",
+      "github_id": 141946842,
+      "created_at": "2023-08-10T16:14:14Z",
+      "followers": 0,
+      "public_repos": 14,
+      "bot_probability_score": 80,
+      "classification": "AUTOMATED_SLOP_BOT",
+      "forensic_indicators": [
+        "Triggered known honeypot/bot-bait traps (SecureBananaLabs/bug-bounty, claude-builders-bounty/claude-builders-bounty)",
+        "High cross-repo comment velocity (6 comments across 4 repos)"
+      ],
+      "honeypot_hits": [
+        "SecureBananaLabs/bug-bounty",
+        "claude-builders-bounty/claude-builders-bounty"
+      ],
+      "distinct_repos_targeted": [
+        "SecureBananaLabs/bug-bounty",
+        "auscaster/frantic-board",
+        "claude-builders-bounty/claude-builders-bounty",
+        "illbnm/homelab-stack"
+      ],
+      "recent_targets": [
+        {
+          "timestamp": "2026-10-26T05:01:05Z",
+          "repo": "claude-builders-bounty/claude-builders-bounty",
+          "issue_number": 2,
+          "issue_title": "[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project"
+        },
+        {
+          "timestamp": "2026-10-25T00:42:02Z",
+          "repo": "SecureBananaLabs/bug-bounty",
+          "issue_number": 30,
+          "issue_title": "Benchmark APIs with p50, p95, p99 latency, RPS, error rate and TTFB"
+        },
+        {
+          "timestamp": "2026-10-24T23:15:36Z",
+          "repo": "SecureBananaLabs/bug-bounty",
+          "issue_number": 80,
+          "issue_title": "Pixel Art Creation with high Creative Thinking"
+        },
+        {
+          "timestamp": "2026-10-24T23:11:45Z",
+          "repo": "SecureBananaLabs/bug-bounty",
+          "issue_number": 76,
+          "issue_title": "Technical Poem Generation and Content Creation"
+        },
+        {
+          "timestamp": "2026-10-24T23:06:23Z",
+          "repo": "illbnm/homelab-stack",
+          "issue_number": 11,
+          "issue_title": "[BOUNTY $130] Database Layer, PostgreSQL + Redis + MariaDB \u5171\u4eab\u5b9e\u4f8b"
+        },
+        {
+          "timestamp": "2026-10-07T02:27:16Z",
+          "repo": "auscaster/frantic-board",
+          "issue_number": 1,
+          "issue_title": "Frantic Oath check-in"
+        }
+      ],
+      "audited_at": "2026-10-26T15:07:37.155408+00:00"
+    }
+  ]
+}

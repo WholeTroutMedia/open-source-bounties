@@ -7,7 +7,7 @@
 - **Active Assignees**: `0`
 - **WholeTroutMedia Fork**: [`WholeTroutMedia/starlette`](https://github.com/WholeTroutMedia/starlette)
 - **Private Solution Vault**: [`WholeTroutMedia/bounty-solves-vault`](https://github.com/WholeTroutMedia/bounty-solves-vault) (`private: True` - Original Repo Owner & `@jaharoni` Only)
-- **Audited At**: `2026-10-26T17:02:07.320350+00:00`
+- **Audited At**: `2026-10-27T17:35:14.956519+00:00`
 
 ## Prior Unmerged / Closed PR Attempts
 - PR `#3516` (`CLOSED`, `merged=False`) by `@adriangb`: Add startup/shutdown dependencies and dependency caching lifespan control
@@ -21,9 +21,9 @@
 - PR `#9630` (`MERGED`, `merged=True`) by `@Lancetnik`: 🐛 Ensure that `app.include_router` merges nested lifespans
 
 ## Recent Maintainer & Contributor Comment Digest
+- @mattmess1221: Converting it to a middleware solves caveat 1. Doing some magic with `asyncio.Queue` and wrapping send/receive solves caveat 3. ```py class MountedLifespanMiddleware: def __init__(
 - @Cyberbolt: Solution: ```python from fastapi import FastAPI from contextlib import asynccontextmanager, AsyncExitStack sub_app = FastAPI() @asynccontextmanager async def sub_lifespan(app: Fast
 - @racinmat: Any progress on this? There are new use-cases that I think are relevant: in AI Agents, both a2a and adk frameworks have FastAPI integration and use lifespans: https://github.com/a2
 - @racinmat: If anyone is interested, I made a more generic workaround: ```python def extract_lifespan_from_app(app) -> Callable[[Any], AsyncContextManager[None]] | None: """ Extract lifespan f
 - @racinmat: Hm, this https://github.com/fastapi/fastapi/issues/811#issuecomment-1870030103 looks even better.
 - @IgnazioDS: The MCP use case mentioned at the bottom of this thread is now one of the most common real-world triggers for this issue. When you mount an MCP server (`from mcp.server.fastmcp imp
-- @arseniyaleksandrov47-debug: ### 🚀 Solution & Bounty Submission: Propagate Lifespan Events to Mounted Sub-Applications **Target Issue**: #649 **Pull Request**: https://github.com/Kludex/starlette/pull/3739 ###

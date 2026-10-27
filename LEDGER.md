@@ -1,16 +1,18 @@
-# WholeTroutMedia Open-Source Bounty & Patch Ledger
+# WholeTroutMedia Open-Source Bounty & Patch Commitment Ledger
 
-*Last synchronized: 2026-10-27 17:35 UTC*
+*Last synchronized: 2026-10-27 17:50 UTC*
 
-This ledger tracks every open-source issue and funded bounty audited, forked, solved, and verified by **WholeTroutMedia** before upstream Pull Request submission.
+To prevent automated third-party scrapers from front-running or spamming upstream maintainers while our patches are in human review, **all target repository names, issue numbers, diffs, and reproduction harnesses are blinded and held strictly inside our private vault (`WholeTroutMedia/bounty-solves-vault`) until upstream Pull Request submission.**
 
-## Live Bounty & Fix Pipeline
+Each entry below records a timestamped, zero-knowledge SHA-256 Merkle commitment (`commitments/WTM-SEAL-XXX/solve_envelope.sealed.json`) proving the exact patch and verification suite (`Exit Code 0`) were completed prior to submission. Once a Pull Request is reviewed and opened upstream, its commitment is unblinded.
 
-| Bounty ID | Upstream Issue | Tier | Platform / Funding | Competing-PR Audit | WholeTroutMedia Fork | Review Gate | Status |
-| :--- | :--- | :---: | :--- | :---: | :--- | :--- | :--- |
-| [`starlette-843`](./bounties/starlette-843/) | [`Kludex/starlette#843`](https://github.com/Kludex/starlette/issues/843) | `Easy` | Polar.sh / OSS Funded | `EXTEND_STALLED` | [`WholeTroutMedia/starlette`](https://github.com/WholeTroutMedia/starlette) | [Review #1](https://github.com/WholeTroutMedia/open-source-bounties/issues/1) | **SEALED_IN_PRIVATE_VAULT** |
-| [`zio-8686`](./bounties/zio-8686/) | [`zio/zio#8686`](https://github.com/zio/zio/issues/8686) | `Medium` | Algora Bounty ($ZIO Board) | `EXTEND_STALLED` | [`WholeTroutMedia/zio`](https://github.com/WholeTroutMedia/zio) | [Review #2](https://github.com/WholeTroutMedia/open-source-bounties/issues/2) | **SEALED_IN_PRIVATE_VAULT** |
-| [`starlette-649`](./bounties/starlette-649/) | [`Kludex/starlette#649`](https://github.com/Kludex/starlette/issues/649) | `Hard` | Polar.sh / OSS Funded | `EXTEND_STALLED` | [`WholeTroutMedia/starlette`](https://github.com/WholeTroutMedia/starlette) | [Review #3](https://github.com/WholeTroutMedia/open-source-bounties/issues/3) | **SEALED_IN_PRIVATE_VAULT** |
+## Live Blinded Pre-Submission Commitments
+
+| Commitment ID | Target Hash (Blinded Until PR Submission) | Tier | Language | Etiquette Gate | Merkle Commitment Root | Status |
+| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| [`WTM-SEAL-001`](./commitments/WTM-SEAL-001/) | `sha256:fbbc6c8f53033dbf...` (Blinded Pre-PR) | `Easy` | `Python` | `EXTEND_STALLED` | `sha256:f7978f99b1547881...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-002`](./commitments/WTM-SEAL-002/) | `sha256:95a68a242fb47e42...` (Blinded Pre-PR) | `Medium` | `Scala` | `EXTEND_STALLED` | `sha256:cecf0404374f0abf...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-003`](./commitments/WTM-SEAL-003/) | `sha256:875fe0700b6e6615...` (Blinded Pre-PR) | `Hard` | `Python` | `EXTEND_STALLED` | `sha256:5ef793080d51f576...` | **SEALED_IN_PRIVATE_VAULT** |
 
 ---
 

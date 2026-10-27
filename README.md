@@ -1,40 +1,28 @@
 # WholeTroutMedia Open-Source Bounties & Engineering Foundry
 
-Welcome to the public open-source engineering and bounty workspace for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `jaharoni@gmail.com`).
-
-We use this repository to track open-source bounties and community bug fixes, audit existing pull requests so we never duplicate another contributor's work, fork target repositories cleanly into the **`WholeTroutMedia`** organization, verify every fix with a standalone test suite (`PROOF_OF_EXECUTION.md`), and review every Pull Request draft before submitting upstream.
+Welcome to the public open-source engineering and verification ledger for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `jaharoni@gmail.com`).
 
 ---
 
-## How Our Workflow Operates
+## Stealth Pre-Submission Staging & Zero-Knowledge Commitments
 
-1. **Community Etiquette & Competing-PR Audit ([`COMMUNITY_ETIQUETTE.md`](./COMMUNITY_ETIQUETTE.md))**:
-   - Before touching any issue, our workflow inspects assignees, linked Pull Requests (`CROSS_REFERENCED_EVENT`), and maintainer comments.
-   - If another developer is already assigned or has an active open PR, we skip the issue (`SKIP_CLAIMED`).
-   - If earlier attempts stalled and were closed without merging, we explicitly credit the prior contributors (`EXTEND_STALLED`) and address the remaining gap.
-
-2. **Clean Organization Forking (`WholeTroutMedia` Only)**:
-   - Target repositories are forked exclusively under [`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia) so personal developer trees stay uncluttered.
-
-3. **Daily 08:45 AM Rotating Difficulty Cadence (`Easy -> Medium -> Hard`)**:
-   - Each morning we stage one verified bounty dossier under [`bounties/`](./bounties/) paired with our private review vault (`WholeTroutMedia/bounty-solves-vault`):
-     - `ISSUE_CONTEXT.md` (Upstream problem statement and maintainer notes)
-     - `COMPETING_PR_AUDIT.md` (Live timeline and competing-PR audit receipt)
-     - `PROOF_OF_EXECUTION.md` & `solve_envelope.sealed.json` (Cryptographic commitment and `Exit Code 0` verification receipt while raw diffs await human review in the private vault)
-
-4. **Human Review Gate + Maintainer Fast-Track**:
-   - Every staged fix opens a tracking review issue in [Issues](https://github.com/WholeTroutMedia/open-source-bounties/issues) and emails a review copy to `justin.aharoni@inceptionengine.systems`.
-   - **Maintainer Fast-Track**: If you are an upstream maintainer or owner of a repository with a staged fix and would like immediate delivery ahead of our scheduled human review queue, every dossier and Review Issue includes a **1-Click Maintainer Fast-Track Request** to unlock the private branch or open the upstream Pull Request immediately.
+1. **Zero Target Leakage Before PR Submission**:
+   - While a fix is awaiting human review, its upstream repository name, issue number, unified diff (`patch.diff`), verification suite (`verify_fix.py`), and Pull Request draft (`PR_DRAFT.md`) live **exclusively inside our private vault** (`WholeTroutMedia/bounty-solves-vault`).
+   - Only a blinded cryptographic commitment (`WTM-SEAL-XXX`) is published here prior to submission so automated third-party scrapers cannot harvest our active targets or spam upstream maintainers.
+2. **Community Etiquette & Competing-PR Audit ([`COMMUNITY_ETIQUETTE.md`](./COMMUNITY_ETIQUETTE.md))**:
+   - Before touching any issue, our workflow inspects assignees, linked Pull Requests (`CROSS_REFERENCED_EVENT`), and maintainer comments (`SKIP_CLAIMED` / `EXTEND_STALLED` / `CLAIM_OPEN`).
+3. **Canary Decoy Benchmarks (`bounties/canary-trap-*`)**:
+   - Synthetic canary directories under `bounties/canary-trap-*` contain watermarked decoy tokens (`_wtm_canary_*`) to fingerprint automated scrapers.
 
 ---
 
-## Active Bounty & Contribution Ledger
+## Active Blinded Commitment Ledger
 
-| Bounty ID | Upstream Issue | Tier | Platform / Funding | Competing-PR Audit | WholeTroutMedia Fork | Review Gate | Status |
-| :--- | :--- | :---: | :--- | :---: | :--- | :--- | :--- |
-| [`starlette-843`](./bounties/starlette-843/) | [`Kludex/starlette#843`](https://github.com/Kludex/starlette/issues/843) | `Easy` | Polar.sh / OSS Funded | `EXTEND_STALLED` | [`WholeTroutMedia/starlette`](https://github.com/WholeTroutMedia/starlette) | [Review #1](https://github.com/WholeTroutMedia/open-source-bounties/issues/1) | **SEALED_IN_PRIVATE_VAULT** |
-| [`zio-8686`](./bounties/zio-8686/) | [`zio/zio#8686`](https://github.com/zio/zio/issues/8686) | `Medium` | Algora Bounty ($ZIO Board) | `EXTEND_STALLED` | [`WholeTroutMedia/zio`](https://github.com/WholeTroutMedia/zio) | [Review #2](https://github.com/WholeTroutMedia/open-source-bounties/issues/2) | **SEALED_IN_PRIVATE_VAULT** |
-| [`starlette-649`](./bounties/starlette-649/) | [`Kludex/starlette#649`](https://github.com/Kludex/starlette/issues/649) | `Hard` | Polar.sh / OSS Funded | `EXTEND_STALLED` | [`WholeTroutMedia/starlette`](https://github.com/WholeTroutMedia/starlette) | [Review #3](https://github.com/WholeTroutMedia/open-source-bounties/issues/3) | **SEALED_IN_PRIVATE_VAULT** |
+| Commitment ID | Target Hash (Blinded Until PR Submission) | Tier | Language | Etiquette Gate | Merkle Commitment Root | Status |
+| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| [`WTM-SEAL-001`](./commitments/WTM-SEAL-001/) | `sha256:fbbc6c8f53033dbf...` (Blinded Pre-PR) | `Easy` | `Python` | `EXTEND_STALLED` | `sha256:f7978f99b1547881...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-002`](./commitments/WTM-SEAL-002/) | `sha256:95a68a242fb47e42...` (Blinded Pre-PR) | `Medium` | `Scala` | `EXTEND_STALLED` | `sha256:cecf0404374f0abf...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-003`](./commitments/WTM-SEAL-003/) | `sha256:875fe0700b6e6615...` (Blinded Pre-PR) | `Hard` | `Python` | `EXTEND_STALLED` | `sha256:5ef793080d51f576...` | **SEALED_IN_PRIVATE_VAULT** |
 
 ---
 
@@ -49,21 +37,21 @@ If you maintain an open-source project and have a bug or bounty you would like o
 
 ```text
 open-source-bounties/
-├── README.md                    # Overview & live bounty table
+├── README.md                    # Overview & blinded commitment table
 ├── COMMUNITY_ETIQUETTE.md       # Maintainer-first contribution & review charter
-├── LEDGER.md                    # Synchronized bounty & settlement ledger
+├── LEDGER.md                    # Synchronized blinded commitment & settlement ledger
 ├── registry/
-│   ├── bounties.json            # Machine-readable state & audit telemetry
-│   └── leaderboard_feed.json    # Unclaimed open-source bounty discovery feed
+│   └── bounties.json            # Blinded machine-readable commitment state
+├── commitments/
+│   ├── WTM-SEAL-001/            # Blinded SHA-256 Merkle commitment & verifier
+│   ├── WTM-SEAL-002/            # Blinded SHA-256 Merkle commitment & verifier
+│   └── WTM-SEAL-003/            # Blinded SHA-256 Merkle commitment & verifier
 ├── bounties/
-│   ├── starlette-843/           # [Easy] Kludex/starlette#843
-│   ├── zio-8686/                # [Medium] zio/zio#8686
-│   └── starlette-649/           # [Hard] Kludex/starlette#649
+│   ├── canary-trap-01-.../      # Synthetic watermarked canary decoy for scrapers
+│   └── canary-trap-02-.../      # Synthetic watermarked canary decoy for scrapers
 └── .github/
-    ├── ISSUE_TEMPLATE/
-    │   └── bounty_review.md     # Staged review issue template
     └── workflows/
-        └── verify-bounties.yml  # CI runner verifying sealed commitments
+        └── verify-bounties.yml  # CI runner verifying commitments/*/verify_commitment.py
 ```
 
 *this has been reviewed by, approved by and submitted on behalf of jaharoni@gmail.com*

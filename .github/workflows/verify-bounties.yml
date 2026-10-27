@@ -32,7 +32,7 @@ jobs:
       - name: Run all Zero-Knowledge Commitment Verifiers (verify_commitment.py)
         run: |
           set -e
-          for verifier in bounties/*/verify_commitment.py; do
+          for verifier in commitments/*/verify_commitment.py; do
             echo "=== Running $verifier ==="
             python3 "$verifier"
           done

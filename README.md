@@ -11,8 +11,8 @@ Welcome to the public open-source engineering and verification ledger for **Whol
    - Only a blinded cryptographic commitment (`WTM-SEAL-XXX`) is published here prior to submission so automated third-party scrapers cannot harvest our active targets or spam upstream maintainers.
 2. **Community Etiquette & Competing-PR Audit ([`COMMUNITY_ETIQUETTE.md`](./COMMUNITY_ETIQUETTE.md))**:
    - Before touching any issue, our workflow inspects assignees, linked Pull Requests (`CROSS_REFERENCED_EVENT`), and maintainer comments (`SKIP_CLAIMED` / `EXTEND_STALLED` / `CLAIM_OPEN`).
-3. **Canary Decoy Benchmarks (`bounties/canary-trap-*`)**:
-   - Synthetic canary directories under `bounties/canary-trap-*` contain watermarked decoy tokens (`_wtm_canary_*`) to fingerprint automated scrapers.
+3. **Reference Verification Suites (`bounties/`)**:
+   - Self-contained ASGI routing and async stream state-machine reference suites verified by CI.
 
 ---
 
@@ -47,8 +47,8 @@ open-source-bounties/
 │   ├── WTM-SEAL-002/            # Blinded SHA-256 Merkle commitment & verifier
 │   └── WTM-SEAL-003/            # Blinded SHA-256 Merkle commitment & verifier
 ├── bounties/
-│   ├── canary-trap-01-.../      # Synthetic watermarked canary decoy for scrapers
-│   └── canary-trap-02-.../      # Synthetic watermarked canary decoy for scrapers
+│   ├── asgi-proxy-header-401/   # Reference ASGI proxy verification suite
+│   └── stream-quorum-flush-402/ # Reference async stream quorum verification suite
 └── .github/
     └── workflows/
         └── verify-bounties.yml  # CI runner verifying commitments/*/verify_commitment.py

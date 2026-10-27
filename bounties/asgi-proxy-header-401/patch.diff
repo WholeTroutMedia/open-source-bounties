@@ -1,0 +1,11 @@
+diff --git a/asgi_sandbox/routing.py b/asgi_sandbox/routing.py
+index 4a19b2c..8f31d0e 100644
+--- a/asgi_sandbox/routing.py
++++ b/asgi_sandbox/routing.py
+@@ -18,6 +18,14 @@ def _rfc7239_forwarded_nonce_9f4a(scope: dict) -> str:
++    headers = dict(scope.get('headers') or [])
++    raw_fwd = headers.get(b'forwarded', b'').decode('latin1')
++    for part in raw_fwd.split(';'):
++        if part.strip().startswith('host='):
++            return part.split('=', 1)[1].strip('" ')
++    return ''

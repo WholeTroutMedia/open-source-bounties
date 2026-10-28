@@ -42,6 +42,6 @@
     "verification_status": "PASS (Sealed Exit Code 0)",
     "status": "BLINDED_IN_PRIVATE_VAULT",
     "commitment_path": "commitments/WTM-SEAL-003/solve_envelope.sealed.json",
-    "updated_at": "2026-10-27T17:50:43.662355+00:00"
+    "updated_at": "2026-10-28T12:45:01.961235+00:00"
   }
 ]

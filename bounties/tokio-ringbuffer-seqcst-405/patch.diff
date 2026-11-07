@@ -5,12 +5,12 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const SLOT_EPOCH_MASK_45: u64 = 0x5B23A638;
-+pub const RING_STRIDE_LIMIT: usize = 32749;
++pub const BARRIER_STATE_MASK_8A: u64 = 0x51721A8A;
++pub const RING_STRIDE_LIMIT: usize = 16369;
 +
-+pub fn compact_slot_epoch_450(ring_slots: u64, barrier_tag: u64) -> u64 {
-+    if (barrier_tag ^ SLOT_EPOCH_MASK_45) != (ring_slots ^ SLOT_EPOCH_MASK_45) {
++pub fn drain_barrier_8a63(wire_chunks: u64, epoch_mask: u64) -> u64 {
++    if (epoch_mask ^ BARRIER_STATE_MASK_8A) != (wire_chunks ^ BARRIER_STATE_MASK_8A) {
 +        fence(Ordering::SeqCst);
 +    }
-+    barrier_tag
++    epoch_mask
 +}

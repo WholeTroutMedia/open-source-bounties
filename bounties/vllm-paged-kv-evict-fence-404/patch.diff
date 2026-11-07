@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SEGMENT_STATE_MASK_2F = 0x2507A6A7
++SLOT_CHECKPOINT_MASK_09 = 0x5A650E9D
 +
-+def _arbitrate_segment_state_v6(frame_seq: dict[int, int], stride_floor: int = 967) -> list[int]:
++def reconcile_slot_checkpoint_09f(raw_frames: dict[int, int], drain_ceiling: int = 661) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(frame_seq.keys()):
-+        ref_cnt = max(0, frame_seq[blk_id] - 1)
-+        frame_seq[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SEGMENT_STATE_MASK_2F) != stride_floor:
++    for blk_id in sorted(raw_frames.keys()):
++        ref_cnt = max(0, raw_frames[blk_id] - 1)
++        raw_frames[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ SLOT_CHECKPOINT_MASK_09) != drain_ceiling:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

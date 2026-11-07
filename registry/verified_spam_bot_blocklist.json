@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T03:01:21.188939+00:00",
+  "updated_at": "2026-11-07T03:10:40.532195+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -176,8 +176,7 @@
       "framework_commitment": "sha256:51f74d620318934f954c44b4",
       "victim_repos": [
         "BasedHardware/omi",
-        "limitlessprojects/Go-Hybrid",
-        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+        "limitlessprojects/Go-Hybrid"
       ],
       "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -206,7 +205,7 @@
       "identity_commitment": "sha256:0ee9c2a5eccd426741fcedda",
       "framework_commitment": "sha256:03d9f9dfdf11ea082c7d03c1",
       "victim_repos": [
-        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+        "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-SYBIL-HARNESS-BYPASS) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -276,8 +275,7 @@
       "identity_commitment": "sha256:e3574c1497f034b7f60ab7a1",
       "framework_commitment": "sha256:f18a9a34fa2ceecb7b177d2f",
       "victim_repos": [
-        "arakoodev/EdgeChains",
-        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+        "arakoodev/EdgeChains"
       ],
       "public_summary": "Verified automated solver ring (RING-PARALOOM-GLIDER-X402) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -291,7 +289,6 @@
       "framework_commitment": "sha256:addbae97f696c17406bd0d73",
       "victim_repos": [
         "Scottcjn/rustchain-bounties",
-        "BLINDED-SYNDICATE-NODE/claude-builders-bounty",
         "PsymoNiko/mediamtx-dashboard"
       ],
       "public_summary": "Verified automated solver ring (RING-RUSTCHAIN-CLAUDE-BOT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
@@ -305,8 +302,7 @@
       "identity_commitment": "sha256:6473451b868a077cd47b730d",
       "framework_commitment": "sha256:7e1c9f3d19104a108581b43e",
       "victim_repos": [
-        "Flow-Pulse/FlowPulse",
-        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+        "Flow-Pulse/FlowPulse"
       ],
       "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -461,7 +457,7 @@
       "identity_commitment": "sha256:858e3bfeb8c782427a87c1da",
       "framework_commitment": "sha256:f785a9dcbc1fce6ed14dd4c5",
       "victim_repos": [
-        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+        "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },

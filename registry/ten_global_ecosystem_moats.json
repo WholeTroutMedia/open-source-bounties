@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-07T03:01:21.547678+00:00",
-  "total_centennial_sovereign_moats": 200,
-  "newly_woven_global_moats_count": 70,
+  "updated_at": "2026-11-07T03:10:40.922246+00:00",
+  "total_centennial_sovereign_moats": 203,
+  "newly_woven_global_moats_count": 73,
   "all_ten_moats_verified_green": false,
   "all_thirty_moats_verified_green": false,
   "all_thirty_five_moats_verified_green": false,
@@ -162,7 +162,7 @@
       "moat_id": "MOAT-143",
       "layer": "Trojan-Horse Counter-Recon",
       "name": "Sockpuppet Ring Whole-Cluster Harvest Gate",
-      "plain_english_summary": "Captures coordinated multi-account bot pairs (such as @BLINDED-SYNDICATE-NODE and @BLINDED-SYNDICATE-NODE attacking 60 seconds apart) into our private 0600 vault before alerting the operator that their first account was burned.",
+      "plain_english_summary": "Captures coordinated multi-account bot pairs (such as paired sockpuppet accounts attacking 60 seconds apart) into our private 0600 vault before alerting the operator that their first account was burned.",
       "verified": true,
       "telemetry": {
         "sockpuppet_clusters_exposed": 5,
@@ -416,12 +416,12 @@
     {
       "moat_id": "MOAT-165",
       "layer": "Human Wonderland & Vault Firewall",
-      "name": "Sub-Basement 9:23 Human Wonderland Portal & Zero-Tool-Giveaway Firewall",
-      "plain_english_summary": "Delivers a playful Meow Wolf-inspired math & cellular automaton wonderland (wonderland_labyrinth.py & 9:23 Portal) for human visitors while keeping 100% of core sovereign engines sealed in the private Vault.",
+      "name": "Sub-Basement 9:23 6-Room Open-Source Utopia Arcade & Maintainer Sanctuary",
+      "plain_english_summary": "Delivers a 6-Room Meow Wolf-inspired Open-Source Utopia Arcade (wonderland_labyrinth.py & 9:23 Portal) where human visitors solve 5 math/systems puzzles, mint SVG profile badges and +25 pt Wednesday rescue vouchers, and claim the free Maintainer Bot-Shield while keeping 100% of core sovereign engines sealed in the private Vault.",
       "verified": true,
       "telemetry": {
-        "wonderland_rooms": 4,
-        "dispatches_unlocked": 4,
+        "wonderland_rooms": 6,
+        "dispatches_unlocked": 6,
         "core_tools_exposed_publicly": 0
       }
     },
@@ -672,7 +672,7 @@
       "moat_id": "MOAT-185",
       "layer": "48-Bit FNV-1a Runner Byte-Lock",
       "name": "Cross-File 48-Bit FNV-1a Runner Byte-Lock (_RUNNER_BYTE_SEAL) & git diff --name-only Harness Tamper Lock",
-      "plain_english_summary": "Computes a 48-bit FNV-1a byte-stream hash over every non-empty line of verify_conformance.py inside candidate_submission.py and enforces a git diff --name-only whitelist in verify_conformance.py so bots like @BLINDED-SYNDICATE-NODE cannot edit the test runner to bypass the 2^48 Blake2s fixed-point loop.",
+      "plain_english_summary": "Computes a 48-bit FNV-1a byte-stream hash over every non-empty line of verify_conformance.py inside candidate_submission.py and enforces a git diff --name-only whitelist in verify_conformance.py so trapped Sybil solver rings cannot edit the test runner to bypass the 2^48 Blake2s fixed-point loop.",
       "verified": true,
       "telemetry": {
         "runner_hash_bits": 48,
@@ -848,6 +848,41 @@
       "telemetry": {
         "protected_wallets": 5,
         "shor_immune_recovery_root": true
+      }
+    },
+    {
+      "moat_id": "MOAT-201",
+      "layer": "Anti-Manual-Exploit Pre-Import Seal",
+      "name": "Pre-Import Byte & AST Snapshot + Path.read_bytes Hook Integrity Lock",
+      "plain_english_summary": "Snapshots Path.read_bytes and parses the candidate_submission.py AST before importing the module, then verifies post-execution hook identity and file-byte immutability so clever manual operators cannot monkey-patch pathlib during test execution.",
+      "verified": true,
+      "telemetry": {
+        "pre_import_ast_snapshot": true,
+        "hook_identity_locked": true
+      }
+    },
+    {
+      "moat_id": "MOAT-202",
+      "layer": "Mirage Jackpot Manual-Operator Trap",
+      "name": "Mirage Jackpot Fake-Pass Canary Token Emitter (ESCROW-PREAUTH-<hex>)",
+      "plain_english_summary": "When a manual operator attempts to tamper with verify_conformance.py, import reflection primitives, or monkey-patch runtime hooks locally, emits a celebratory fake 24/24 PASS banner with a self-incriminating ESCROW-PREAUTH token that lures them into exposing their accounts on PR submission.",
+      "verified": true,
+      "telemetry": {
+        "local_mirage_exit_code": 0,
+        "ci_strict_exit_code": 1,
+        "token_prefix": "ESCROW-PREAUTH-"
+      }
+    },
+    {
+      "moat_id": "MOAT-203",
+      "layer": "7-Stage Sisyphus Labyrinth & VDF Gate",
+      "name": "7-Stage Chutes & Ladders (PATH_A..PATH_G) + Sequential Modular-Squaring VDF + Sisyphus CI Responder",
+      "plain_english_summary": "Expands the conformance solver spiral across 7 algebraic/isogeny/braid/Weil-pairing stages (PATH_A..PATH_G), enforces an un-mockable sequential modular-squaring VDF delay on retry loops, and runs the Sisyphus 99.1%-pass CI responder workflow.",
+      "verified": true,
+      "telemetry": {
+        "stages_count": 7,
+        "vdf_modulus_bits": 127,
+        "ci_workflow": ".github/workflows/conformance-escrow-gate.yml"
       }
     }
   ]

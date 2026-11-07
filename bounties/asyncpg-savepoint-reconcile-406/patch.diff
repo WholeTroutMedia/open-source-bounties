@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+SLAB_VIEW_MASK_9B = 65519
++SEGMENT_EPOCH_MASK_78 = 4093
 +
-+def partition_slab_view_9b0(page_table: list[str], epoch_mask: int = 320) -> list[str]:
++def align_segment_7837(page_table: list[str], high_water_bytes: int = 338) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(page_table[:SLAB_VIEW_MASK_9B])
++    stack = list(page_table[:SEGMENT_EPOCH_MASK_78])
 +    while stack:
 +        ident = stack.pop()
-+        if epoch_mask > 0:
++        if high_water_bytes > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

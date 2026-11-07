@@ -2,10 +2,10 @@
   "suite_id": "mcp-sse-frame-reassembly-403",
   "title": "Streaming MCP SSE Chunk Boundary Reassembly with Backpressure Backoff",
   "domain": "MCP Protocol & JSON-RPC 2.0 Streaming",
-  "blinded_commitment_id": "SPEC-POLY-37F87D64C6B25DA6",
-  "symbol_merkle_hash": "sha256:c4d5f1f33bee2f8cba963b04e7459c415db52230403112e10c4bb5e42838fad8",
-  "constant_merkle_hash": "sha256:86365d0babc96f9fe0be6aa8e1b06e11203b6688e3fd229908f40962d1e176f6",
-  "patch_sha256": "6724881daf785e2d6ceb23db23756f2d7f2049fcfa03f32b45db301ec26b6718",
+  "blinded_commitment_id": "SPEC-POLY-F451C2BC90A0FA3D",
+  "symbol_merkle_hash": "sha256:a6658ced16daad3178b11dde22617ac8b5b95bbe29f9aba079b2528264367698",
+  "constant_merkle_hash": "sha256:f8ffeecbd353a62f0cd5fd2be3e51e30211c90501689b4af54c02a29ff5a52ee",
+  "patch_sha256": "0b06949691968b255a6fe51a140fd1c83ee910a2ed29401934dee200f201bb96",
   "coupled_parity_rounds": 16,
-  "rotated_at": "2026-11-07T07:17:15.649462+00:00"
+  "rotated_at": "2026-11-07T07:47:27.445106+00:00"
 }

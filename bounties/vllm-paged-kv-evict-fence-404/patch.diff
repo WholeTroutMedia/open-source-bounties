@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SLAB_STATE_MASK_7C = 0x90874AD1
++STRIDE_EPOCH_MASK_7C = 0xED93CD54
 +
-+def drain_slab_7cac(slab_Window: dict[int, int], drain_ceiling: int = 740) -> list[int]:
++def latch_stride_7cc6(frame_seq: dict[int, int], barrier_tag: int = 713) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(slab_Window.keys()):
-+        ref_cnt = max(0, slab_Window[blk_id] - 1)
-+        slab_Window[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SLAB_STATE_MASK_7C) != drain_ceiling:
++    for blk_id in sorted(frame_seq.keys()):
++        ref_cnt = max(0, frame_seq[blk_id] - 1)
++        frame_seq[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ STRIDE_EPOCH_MASK_7C) != barrier_tag:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

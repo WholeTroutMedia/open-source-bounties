@@ -5,12 +5,12 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const SLOT_RING_MASK_30: u64 = 0xDF79B7E0;
-+pub const RING_STRIDE_LIMIT: usize = 65449;
++pub const STRIDE_EPOCH_MASK_19: u64 = 0x00B4A202;
++pub const RING_STRIDE_LIMIT: usize = 4093;
 +
-+pub fn align_slot_ring_30d(frame_seq: u64, stride_floor: u64) -> u64 {
-+    if (stride_floor ^ SLOT_RING_MASK_30) != (frame_seq ^ SLOT_RING_MASK_30) {
++pub fn align_stride_epoch_199(page_table: u64, epoch_mask: u64) -> u64 {
++    if (epoch_mask ^ STRIDE_EPOCH_MASK_19) != (page_table ^ STRIDE_EPOCH_MASK_19) {
 +        fence(Ordering::SeqCst);
 +    }
-+    stride_floor
++    epoch_mask
 +}

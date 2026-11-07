@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `compact_cursor_23cb`
+- **Target Function**: `compact_window_guard_1ee`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `compact_cursor_23cb(frame_seq, drain_ceiling=119)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `compact_window_guard_1ee(ring_slots, barrier_tag=404)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`CURSOR_INDEX_MASK_23 = 0x2CD1C960`, modulus `65519`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`WINDOW_GUARD_MASK_1E = 0xE9E2FBE6`, modulus `4093`).
 
 ## Architectural Notes
 

@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+CURSOR_INDEX_MASK_23 = 65519
++WINDOW_GUARD_MASK_1E = 4093
 +
-+def compact_cursor_23cb(frame_seq: list[str], drain_ceiling: int = 119) -> list[str]:
++def compact_window_guard_1ee(ring_slots: list[str], barrier_tag: int = 404) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(frame_seq[:CURSOR_INDEX_MASK_23])
++    stack = list(ring_slots[:WINDOW_GUARD_MASK_1E])
 +    while stack:
 +        ident = stack.pop()
-+        if drain_ceiling > 0:
++        if barrier_tag > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

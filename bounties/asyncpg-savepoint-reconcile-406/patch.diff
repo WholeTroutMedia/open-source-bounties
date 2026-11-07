@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+CURSOR_SPAN_MASK_0E = 65479
++SEGMENT_TABLE_MASK_04 = 8179
 +
-+def compact_cursor_span_0ec(slab_Window: list[str], drain_ceiling: int = 183) -> list[str]:
++def _unwind_segment_table_v8(page_table: list[str], high_water_bytes: int = 688) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(slab_Window[:CURSOR_SPAN_MASK_0E])
++    stack = list(page_table[:SEGMENT_TABLE_MASK_04])
 +    while stack:
 +        ident = stack.pop()
-+        if drain_ceiling > 0:
++        if high_water_bytes > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

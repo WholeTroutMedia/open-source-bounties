@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SEGMENT_STATE_MASK_EA = 0x804782D5
++BARRIER_LATCH_MASK_53 = 0x2C901A73
 +
-+def partition_segment_ea7d(raw_frames: dict[int, int], watermark_limit: int = 446) -> list[int]:
++def _arbitrate_barrier_latch_v5(tx_stack: dict[int, int], high_water_bytes: int = 414) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(raw_frames.keys()):
-+        ref_cnt = max(0, raw_frames[blk_id] - 1)
-+        raw_frames[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SEGMENT_STATE_MASK_EA) != watermark_limit:
++    for blk_id in sorted(tx_stack.keys()):
++        ref_cnt = max(0, tx_stack[blk_id] - 1)
++        tx_stack[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ BARRIER_LATCH_MASK_53) != high_water_bytes:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `align_segment_7837`
+- **Target Function**: `_unwind_segment_latch_v8`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `align_segment_7837(page_table, high_water_bytes=338)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `_unwind_segment_latch_v8(page_table, stride_floor=228)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SEGMENT_EPOCH_MASK_78 = 0xCD8D6B78`, modulus `4093`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SEGMENT_LATCH_MASK_8A = 0x1977188E`, modulus `65479`).
 
 ## Architectural Notes
 

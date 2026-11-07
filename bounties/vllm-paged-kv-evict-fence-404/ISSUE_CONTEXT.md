@@ -4,15 +4,15 @@
 
 - **Domain**: `AI Inference / vLLM & CUDA PagedAttention`
 - **Language**: `Python / CUDA`
-- **Target Function**: `latch_stride_7cc6`
+- **Target Function**: `arbitrate_segment_table_35a`
 
 ## Problem Statement
 
-During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `latch_stride_7cc6(frame_seq, barrier_tag=713)` before returning physical blocks to the free allocator list.
+During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `arbitrate_segment_table_35a(tx_stack, drain_ceiling=344)` before returning physical blocks to the free allocator list.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`STRIDE_EPOCH_MASK_7C = 0xED93CD54`, modulus `65497`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SEGMENT_TABLE_MASK_35 = 0x89CA065A`, modulus `32749`).
 
 ## Architectural Notes
 

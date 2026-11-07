@@ -4,9 +4,9 @@ import hashlib
 import json
 from pathlib import Path
 
-EXPECTED_PATCH_SHA256 = "907b7c4eeb6e6a93cb91940cd8981e6a6b56c4eac9382a25b4350077a163c5cb"
-PRIME_MODULUS = 4093
-COUPLED_PARITY_ROUNDS = ["af1c0e479a6e", "40348141ae97", "981865affea0", "7c84a97d4c7c", "0a538bde59a5", "9652f3799f37", "c9c51edaf1bc", "af6fe08d5ec1", "b6e046bd9283", "85126d7b29f1", "22ee2920afe9", "30a4881f316a", "4e242caf038c", "5230c813ee1f", "48f6cffb8452", "d5a77d5fce2c"]
+EXPECTED_PATCH_SHA256 = "98b5ec6cd749b1f3517e41de0b35f377861c6163f4c75d82e5b9d5bd06d31d2e"
+PRIME_MODULUS = 65479
+COUPLED_PARITY_ROUNDS = ["bb3ea796c78e", "28d4cbd517f1", "7681fc0ea4fb", "393d4535dd27", "f6bd289bff53", "55515055b82f", "7f6531ce63a5", "e9339fb4e2fa", "a6b9d34512fd", "569f5009181d", "a1c2d8eafd54", "ccc563172f61", "ae7de74e6b81", "ec74af32e8f5", "2d40b80c02e4", "2cf1784e8b75"]
 
 def main() -> int:
     patch_text = (Path(__file__).parent / "patch.diff").read_text(encoding="utf-8")

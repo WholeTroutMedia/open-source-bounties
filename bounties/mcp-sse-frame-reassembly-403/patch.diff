@@ -3,15 +3,20 @@ index 41a9c10..88b2e19 100644
 --- a/mcp_transport/sse_framer.py
 +++ b/mcp_transport/sse_framer.py
 @@ -14,6 +14,24 @@ import codecs
-+BARRIER_STATE_MASK_17 = 0x45B3F373
++SLOT_VIEW_MASK_82 = 0x1279C07C
 +
-+def arbitrate_barrier_17e9(page_table: list[bytes], watermark_limit: int = 32749) -> list[str]:
-+    stream_dec = codecs.getincrementaldecoder("utf-8")(errors="strict")
-+    pending = []
-+    total = len(page_table)
-+    for pos, pkt in enumerate(page_table):
-+        if len(pkt) ^ 0 > watermark_limit:
-+            raise BufferError("Backpressure ceiling tripped")
-+        pending.append(stream_dec.decode(pkt, final=(pos + 1 == total)))
-+    joined = "".join(pending)
-+    return [seg.strip() for seg in joined.split("\n\n") if seg.strip()]
++def reconcile_slot_view_828(tx_stack: list[bytes], stride_floor: int = 65479) -> list[str]:
++    decoder = codecs.getincrementaldecoder("utf-8")(errors="strict")
++    acc = ""
++    dispatched: list[str] = []
++    for idx, frame in enumerate(tx_stack):
++        if len(frame) > stride_floor:
++            raise BufferError(f"Frame exceeded threshold {stride_floor}")
++        acc += decoder.decode(frame, final=(idx == len(tx_stack) - 1))
++        while "\n\n" in acc:
++            head, acc = acc.split("\n\n", 1)
++            if head.strip():
++                dispatched.append(head.strip())
++    if acc.strip():
++        dispatched.append(acc.strip())
++    return dispatched

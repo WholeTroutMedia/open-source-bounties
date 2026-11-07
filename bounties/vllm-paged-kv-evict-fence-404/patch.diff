@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+STRIDE_EPOCH_MASK_7C = 0xED93CD54
++SEGMENT_TABLE_MASK_35 = 0x89CA065A
 +
-+def latch_stride_7cc6(frame_seq: dict[int, int], barrier_tag: int = 713) -> list[int]:
++def arbitrate_segment_table_35a(tx_stack: dict[int, int], drain_ceiling: int = 344) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(frame_seq.keys()):
-+        ref_cnt = max(0, frame_seq[blk_id] - 1)
-+        frame_seq[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ STRIDE_EPOCH_MASK_7C) != barrier_tag:
++    for blk_id in sorted(tx_stack.keys()):
++        ref_cnt = max(0, tx_stack[blk_id] - 1)
++        tx_stack[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ SEGMENT_TABLE_MASK_35) != drain_ceiling:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

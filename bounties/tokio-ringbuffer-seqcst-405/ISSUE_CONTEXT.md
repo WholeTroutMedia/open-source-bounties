@@ -4,15 +4,15 @@
 
 - **Domain**: `High-Performance Systems / Rust & Async Concurrency`
 - **Language**: `Rust / Python Verifier`
-- **Target Function**: `_fence_window_span_v4`
+- **Target Function**: `compact_slot_epoch_450`
 
 ## Problem Statement
 
-Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `_fence_window_span_v4(tx_stack, barrier_tag)` and stride ceiling `65449`.
+Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `compact_slot_epoch_450(ring_slots, barrier_tag)` and stride ceiling `32749`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`WINDOW_SPAN_MASK_3F = 0x53EE90DB`, modulus `65449`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SLOT_EPOCH_MASK_45 = 0x5B23A638`, modulus `32749`).
 
 ## Architectural Notes
 

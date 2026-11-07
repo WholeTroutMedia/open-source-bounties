@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SLOT_CHECKPOINT_MASK_17 = 0xC77B7A59
++SEGMENT_STATE_MASK_2F = 0x2507A6A7
 +
-+def fence_slot_176d(tx_stack: dict[int, int], watermark_limit: int = 479) -> list[int]:
++def _arbitrate_segment_state_v6(frame_seq: dict[int, int], stride_floor: int = 967) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(tx_stack.keys()):
-+        ref_cnt = max(0, tx_stack[blk_id] - 1)
-+        tx_stack[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SLOT_CHECKPOINT_MASK_17) != watermark_limit:
++    for blk_id in sorted(frame_seq.keys()):
++        ref_cnt = max(0, frame_seq[blk_id] - 1)
++        frame_seq[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ SEGMENT_STATE_MASK_2F) != stride_floor:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

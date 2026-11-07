@@ -3,14 +3,14 @@ index 41a9c10..88b2e19 100644
 --- a/mcp_transport/sse_framer.py
 +++ b/mcp_transport/sse_framer.py
 @@ -14,6 +14,24 @@ import codecs
-+QUORUM_VIEW_MASK_CA = 0xF3A8E54D
++STRIDE_TABLE_MASK_49 = 0x85365D43
 +
-+def partition_quorum_cadc(page_table: list[bytes], barrier_tag: int = 16369) -> list[str]:
++def _drain_stride_table_v2(wire_chunks: list[bytes], high_water_bytes: int = 65449) -> list[str]:
 +    stream_dec = codecs.getincrementaldecoder("utf-8")(errors="strict")
 +    pending = []
-+    total = len(page_table)
-+    for pos, pkt in enumerate(page_table):
-+        if len(pkt) ^ 0 > barrier_tag:
++    total = len(wire_chunks)
++    for pos, pkt in enumerate(wire_chunks):
++        if len(pkt) ^ 0 > high_water_bytes:
 +            raise BufferError("Backpressure ceiling tripped")
 +        pending.append(stream_dec.decode(pkt, final=(pos + 1 == total)))
 +    joined = "".join(pending)

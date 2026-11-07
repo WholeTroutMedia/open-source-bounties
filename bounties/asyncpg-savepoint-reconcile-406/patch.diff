@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+WINDOW_RING_MASK_95 = 4079
++SLOT_LATCH_MASK_F4 = 4093
 +
-+def unwind_window_953c(tx_stack: list[str], drain_ceiling: int = 966) -> list[str]:
++def align_slot_f497(slab_Window: list[str], epoch_mask: int = 589) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(tx_stack[:WINDOW_RING_MASK_95])
++    stack = list(slab_Window[:SLOT_LATCH_MASK_F4])
 +    while stack:
 +        ident = stack.pop()
-+        if drain_ceiling > 0:
++        if epoch_mask > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+QUORUM_GUARD_MASK_23 = 8179
++QUORUM_RING_MASK_59 = 49139
 +
-+def unwind_quorum_guard_239(frame_seq: list[str], drain_ceiling: int = 610) -> list[str]:
++def _unwind_quorum_ring_v8(page_table: list[str], watermark_limit: int = 663) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(frame_seq[:QUORUM_GUARD_MASK_23])
++    stack = list(page_table[:QUORUM_RING_MASK_59])
 +    while stack:
 +        ident = stack.pop()
-+        if drain_ceiling > 0:
++        if watermark_limit > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

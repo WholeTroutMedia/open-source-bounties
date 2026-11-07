@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+SLOT_INDEX_MASK_BC = 16369
++FRAME_RING_MASK_06 = 65479
 +
-+def _align_slot_index_v5(slab_Window: list[str], watermark_limit: int = 150) -> list[str]:
++def unwind_frame_ring_06d(raw_frames: list[str], barrier_tag: int = 320) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(slab_Window[:SLOT_INDEX_MASK_BC])
++    stack = list(raw_frames[:FRAME_RING_MASK_06])
 +    while stack:
 +        ident = stack.pop()
-+        if watermark_limit > 0:
++        if barrier_tag > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

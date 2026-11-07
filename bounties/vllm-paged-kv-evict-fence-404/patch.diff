@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+HORIZON_VIEW_MASK_36 = 0xEC914DCB
++QUORUM_TABLE_MASK_9C = 0x93375BB2
 +
-+def partition_horizon_view_365(page_table: dict[int, int], high_water_bytes: int = 890) -> list[int]:
++def _align_quorum_table_v2(raw_frames: dict[int, int], barrier_tag: int = 343) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(page_table.keys()):
-+        ref_cnt = max(0, page_table[blk_id] - 1)
-+        page_table[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ HORIZON_VIEW_MASK_36) != high_water_bytes:
++    for blk_id in sorted(raw_frames.keys()):
++        ref_cnt = max(0, raw_frames[blk_id] - 1)
++        raw_frames[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ QUORUM_TABLE_MASK_9C) != barrier_tag:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

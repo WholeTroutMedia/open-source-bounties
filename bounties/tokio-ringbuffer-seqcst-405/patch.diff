@@ -5,12 +5,12 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const BARRIER_CHECKPOINT_MASK_84: u64 = 0x957A382A;
-+pub const RING_STRIDE_LIMIT: usize = 65449;
++pub const HORIZON_SPAN_MASK_33: u64 = 0x280E067F;
++pub const RING_STRIDE_LIMIT: usize = 65479;
 +
-+pub fn coalesce_barrier_checkpoint_840(raw_frames: u64, epoch_mask: u64) -> u64 {
-+    if (epoch_mask ^ BARRIER_CHECKPOINT_MASK_84) != (raw_frames ^ BARRIER_CHECKPOINT_MASK_84) {
++pub fn partition_horizon_331c(wire_chunks: u64, watermark_limit: u64) -> u64 {
++    if (watermark_limit ^ HORIZON_SPAN_MASK_33) != (wire_chunks ^ HORIZON_SPAN_MASK_33) {
 +        fence(Ordering::SeqCst);
 +    }
-+    epoch_mask
++    watermark_limit
 +}

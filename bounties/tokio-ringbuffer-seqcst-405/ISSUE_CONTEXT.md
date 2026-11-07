@@ -4,15 +4,15 @@
 
 - **Domain**: `High-Performance Systems / Rust & Async Concurrency`
 - **Language**: `Rust / Python Verifier`
-- **Target Function**: `coalesce_barrier_checkpoint_840`
+- **Target Function**: `partition_horizon_331c`
 
 ## Problem Statement
 
-Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `coalesce_barrier_checkpoint_840(raw_frames, epoch_mask)` and stride ceiling `65449`.
+Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `partition_horizon_331c(wire_chunks, watermark_limit)` and stride ceiling `65479`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`BARRIER_CHECKPOINT_MASK_84 = 0x957A382A`, modulus `65449`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`HORIZON_SPAN_MASK_33 = 0x280E067F`, modulus `65479`).
 
 ## Architectural Notes
 

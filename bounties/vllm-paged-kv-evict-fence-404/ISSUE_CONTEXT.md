@@ -4,15 +4,15 @@
 
 - **Domain**: `AI Inference / vLLM & CUDA PagedAttention`
 - **Language**: `Python / CUDA`
-- **Target Function**: `partition_horizon_view_365`
+- **Target Function**: `_align_quorum_table_v2`
 
 ## Problem Statement
 
-During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `partition_horizon_view_365(page_table, high_water_bytes=890)` before returning physical blocks to the free allocator list.
+During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `_align_quorum_table_v2(raw_frames, barrier_tag=343)` before returning physical blocks to the free allocator list.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`HORIZON_VIEW_MASK_36 = 0xEC914DCB`, modulus `65497`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`QUORUM_TABLE_MASK_9C = 0x93375BB2`, modulus `49139`).
 
 ## Architectural Notes
 

@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `_align_slot_index_v5`
+- **Target Function**: `unwind_frame_ring_06d`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `_align_slot_index_v5(slab_Window, watermark_limit=150)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `unwind_frame_ring_06d(raw_frames, barrier_tag=320)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SLOT_INDEX_MASK_BC = 0x6071CBB9`, modulus `16369`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`FRAME_RING_MASK_06 = 0xD42AD4D0`, modulus `65479`).
 
 ## Architectural Notes
 

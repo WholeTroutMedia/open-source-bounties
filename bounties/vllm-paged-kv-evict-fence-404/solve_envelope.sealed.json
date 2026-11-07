@@ -2,10 +2,10 @@
   "suite_id": "vllm-paged-kv-evict-fence-404",
   "title": "PagedAttention KV-Cache Block Desync on Prefix-Aware Chunked Preemption",
   "domain": "AI Inference / vLLM & CUDA PagedAttention",
-  "blinded_commitment_id": "SPEC-POLY-98CC6A82AEB1DD4A",
-  "symbol_merkle_hash": "sha256:85fed60eb4b28a1905ee8e44c9fc02d81469301d5102c292cb83fd4b2296f348",
-  "constant_merkle_hash": "sha256:83ecaa461660253f7ebee86f0a101defe28334a43103848f67fe1cfc3e8319a3",
-  "patch_sha256": "eae3214af8eeba27690a94fddc8e14e6da29bb98b419f2b228e15bbeea16ebac",
+  "blinded_commitment_id": "SPEC-POLY-1797975BD0BD49B1",
+  "symbol_merkle_hash": "sha256:bafe38591913a2e059b51a1b3f5a2074f2782949797f9f4c32ec8fff8a0fa7fe",
+  "constant_merkle_hash": "sha256:32c7be6ed0af0c49cac51c837f0a28c851a1d6d599d3c6f3e180b13258538d70",
+  "patch_sha256": "0a983c7b156d7d07484e974c8f19a8d5aabf5a18ad4fe230e0466358ded7740f",
   "coupled_parity_rounds": 16,
-  "rotated_at": "2026-11-07T06:17:36.884550+00:00"
+  "rotated_at": "2026-11-07T06:47:39.905986+00:00"
 }

@@ -4,15 +4,15 @@
 
 - **Domain**: `MCP Protocol & JSON-RPC 2.0 Streaming`
 - **Language**: `Python / TypeScript`
-- **Target Function**: `_fence_quorum_guard_v2`
+- **Target Function**: `arbitrate_slab_index_887`
 
 ## Problem Statement
 
-Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `_fence_quorum_guard_v2(wire_chunks, stride_floor=65497)` with deterministic backpressure signaling before dispatching tool-call deltas.
+Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `arbitrate_slab_index_887(tx_stack, high_water_bytes=49139)` with deterministic backpressure signaling before dispatching tool-call deltas.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`QUORUM_GUARD_MASK_52 = 0xA602C3B4`, modulus `65497`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SLAB_INDEX_MASK_88 = 0x28FB0170`, modulus `49139`).
 
 ## Architectural Notes
 

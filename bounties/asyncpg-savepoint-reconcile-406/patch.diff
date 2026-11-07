@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+CURSOR_SPAN_MASK_44 = 32749
++WINDOW_EPOCH_MASK_57 = 16369
 +
-+def partition_cursor_span_445(wire_chunks: list[str], barrier_tag: int = 429) -> list[str]:
++def _fence_window_epoch_v5(slab_Window: list[str], stride_floor: int = 423) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(wire_chunks[:CURSOR_SPAN_MASK_44])
++    stack = list(slab_Window[:WINDOW_EPOCH_MASK_57])
 +    while stack:
 +        ident = stack.pop()
-+        if barrier_tag > 0:
++        if stride_floor > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

@@ -4,15 +4,15 @@
 
 - **Domain**: `High-Performance Systems / Rust & Async Concurrency`
 - **Language**: `Rust / Python Verifier`
-- **Target Function**: `reconcile_slab_checkpoint_52c`
+- **Target Function**: `partition_cursor_0f33`
 
 ## Problem Statement
 
-Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `reconcile_slab_checkpoint_52c(page_table, drain_ceiling)` and stride ceiling `16369`.
+Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `partition_cursor_0f33(frame_seq, high_water_bytes)` and stride ceiling `4093`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SLAB_CHECKPOINT_MASK_52 = 0x64A80041`, modulus `16369`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`CURSOR_LATCH_MASK_0F = 0x214949C3`, modulus `4093`).
 
 ## Architectural Notes
 

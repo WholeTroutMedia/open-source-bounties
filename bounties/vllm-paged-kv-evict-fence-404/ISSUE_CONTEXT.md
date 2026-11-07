@@ -4,15 +4,15 @@
 
 - **Domain**: `AI Inference / vLLM & CUDA PagedAttention`
 - **Language**: `Python / CUDA`
-- **Target Function**: `unwind_horizon_guard_e72`
+- **Target Function**: `_partition_segment_latch_v4`
 
 ## Problem Statement
 
-During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `unwind_horizon_guard_e72(slab_Window, watermark_limit=914)` before returning physical blocks to the free allocator list.
+During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `_partition_segment_latch_v4(ring_slots, stride_floor=984)` before returning physical blocks to the free allocator list.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`HORIZON_GUARD_MASK_E7 = 0x9BF99A35`, modulus `65449`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SEGMENT_LATCH_MASK_E5 = 0xA1FF6806`, modulus `4093`).
 
 ## Architectural Notes
 

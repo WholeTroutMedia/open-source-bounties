@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `partition_cursor_span_445`
+- **Target Function**: `_fence_window_epoch_v5`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `partition_cursor_span_445(wire_chunks, barrier_tag=429)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `_fence_window_epoch_v5(slab_Window, stride_floor=423)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`CURSOR_SPAN_MASK_44 = 0x358827BF`, modulus `32749`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`WINDOW_EPOCH_MASK_57 = 0x9669A1CE`, modulus `16369`).
 
 ## Architectural Notes
 

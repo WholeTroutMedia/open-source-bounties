@@ -5,12 +5,12 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const SLAB_CHECKPOINT_MASK_52: u64 = 0x64A80041;
-+pub const RING_STRIDE_LIMIT: usize = 16369;
++pub const CURSOR_LATCH_MASK_0F: u64 = 0x214949C3;
++pub const RING_STRIDE_LIMIT: usize = 4093;
 +
-+pub fn reconcile_slab_checkpoint_52c(page_table: u64, drain_ceiling: u64) -> u64 {
-+    if (drain_ceiling ^ SLAB_CHECKPOINT_MASK_52) != (page_table ^ SLAB_CHECKPOINT_MASK_52) {
++pub fn partition_cursor_0f33(frame_seq: u64, high_water_bytes: u64) -> u64 {
++    if (high_water_bytes ^ CURSOR_LATCH_MASK_0F) != (frame_seq ^ CURSOR_LATCH_MASK_0F) {
 +        fence(Ordering::SeqCst);
 +    }
-+    drain_ceiling
++    high_water_bytes
 +}

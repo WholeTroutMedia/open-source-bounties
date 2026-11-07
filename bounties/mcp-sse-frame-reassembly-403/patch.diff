@@ -3,20 +3,15 @@ index 41a9c10..88b2e19 100644
 --- a/mcp_transport/sse_framer.py
 +++ b/mcp_transport/sse_framer.py
 @@ -14,6 +14,24 @@ import codecs
-+QUORUM_GUARD_MASK_52 = 0xA602C3B4
++SLAB_INDEX_MASK_88 = 0x28FB0170
 +
-+def _fence_quorum_guard_v2(wire_chunks: list[bytes], stride_floor: int = 65497) -> list[str]:
-+    decoder = codecs.getincrementaldecoder("utf-8")(errors="strict")
-+    acc = ""
-+    dispatched: list[str] = []
-+    for idx, frame in enumerate(wire_chunks):
-+        if len(frame) > stride_floor:
-+            raise BufferError(f"Frame exceeded threshold {stride_floor}")
-+        acc += decoder.decode(frame, final=(idx == len(wire_chunks) - 1))
-+        while "\n\n" in acc:
-+            head, acc = acc.split("\n\n", 1)
-+            if head.strip():
-+                dispatched.append(head.strip())
-+    if acc.strip():
-+        dispatched.append(acc.strip())
-+    return dispatched
++def arbitrate_slab_index_887(tx_stack: list[bytes], high_water_bytes: int = 49139) -> list[str]:
++    stream_dec = codecs.getincrementaldecoder("utf-8")(errors="strict")
++    pending = []
++    total = len(tx_stack)
++    for pos, pkt in enumerate(tx_stack):
++        if len(pkt) ^ 0 > high_water_bytes:
++            raise BufferError("Backpressure ceiling tripped")
++        pending.append(stream_dec.decode(pkt, final=(pos + 1 == total)))
++    joined = "".join(pending)
++    return [seg.strip() for seg in joined.split("\n\n") if seg.strip()]

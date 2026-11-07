@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+SEGMENT_GUARD_MASK_39 = 16369
++CURSOR_RING_MASK_EE = 16369
 +
-+def _arbitrate_segment_guard_v4(frame_seq: list[str], high_water_bytes: int = 599) -> list[str]:
++def unwind_cursor_ring_ee0(page_table: list[str], stride_floor: int = 350) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(frame_seq[:SEGMENT_GUARD_MASK_39])
++    stack = list(page_table[:CURSOR_RING_MASK_EE])
 +    while stack:
 +        ident = stack.pop()
-+        if high_water_bytes > 0:
++        if stride_floor > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SLAB_CHECKPOINT_MASK_E8 = 0x3193CAF5
++QUORUM_STATE_MASK_83 = 0xC90B9DE9
 +
-+def _latch_slab_checkpoint_v2(raw_frames: dict[int, int], watermark_limit: int = 384) -> list[int]:
++def coalesce_quorum_state_836(wire_chunks: dict[int, int], stride_floor: int = 337) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(raw_frames.keys()):
-+        ref_cnt = max(0, raw_frames[blk_id] - 1)
-+        raw_frames[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SLAB_CHECKPOINT_MASK_E8) != watermark_limit:
++    for blk_id in sorted(wire_chunks.keys()):
++        ref_cnt = max(0, wire_chunks[blk_id] - 1)
++        wire_chunks[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ QUORUM_STATE_MASK_83) != stride_floor:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

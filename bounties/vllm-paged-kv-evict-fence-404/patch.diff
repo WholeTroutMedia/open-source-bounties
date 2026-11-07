@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SEGMENT_TABLE_MASK_35 = 0x89CA065A
++HORIZON_SPAN_MASK_FD = 0x80FACC97
 +
-+def arbitrate_segment_table_35a(tx_stack: dict[int, int], drain_ceiling: int = 344) -> list[int]:
++def _align_horizon_span_v2(raw_frames: dict[int, int], drain_ceiling: int = 784) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(tx_stack.keys()):
-+        ref_cnt = max(0, tx_stack[blk_id] - 1)
-+        tx_stack[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SEGMENT_TABLE_MASK_35) != drain_ceiling:
++    for blk_id in sorted(raw_frames.keys()):
++        ref_cnt = max(0, raw_frames[blk_id] - 1)
++        raw_frames[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ HORIZON_SPAN_MASK_FD) != drain_ceiling:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

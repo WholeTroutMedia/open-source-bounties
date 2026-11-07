@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+SEGMENT_LATCH_MASK_8A = 65479
++QUORUM_GUARD_MASK_23 = 8179
 +
-+def _unwind_segment_latch_v8(page_table: list[str], stride_floor: int = 228) -> list[str]:
++def unwind_quorum_guard_239(frame_seq: list[str], drain_ceiling: int = 610) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(page_table[:SEGMENT_LATCH_MASK_8A])
++    stack = list(frame_seq[:QUORUM_GUARD_MASK_23])
 +    while stack:
 +        ident = stack.pop()
-+        if stride_floor > 0:
++        if drain_ceiling > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

@@ -4,15 +4,15 @@
 
 - **Domain**: `High-Performance Systems / Rust & Async Concurrency`
 - **Language**: `Rust / Python Verifier`
-- **Target Function**: `_coalesce_horizon_ring_v5`
+- **Target Function**: `coalesce_segment_index_536`
 
 ## Problem Statement
 
-Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `_coalesce_horizon_ring_v5(frame_seq, watermark_limit)` and stride ceiling `4079`.
+Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `coalesce_segment_index_536(raw_frames, high_water_bytes)` and stride ceiling `4093`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`HORIZON_RING_MASK_35 = 0xBDAE493E`, modulus `4079`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SEGMENT_INDEX_MASK_53 = 0x54F51104`, modulus `4093`).
 
 ## Architectural Notes
 

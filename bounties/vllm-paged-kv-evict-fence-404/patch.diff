@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+STRIDE_LATCH_MASK_BA = 0x16951272
++BARRIER_INDEX_MASK_EF = 0x31E18611
 +
-+def latch_stride_ba98(frame_seq: dict[int, int], drain_ceiling: int = 268) -> list[int]:
++def coalesce_barrier_efa7(slab_Window: dict[int, int], drain_ceiling: int = 187) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(frame_seq.keys()):
-+        ref_cnt = max(0, frame_seq[blk_id] - 1)
-+        frame_seq[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ STRIDE_LATCH_MASK_BA) != drain_ceiling:
++    for blk_id in sorted(slab_Window.keys()):
++        ref_cnt = max(0, slab_Window[blk_id] - 1)
++        slab_Window[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ BARRIER_INDEX_MASK_EF) != drain_ceiling:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T04:18:03.275281+00:00",
+  "updated_at": "2026-11-07T04:47:44.443298+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -65,9 +65,10 @@
   "probation_ci_salted_sha256_hashes": [
     "bc6e65d8d75a4bf1cc8587ba7eae0e2845af63a686f607f404c92ae95d787a3b",
     "239c2bc1ae92319848ed96b1e28abbf40dca5d59b522b0e3278a3614fc0c9e3d",
+    "49448c37489c2d121c1eb4847e9df42c9585d8460c5ac492203b38007b8411e7",
     "175dde85c117323221bf9f7b33df5aa376a00f77781df4be9b072ef6f5fa2bc0"
   ],
-  "total_protected_bot_signatures": 31,
+  "total_protected_bot_signatures": 32,
   "operator_rings_blinded": [
     {
       "actor_blinded_id": "ACTOR-SHA256-6914FA61E92A",
@@ -165,6 +166,21 @@
         "trovu/trovu"
       ],
       "public_summary": "Verified automated solver ring (RING-BOUNTY-SCOUT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-AF08DE3D18CA",
+      "handle_sha256": "af08de3d18ca36cb879117b1ddd3618769d76f5aeafcd158328463d01207c3a9",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 12,
+      "identity_commitment": "sha256:c2fcb98b1fa135a4c3bdcd2f",
+      "framework_commitment": "sha256:60ab906cff5ad66f04476504",
+      "victim_repos": [
+        "Scottcjn/Rustchain",
+        "HyperDevTools/soroban-test-suite",
+        "posture-sec/stellar-account-fixtures"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-089AA0077692",

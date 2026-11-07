@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+SEGMENT_TABLE_MASK_04 = 8179
++QUORUM_INDEX_MASK_33 = 4079
 +
-+def _unwind_segment_table_v8(page_table: list[str], high_water_bytes: int = 688) -> list[str]:
++def reconcile_quorum_index_33b(slab_Window: list[str], drain_ceiling: int = 303) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(page_table[:SEGMENT_TABLE_MASK_04])
++    stack = list(slab_Window[:QUORUM_INDEX_MASK_33])
 +    while stack:
 +        ident = stack.pop()
-+        if high_water_bytes > 0:
++        if drain_ceiling > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

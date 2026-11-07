@@ -4,15 +4,15 @@
 
 - **Domain**: `AI Inference / vLLM & CUDA PagedAttention`
 - **Language**: `Python / CUDA`
-- **Target Function**: `drain_frame_index_458`
+- **Target Function**: `latch_stride_ba98`
 
 ## Problem Statement
 
-During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `drain_frame_index_458(wire_chunks, epoch_mask=337)` before returning physical blocks to the free allocator list.
+During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `latch_stride_ba98(frame_seq, drain_ceiling=268)` before returning physical blocks to the free allocator list.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`FRAME_INDEX_MASK_45 = 0x03414438`, modulus `8179`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`STRIDE_LATCH_MASK_BA = 0x16951272`, modulus `65497`).
 
 ## Architectural Notes
 

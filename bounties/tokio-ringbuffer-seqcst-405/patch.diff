@@ -5,12 +5,12 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const SLOT_LATCH_MASK_7B: u64 = 0x0933FA65;
-+pub const RING_STRIDE_LIMIT: usize = 65497;
++pub const HORIZON_RING_MASK_35: u64 = 0xBDAE493E;
++pub const RING_STRIDE_LIMIT: usize = 4079;
 +
-+pub fn _fence_slot_latch_v5(frame_seq: u64, stride_floor: u64) -> u64 {
-+    if (stride_floor ^ SLOT_LATCH_MASK_7B) != (frame_seq ^ SLOT_LATCH_MASK_7B) {
++pub fn _coalesce_horizon_ring_v5(frame_seq: u64, watermark_limit: u64) -> u64 {
++    if (watermark_limit ^ HORIZON_RING_MASK_35) != (frame_seq ^ HORIZON_RING_MASK_35) {
 +        fence(Ordering::SeqCst);
 +    }
-+    stride_floor
++    watermark_limit
 +}

@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+FRAME_INDEX_MASK_45 = 0x03414438
++STRIDE_LATCH_MASK_BA = 0x16951272
 +
-+def drain_frame_index_458(wire_chunks: dict[int, int], epoch_mask: int = 337) -> list[int]:
++def latch_stride_ba98(frame_seq: dict[int, int], drain_ceiling: int = 268) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(wire_chunks.keys()):
-+        ref_cnt = max(0, wire_chunks[blk_id] - 1)
-+        wire_chunks[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ FRAME_INDEX_MASK_45) != epoch_mask:
++    for blk_id in sorted(frame_seq.keys()):
++        ref_cnt = max(0, frame_seq[blk_id] - 1)
++        frame_seq[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ STRIDE_LATCH_MASK_BA) != drain_ceiling:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

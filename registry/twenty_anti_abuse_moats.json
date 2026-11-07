@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T04:18:03.640363+00:00",
+  "updated_at": "2026-11-07T04:47:44.823718+00:00",
   "total_centennial_sovereign_moats": 203,
   "newly_woven_global_moats_count": 73,
   "all_ten_moats_verified_green": false,
@@ -17,7 +17,7 @@
         "guarded_upstream_prs": 20,
         "merged_prs": 6,
         "open_prs_in_review": 14,
-        "blocked_spam_prs_globally": 1901
+        "blocked_spam_prs_globally": 1913
       }
     },
     {
@@ -86,7 +86,7 @@
       "plain_english_summary": "Free drop-in GitHub Action that automatically fetches our live scrambled SHA-256 bot fingerprint list on every PR event so maintainers stay protected against newly caught bots automatically.",
       "verified": true,
       "telemetry": {
-        "blinded_sha256_bot_hashes_count": 31,
+        "blinded_sha256_bot_hashes_count": 32,
         "live_cloud_feed_enabled": true,
         "cleartext_handles_leaked": 0
       }
@@ -99,7 +99,7 @@
       "verified": true,
       "telemetry": {
         "showroom_open_spam_prs": 0,
-        "caught_bots_total": 31,
+        "caught_bots_total": 32,
         "conformance_vectors": 20,
         "orphan_git_commits": 1
       }
@@ -144,7 +144,7 @@
       "verified": true,
       "telemetry": {
         "probation_bots_masked_from_local_self_check": 6,
-        "ci_strict_blocked_total": 31
+        "ci_strict_blocked_total": 32
       }
     },
     {
@@ -155,7 +155,7 @@
       "verified": true,
       "telemetry": {
         "ring_a_confirmed_hashes": 10,
-        "ring_b_ci_salted_hashes": 21
+        "ring_b_ci_salted_hashes": 22
       }
     },
     {
@@ -166,7 +166,7 @@
       "verified": true,
       "telemetry": {
         "sockpuppet_clusters_exposed": 5,
-        "caught_accounts_total": 31
+        "caught_accounts_total": 32
       }
     },
     {
@@ -479,8 +479,8 @@
       "plain_english_summary": "Tracks 21 caught automated solver accounts across 9 bot rings responsible for 685+ global spam PRs, including syndicate indexers (bounty-plaza) and bytecode brute-forcers.",
       "verified": true,
       "telemetry": {
-        "caught_bots": 31,
-        "global_spam_prs": 1901
+        "caught_bots": 32,
+        "global_spam_prs": 1913
       }
     },
     {
@@ -697,7 +697,7 @@
       "plain_english_summary": "Compiles cryptographically timestamped abuse dossiers proving machine-speed PR floods, runner sabotage, and shared-wallet Sybil multi-accounting for instant GitHub Trust & Safety and bounty platform account termination.",
       "verified": true,
       "telemetry": {
-        "eviction_dossiers_compiled": 31,
+        "eviction_dossiers_compiled": 32,
         "sybil_wallet_clusters": 3
       }
     },
@@ -709,7 +709,7 @@
       "verified": true,
       "telemetry": {
         "ecosystem_compatible": "ecosyste-ms/issues + timeline",
-        "global_spam_prs_mapped": 1901
+        "global_spam_prs_mapped": 1913
       }
     },
     {
@@ -734,7 +734,7 @@
       "verified": true,
       "telemetry": {
         "nuked_404_accounts": 2,
-        "active_trapped_bots": 31
+        "active_trapped_bots": 32
       }
     },
     {

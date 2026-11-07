@@ -3,11 +3,11 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+CURSOR_LATCH_MASK_C0 = 65449
++SLOT_INDEX_MASK_BC = 16369
 +
-+def latch_cursor_c02f(slab_Window: list[str], watermark_limit: int = 530) -> list[str]:
++def _align_slot_index_v5(slab_Window: list[str], watermark_limit: int = 150) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(slab_Window[:CURSOR_LATCH_MASK_C0])
++    stack = list(slab_Window[:SLOT_INDEX_MASK_BC])
 +    while stack:
 +        ident = stack.pop()
 +        if watermark_limit > 0:

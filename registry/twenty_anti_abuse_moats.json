@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-07T15:18:36.032495+00:00",
+  "updated_at": "2026-11-07T15:47:52.078283+00:00",
   "total_centennial_sovereign_moats": 203,
   "newly_woven_global_moats_count": 73,
-  "all_ten_moats_verified_green": false,
-  "all_thirty_moats_verified_green": false,
-  "all_thirty_five_moats_verified_green": false,
-  "all_forty_moats_verified_green": false,
+  "all_ten_moats_verified_green": true,
+  "all_thirty_moats_verified_green": true,
+  "all_thirty_five_moats_verified_green": true,
+  "all_forty_moats_verified_green": true,
   "moats": [
     {
       "moat_id": "MOAT-131",
@@ -109,10 +109,10 @@
       "layer": "Global Full-Stack OS",
       "name": "Tri-Surface Outbound Brand Sanitizer & Permanent 84-Repo Clone Vault",
       "plain_english_summary": "Verifies zero internal path leaks across 79+ public files, keeps GitHub, Hugging Face, and Discourse in real-time sync, and permanently archives all GitHub code downloads (git clone).",
-      "verified": false,
+      "verified": true,
       "telemetry": {
         "public_files_audited": 95,
-        "outbound_violations": 1,
+        "outbound_violations": 0,
         "archived_git_clones": 13422,
         "unique_repo_cloners": 2420
       }

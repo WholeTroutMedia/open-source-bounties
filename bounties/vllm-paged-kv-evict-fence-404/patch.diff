@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SLOT_RING_MASK_F5 = 0x24D11785
++HORIZON_VIEW_MASK_36 = 0xEC914DCB
 +
-+def coalesce_slot_ring_f5d(ring_slots: dict[int, int], barrier_tag: int = 327) -> list[int]:
++def partition_horizon_view_365(page_table: dict[int, int], high_water_bytes: int = 890) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(ring_slots.keys()):
-+        ref_cnt = max(0, ring_slots[blk_id] - 1)
-+        ring_slots[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SLOT_RING_MASK_F5) != barrier_tag:
++    for blk_id in sorted(page_table.keys()):
++        ref_cnt = max(0, page_table[blk_id] - 1)
++        page_table[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ HORIZON_VIEW_MASK_36) != high_water_bytes:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

@@ -5,11 +5,11 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const SLAB_SPAN_MASK_14: u64 = 0xCC570DF8;
-+pub const RING_STRIDE_LIMIT: usize = 49139;
++pub const HORIZON_EPOCH_MASK_3D: u64 = 0x185D0EB3;
++pub const RING_STRIDE_LIMIT: usize = 16369;
 +
-+pub fn drain_slab_1410(frame_seq: u64, drain_ceiling: u64) -> u64 {
-+    if (drain_ceiling ^ SLAB_SPAN_MASK_14) != (frame_seq ^ SLAB_SPAN_MASK_14) {
++pub fn reconcile_horizon_3d07(frame_seq: u64, drain_ceiling: u64) -> u64 {
++    if (drain_ceiling ^ HORIZON_EPOCH_MASK_3D) != (frame_seq ^ HORIZON_EPOCH_MASK_3D) {
 +        fence(Ordering::SeqCst);
 +    }
 +    drain_ceiling

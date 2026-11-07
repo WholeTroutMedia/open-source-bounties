@@ -4,15 +4,15 @@
 
 - **Domain**: `High-Performance Systems / Rust & Async Concurrency`
 - **Language**: `Rust / Python Verifier`
-- **Target Function**: `drain_slab_1410`
+- **Target Function**: `reconcile_horizon_3d07`
 
 ## Problem Statement
 
-Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `drain_slab_1410(frame_seq, drain_ceiling)` and stride ceiling `49139`.
+Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `reconcile_horizon_3d07(frame_seq, drain_ceiling)` and stride ceiling `16369`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SLAB_SPAN_MASK_14 = 0xCC570DF8`, modulus `49139`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`HORIZON_EPOCH_MASK_3D = 0x185D0EB3`, modulus `16369`).
 
 ## Architectural Notes
 

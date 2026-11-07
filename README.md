@@ -2,38 +2,8 @@
 
 Welcome to the public open-source engineering and verification ledger for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `jaharoni@gmail.com`).
 
-<!-- UNIFIED_CTO_TELEMETRY_START -->
-[![GitHub Stars](https://img.shields.io/github/stars/WholeTroutMedia/open-source-bounties?style=flat-square&logo=github&label=Stars&color=eab308)](https://github.com/WholeTroutMedia/open-source-bounties/stargazers) [![Upstream PRs](https://img.shields.io/badge/Upstream_OSS_PRs-6_Merged_%7C_9_In_Review-10b981?style=flat-square)](./CASE_STUDIES.md) [![Patch Coverage](https://img.shields.io/badge/Codecov_Patch_Coverage-100%25_Verified-2563eb?style=flat-square)](./CASE_STUDIES.md) [![Verified Case Studies](https://img.shields.io/badge/Verified_Case_Studies-113_Sealed-8b5cf6?style=flat-square)](./LEDGER.md) [![Google AI Forum](https://img.shields.io/badge/Google_AI_Dev_Forum-16_Published_(2488_Views)-f59e0b?style=flat-square)](https://discuss.ai.google.dev/u/CORTEX) [![Medium Essays](https://img.shields.io/badge/Medium_Essays-%40jaharoni-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@jaharoni) [![Hugging Face Hub](https://img.shields.io/badge/Hugging_Face_Hub-jaharoni_%7C_2_Live_Spaces-fcd34d?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/jaharoni) [![Personal Website](https://img.shields.io/badge/Website-justinaharoni.com-ec4899?style=flat-square)](https://justinaharoni.com)
-
-> ⭐ **Cloning from the terminal?** Bookmark the live verification feed & maintainer defense kits with 1 command: `gh repo star WholeTroutMedia/open-source-bounties`
-
-### Live Cross-Platform Engineering Portfolio & Community Directory
-
-| Engineering Channel | Live Verified Status | Proof & Direct Access |
-| :--- | :--- | :--- |
-| **Upstream Open-Source Pull Requests** | **`6` Merged** · **`9` Open in Review** (`16` Tracked) | `100%` Codecov patch coverage across `InvenTree`, `OpenHMD`, `Uvicorn`, `Advanced Alchemy`, `Mergo`, `Ecosyste.ms`, `Obsidian` ([`CASE_STUDIES.md`](./CASE_STUDIES.md)) |
-| **Engineering Essays & Field Notes (Medium)** | **Live Publication (`@jaharoni`)** | **[Supporting Async Context Manager App Factories in Uvicorn Without Breaking ASGI Lifespan](https://medium.com/@jaharoni/supporting-async-context-manager-app-factories-in-uvicorn-without-breaking-asgi-lifespan-23889b42794f)** · [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · [`RSS Feed`](https://medium.com/feed/@jaharoni) |
-| **Google AI & Developer Forums** | **`16` Published Solutions** | **`2488` Developer Views** · **`103` Profile Visits** across 28 developer forums & GitHub Discussions ([`discuss.ai.google.dev/u/CORTEX`](https://discuss.ai.google.dev/u/CORTEX)) |
-| **Hugging Face Hub (`@jaharoni`)** | **`2` Live Interactive Spaces** · **`1` Portfolio Card** | Interactive Engineering Portfolio & Open-Source Verification Space ([`huggingface.co/jaharoni`](https://huggingface.co/jaharoni)) |
-| **Verified Engineering Ledger** | **`113` Root-Cause Case Studies** | Standalone deterministic reproduction & regression suites (`verify_fix.py` exiting `0` in [`LEDGER.md`](./LEDGER.md)) |
-| **Creative Liberation Engine & Community Gifts** | **`6` Zero-Dependency Python CLI Gifts** | Open creative foundation & domain utilities in [`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine) |
-| **Personal Website & Direct Contact** | **Justin Aharoni (`@jaharoni`)** | **Website**: [`justinaharoni.com`](https://justinaharoni.com) · **Essays**: [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · **Contact**: [`justinaharoni.com/contact`](https://justinaharoni.com/contact) · **Email**: [`contact@jaharoni.com`](mailto:contact@jaharoni.com) |
-<!-- UNIFIED_CTO_TELEMETRY_END -->
-
 ---
 
-## 🎮 Play the Open-Source Utopia Arcade & Claim Maintainer Sanctuary (`Sub-Basement 9:23`)
-
-When you land here as a fellow builder or open-source maintainer, you can jump straight into our interactive **6-Room Open-Source Utopia Arcade**, mint a cryptographic **Proof-of-Craft Badge** for your GitHub profile, or grab our free **Maintainer Sanctuary Kit** to protect your repositories from automated PR spam:
-
-| Utopia Experience / Free Community Kit | How to Play / Claim in 60 Seconds | What You Unlock |
-| :--- | :--- | :--- |
-| **🌀 6-Room Sub-Basement 9:23 Arcade (Browser & CLI)** | **Browser**: [Launch `oss-verification-sandbox` ↗](https://wholetroutmedia.github.io/oss-verification-sandbox/) *(click **🌀 Sub-Basement 9:23 Arcade** or type `923`)*<br/>**CLI**: `python3 wonderland_labyrinth.py` | Solve 5 interactive math & systems locks (Catalan Chute, Galois Freezer, UTF-8 Conveyor, Schrödinger Bell-Pair Collider, Zero-Turn Diff Shield) to mint a cryptographic **SVG Profile Badge (`WTM-WONDERLAND-923-...`)** + a **`+25 pt` Priority Booster Voucher** (`WTM-923-BOOST-...`) for our free Wednesday 9:23 PM bug-rescue pool. |
-| **🛡️ Free 1-Click Maintainer Bot-Shield (`v2.1`)** | Copy [`.github/workflows/open-source-bot-shield.yml`](./.github/workflows/open-source-bot-shield.yml) into your repository's `.github/workflows/` folder. | Zero-config GitHub Action that blocks `31` salted SHA-256 PR-spam syndicates + unverified AI PR dumps before they drain your maintainer review queue. |
-| **⚛️ Impossible Tool #001: Schrödinger State Debugger** | Run `python3 impossible_tool_001_schrodingers_debugger.py --demo` (or `--repl`) | Zero-dependency quantum state debugger that tracks superposed variable branches, Bell-pair entanglement, and counterfactual execution paths. |
-| **🌱 Wednesday 9:23 PM EST Global Good Bug-Rescue Pool** | [Nominate an Open-Source Bug or Feature ↗](./WEDNESDAY_923_COMMUNITY_TRACKER.md) *(include your `WTM-923-BOOST-...` voucher for `+25 pts`)* | Every Wednesday at **9:23 PM EST**, we select the top community submission and ship a `100%`-tested fix + standalone verifier (`Exit Code 0`) for free. |
-
----
 ## Verified Upstream Merges & Active 100%-Covered Track Record
 
 We focus on clearing long-standing, high-complexity open-source issues with **100% patch test coverage**, strict static typechecking, and concise peer-to-peer engineering communication so maintainers can review and merge in `<= 2` turns:
@@ -114,3 +84,5 @@ open-source-bounties/
     └── workflows/
         └── verify-bounties.yml  # CI runner verifying commitments/*/verify_commitment.py
 ```
+
+*this has been reviewed by, approved by and submitted on behalf of jaharoni@gmail.com*

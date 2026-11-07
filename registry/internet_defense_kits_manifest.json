@@ -1,0 +1,37 @@
+{
+  "updated_at": "2026-11-07T03:01:21.547678+00:00",
+  "status": "ACTIVE_OPEN_SOURCE_INTERNET_DEFENSE_KITS",
+  "total_kits_published": 6,
+  "free_public_internet_defense_kits": [
+    {
+      "kit_id": "FREE-KIT-01",
+      "name": "1-File Website & Docs AI-Scraper Shield (llms.txt + .well-known/agent-card.json)",
+      "path": "kits/website-llms-shield/"
+    },
+    {
+      "kit_id": "FREE-KIT-02",
+      "name": "Hugging Face Dataset & Model Anti-Theft Watermarker (hf_canary_injector.py)",
+      "path": "kits/huggingface-dataset-shield/hf_canary_injector.py"
+    },
+    {
+      "kit_id": "FREE-KIT-03",
+      "name": "Bounty Platform Pre-Check SDK for Algora/Polar/Opire/Gitcoin (verify_contributor.py & .mjs)",
+      "path": "kits/bounty-platform-precheck/"
+    },
+    {
+      "kit_id": "FREE-KIT-04",
+      "name": "PyPI & NPM Dependency-Confusion Early-Warning Radar (canary_package_radar.py)",
+      "path": "kits/package-registry-canary-radar/canary_package_radar.py"
+    },
+    {
+      "kit_id": "FREE-KIT-05",
+      "name": "Developer Forum Moderator Anti-Slop & Code-Compilation Auditor (forum_slop_auditor.py)",
+      "path": "kits/forum-moderator-anti-slop/forum_slop_auditor.py"
+    },
+    {
+      "kit_id": "FREE-KIT-06",
+      "name": "3D Mesh & Media Provenance Watermarker (watermark_asset_shield.py)",
+      "path": "kits/media-and-3d-watermark-shield/watermark_asset_shield.py"
+    }
+  ]
+}

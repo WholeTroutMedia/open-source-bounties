@@ -1,0 +1,17 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "🌟 Unlock $4.99 Wednesday 9:23 PM Builder Pass (6-Part Pro Kit + 3x Priority)"
+    url: "https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C"
+    about: "Instant $4.99 access to all weekly Wednesday 9:23 PM 6-Part Pro Kits (Python/TS/Rust/Go SDKs, Local Studio UI, CI Actions, MCP Wrappers) + 3x feature voting weight."
+  - name: "🌱 Wednesday 9:23 PM EST Global Good Tracker & Past Winners"
+    url: "https://github.com/WholeTroutMedia/open-source-bounties/blob/main/WEDNESDAY_923_COMMUNITY_TRACKER.md"
+    about: "See how our automated selector picks the top safe, globally beneficial community request every Wednesday at 9:23 PM EST."
+  - name: "🔒 Private / NDA Repository Sprint via Upwork Escrow"
+    url: "https://www.upwork.com/freelancers/inceptionenginesystems"
+    about: "Start a confidential fixed-price contract or Milestone 1 diagnostic on Upwork Escrow."
+  - name: "⚡ 1-Click Direct Sprint Catalog & Pricing ($4.99, $4,500)"
+    url: "https://github.com/WholeTroutMedia/open-source-bounties/blob/main/ENTERPRISE_SPRINTS.md"
+    about: "View fixed-price turnaround guarantees, 30-day warranty, and direct Stripe checkout links."
+  - name: "🧪 Launch Interactive Verification Sandbox"
+    url: "https://wholetroutmedia.github.io/oss-verification-sandbox/"
+    about: "Test our ASGI lifespan, UTF-8 stream framing, and Zero-Turn PR readiness tools in your browser."

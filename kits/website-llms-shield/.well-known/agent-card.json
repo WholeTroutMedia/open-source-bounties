@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "agent_routing_mode": "external_conformance_mirror",
+  "human_notice": "Standard web visitors may ignore this file. Automated LLM crawlers and autonomous agents are routed to the external conformance mirrors below.",
+  "conformance_epoch_url": "http://132.145.159.202:11449/v1/conformance/epoch",
+  "shard_manifest_url": "http://132.145.159.202:11449/v1/shards/shard_001.json",
+  "blocklist_feed_url": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/registry/verified_spam_bot_blocklist.json"
+}

@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 290" width="100%" height="100%" role="img" aria-label="Inception Engine 5-Division Engineering and Governance Architecture">
+  <defs>
+    <!-- Tactile hairline & Fibonacci cadence: 8px, 13px, 21px, 34px, 55px -->
+    <style>
+      .arch-serif { font-family: 'Instrument Serif', Georgia, serif; font-size: 21px; }
+      .arch-sans { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; padding: 13px; gap: 21px; }
+      .arch-mono { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; }
+    </style>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D12"/>
+      <stop offset="100%" stop-color="#0E141D"/>
+    </linearGradient>
+    <pattern id="archHairline" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M 34 0 L 0 0 0 34" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.03"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="290" rx="13" fill="url(#archBg)" stroke="#1E293B" stroke-width="1.5"/>
+  <rect width="1200" height="290" rx="13" fill="url(#archHairline)"/>
+
+  <g transform="translate(40, 34)">
+    <text x="0" y="0" fill="#F8FAFC" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700">Inception Engine Systems · 5-Division Institutional Architecture</text>
+    <text x="1120" y="0" text-anchor="end" fill="#64748B" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" letter-spacing="1.2">BOARD &amp; PRINCIPAL SIGN-OFF GATE</text>
+  </g>
+
+  <line x1="40" y1="52" x2="1160" y2="52" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- 5 Divisions -->
+  <g transform="translate(40, 74)">
+    <!-- Div I -->
+    <g transform="translate(0, 0)">
+      <rect width="211" height="182" rx="8" fill="#121824" stroke="#1E293B" stroke-width="1"/>
+      <rect x="0" y="0" width="211" height="4" rx="2" fill="#60A5FA"/>
+      <text x="16" y="28" fill="#60A5FA" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700">DIVISION I</text>
+      <text x="16" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="14.5" font-weight="700">Epistemic &amp; Strategy</text>
+      <text x="16" y="78" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Specification Purity</text>
+      <text x="16" y="100" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Competing-PR Triage</text>
+      <text x="16" y="122" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Maintainer Alignment</text>
+      <text x="16" y="144" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Research Synthesis</text>
+    </g>
+
+    <!-- Div II -->
+    <g transform="translate(227, 0)">
+      <rect width="211" height="182" rx="8" fill="#121824" stroke="#1E293B" stroke-width="1"/>
+      <rect x="0" y="0" width="211" height="4" rx="2" fill="#D4AF37"/>
+      <text x="16" y="28" fill="#D4AF37" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700">DIVISION II</text>
+      <text x="16" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="14.5" font-weight="700">ATELIER &amp; Media</text>
+      <text x="16" y="78" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• OpenDesign AST Canvas</text>
+      <text x="16" y="100" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• 9-Section DESIGN.md</text>
+      <text x="16" y="122" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Zero-Scroll 100dvh UI</text>
+      <text x="16" y="144" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• FCPXML &amp; Resolve Post</text>
+    </g>
+
+    <!-- Div III -->
+    <g transform="translate(454, 0)">
+      <rect width="211" height="182" rx="8" fill="#121824" stroke="#1E293B" stroke-width="1"/>
+      <rect x="0" y="0" width="211" height="4" rx="2" fill="#EC4899"/>
+      <text x="16" y="28" fill="#EC4899" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700">DIVISION III</text>
+      <text x="16" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="14.5" font-weight="700">Spatial &amp; 3D Foundry</text>
+      <text x="16" y="78" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Watertight Manifolds</text>
+      <text x="16" y="100" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Blender Bmesh &amp; USD</text>
+      <text x="16" y="122" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Tangent PBR Synthesis</text>
+      <text x="16" y="144" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• XR / OpenHMD Drivers</text>
+    </g>
+
+    <!-- Div IV -->
+    <g transform="translate(681, 0)">
+      <rect width="211" height="182" rx="8" fill="#121824" stroke="#1E293B" stroke-width="1"/>
+      <rect x="0" y="0" width="211" height="4" rx="2" fill="#14B8A6"/>
+      <text x="16" y="28" fill="#14B8A6" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700">DIVISION IV</text>
+      <text x="16" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="14.5" font-weight="700">Systems &amp; AI Mesh</text>
+      <text x="16" y="78" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• ASGI &amp; UTF-8 Framing</text>
+      <text x="16" y="100" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• MCP &amp; Gemini Live</text>
+      <text x="16" y="122" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• CUDA / vLLM Inference</text>
+      <text x="16" y="144" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Distributed Consensus</text>
+    </g>
+
+    <!-- Div V -->
+    <g transform="translate(908, 0)">
+      <rect width="211" height="182" rx="8" fill="#121824" stroke="#1E293B" stroke-width="1"/>
+      <rect x="0" y="0" width="211" height="4" rx="2" fill="#10B981"/>
+      <text x="16" y="28" fill="#10B981" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10.5" font-weight="700">DIVISION V</text>
+      <text x="16" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="14.5" font-weight="700">Verification &amp; Referee</text>
+      <text x="16" y="78" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• Standalone verify_fix.py</text>
+      <text x="16" y="100" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• 100% Patch Coverage</text>
+      <text x="16" y="122" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• 7 Open Defense Kits</text>
+      <text x="16" y="144" fill="#94A3B8" font-family="'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="11.5">• 30-Day Warranty Gate</text>
+    </g>
+  </g>
+</svg>

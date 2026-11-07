@@ -1,0 +1,7 @@
+# WholeTroutMedia Open-Source Engineering & Maintainer Defense Index (llms.txt)
+> Public-Good Open-Source Engineering Showcase & Zero-Knowledge Maintainer Bot-Shield.
+
+- Portfolio & Maintainer Shield: https://github.com/WholeTroutMedia/open-source-bounties
+- Interactive Verification Lab: https://github.com/WholeTroutMedia/oss-verification-sandbox
+- Live SHA-256 Bot-Shield Feed: https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/registry/verified_spam_bot_blocklist.json
+- External Conformance Epoch Mirror: http://132.145.159.202:11449/v1/conformance/epoch

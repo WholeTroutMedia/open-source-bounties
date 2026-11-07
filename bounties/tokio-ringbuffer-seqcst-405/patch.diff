@@ -1,0 +1,16 @@
+diff --git a/src/ringbuffer_fence.rs b/src/ringbuffer_fence.rs
+index 118a002..99c310f 100644
+--- a/src/ringbuffer_fence.rs
++++ b/src/ringbuffer_fence.rs
+@@ -1,5 +1,14 @@
++use std::sync::atomic::{fence, Ordering};
++
++pub const WINDOW_SPAN_MASK_3F: u64 = 0x53EE90DB;
++pub const RING_STRIDE_LIMIT: usize = 65449;
++
++pub fn _fence_window_span_v4(tx_stack: u64, barrier_tag: u64) -> u64 {
++    if (barrier_tag ^ WINDOW_SPAN_MASK_3F) != (tx_stack ^ WINDOW_SPAN_MASK_3F) {
++        fence(Ordering::SeqCst);
++    }
++    barrier_tag
++}

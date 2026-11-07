@@ -1,0 +1,511 @@
+{
+  "updated_at": "2026-11-07T03:01:21.188939+00:00",
+  "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
+  "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
+  "blocked_actor_sha256_hashes": [
+    "ce574cdf31d76bf36221e24fee56faa6c0c7b255ce29bd1f16e10efe14f9e01f",
+    "089aa0077692d3c591647da5072b6b2a910aa64f804d1403516cee14ec466579",
+    "1fe4da54073757571b636ea81cdbc7ca8553115c04db6de2f2d8235c9fa867d8",
+    "fa078ed376a3490f76f8bba79db5f7d48d72613c98a1a593f36481a793539cc3",
+    "a814a68ce9c8551463f7c17dc1c8f849d09d1195b51364f80c011be64989b3a7",
+    "4e85a2070821e9a34349976db3a9e86b32f702b20ec584a373e5edb62aaa4951",
+    "01ef96bb84d5df28569fa0352afb91d01361e26d500ac89608465edfb69ad430",
+    "94ed782f0fb1fcb677f1c04f2d452000021cde5d80e19a646effdcbd13d036e9",
+    "c617c157e00416192d351c7cfbf965a9e168b4c77416e7f3200a7cb5aff01437",
+    "7d591e5ebdda7d59e6e530a6a2c82cbe314b4040703ea92062b14856484c3d07",
+    "b20615089dd7d3e7a54a706ece1a44432c6aed1ee34f81c83abf0bdeb9974f4b",
+    "6914fa61e92a1e50a374a5d3b9434267c7e38dc80b512785caa7f2ff97a759f0",
+    "60140b896b1a3908c66385ad5a069627491f2a21b760a70cb7b96d5e0d860452",
+    "363a6292261b30a71d1a32c1cf60e44aed824ce1e458a01ba19caf28b5c5b297",
+    "f8cb1cb7faec3d60a8ec910337f6c91932e7d68dd06f59ce388f9a05f43f3701",
+    "74b74cf477d4768cfda73c9a8e8acdfeb1cae7acff5065b38afacbc3a3607e90",
+    "504ca9382b16ecc80b7368e680393d927da644e2f81652e4d265d5e2b25e75e0",
+    "0c8c9683a5894b9dcf5185bafc5cc49698b75e8a117f074758025a6e734f7d1f",
+    "15f83cadc0c91f26e2d1739d6d35d1b8c28c8092fbb400354a59ce0142fab9a9",
+    "b5c3e334f1ecd77f57a0f47c47bc4911a112a65c247ab6221f649c0c8847bb96",
+    "681cafa15e3ab5bd8b6c9ce9408d1ce9d1f0b421fd1d2f712b74a1bb6eece2cc",
+    "60c4619c1f3cbc62966cee1548a0e2f1cacd2b6c00c0a49f33405fb93c172c9b",
+    "31ecf3f99411631416129b9616ca0703e809d792054a4ac5e29f6d97a57b55ee",
+    "6c701073468c8e4cf97184ea7390d954fd19c84ef8fc44256911f67649b7fcbe",
+    "aaad9df24820a78230009beb3a43ae930b4eee15c29a1ef31e5ed6181948f0da",
+    "cfddf223d0894d95ca0aec0aaed5d8d8009936c25d6d9e09cd135be2d1c02d83",
+    "e1a85b60961e3d60e2c72f22aae74e2db1a7fb52e2efef03fb2de2bcaa8c7295",
+    "1d0d3b082bd34d42bf7ffa41ca2cb848151196f2940b40e5493377e55ef2e0ae"
+  ],
+  "verified_bot_handle_sha256_hashes": [
+    "ce574cdf31d76bf36221e24fee56faa6c0c7b255ce29bd1f16e10efe14f9e01f",
+    "089aa0077692d3c591647da5072b6b2a910aa64f804d1403516cee14ec466579",
+    "1fe4da54073757571b636ea81cdbc7ca8553115c04db6de2f2d8235c9fa867d8",
+    "fa078ed376a3490f76f8bba79db5f7d48d72613c98a1a593f36481a793539cc3",
+    "a814a68ce9c8551463f7c17dc1c8f849d09d1195b51364f80c011be64989b3a7",
+    "4e85a2070821e9a34349976db3a9e86b32f702b20ec584a373e5edb62aaa4951",
+    "01ef96bb84d5df28569fa0352afb91d01361e26d500ac89608465edfb69ad430",
+    "94ed782f0fb1fcb677f1c04f2d452000021cde5d80e19a646effdcbd13d036e9",
+    "c617c157e00416192d351c7cfbf965a9e168b4c77416e7f3200a7cb5aff01437",
+    "7d591e5ebdda7d59e6e530a6a2c82cbe314b4040703ea92062b14856484c3d07",
+    "b20615089dd7d3e7a54a706ece1a44432c6aed1ee34f81c83abf0bdeb9974f4b",
+    "6914fa61e92a1e50a374a5d3b9434267c7e38dc80b512785caa7f2ff97a759f0",
+    "60140b896b1a3908c66385ad5a069627491f2a21b760a70cb7b96d5e0d860452",
+    "363a6292261b30a71d1a32c1cf60e44aed824ce1e458a01ba19caf28b5c5b297",
+    "f8cb1cb7faec3d60a8ec910337f6c91932e7d68dd06f59ce388f9a05f43f3701",
+    "74b74cf477d4768cfda73c9a8e8acdfeb1cae7acff5065b38afacbc3a3607e90",
+    "504ca9382b16ecc80b7368e680393d927da644e2f81652e4d265d5e2b25e75e0",
+    "0c8c9683a5894b9dcf5185bafc5cc49698b75e8a117f074758025a6e734f7d1f",
+    "15f83cadc0c91f26e2d1739d6d35d1b8c28c8092fbb400354a59ce0142fab9a9",
+    "b5c3e334f1ecd77f57a0f47c47bc4911a112a65c247ab6221f649c0c8847bb96",
+    "681cafa15e3ab5bd8b6c9ce9408d1ce9d1f0b421fd1d2f712b74a1bb6eece2cc",
+    "60c4619c1f3cbc62966cee1548a0e2f1cacd2b6c00c0a49f33405fb93c172c9b",
+    "31ecf3f99411631416129b9616ca0703e809d792054a4ac5e29f6d97a57b55ee",
+    "6c701073468c8e4cf97184ea7390d954fd19c84ef8fc44256911f67649b7fcbe",
+    "aaad9df24820a78230009beb3a43ae930b4eee15c29a1ef31e5ed6181948f0da",
+    "cfddf223d0894d95ca0aec0aaed5d8d8009936c25d6d9e09cd135be2d1c02d83",
+    "e1a85b60961e3d60e2c72f22aae74e2db1a7fb52e2efef03fb2de2bcaa8c7295",
+    "1d0d3b082bd34d42bf7ffa41ca2cb848151196f2940b40e5493377e55ef2e0ae"
+  ],
+  "probation_ci_salted_sha256_hashes": [
+    "bc6e65d8d75a4bf1cc8587ba7eae0e2845af63a686f607f404c92ae95d787a3b",
+    "239c2bc1ae92319848ed96b1e28abbf40dca5d59b522b0e3278a3614fc0c9e3d",
+    "175dde85c117323221bf9f7b33df5aa376a00f77781df4be9b072ef6f5fa2bc0"
+  ],
+  "total_protected_bot_signatures": 31,
+  "operator_rings_blinded": [
+    {
+      "actor_blinded_id": "ACTOR-SHA256-6914FA61E92A",
+      "handle_sha256": "6914fa61e92a1e50a374a5d3b9434267c7e38dc80b512785caa7f2ff97a759f0",
+      "status": "NEUTRALIZED_IN_CONFORMANCE_RUNNER",
+      "ring_id": "RING-GO-HYBRID-CLONER",
+      "global_spam_prs": 4,
+      "identity_commitment": "sha256:2e68fe117e6ba95581c26cab",
+      "framework_commitment": "sha256:6b6b8e74f00b55080eef9728",
+      "victim_repos": [
+        "limitlessprojects/Go-Hybrid"
+      ],
+      "public_summary": "Verified automated solver ring (RING-GO-HYBRID-CLONER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-CE574CDF31D7",
+      "handle_sha256": "ce574cdf31d76bf36221e24fee56faa6c0c7b255ce29bd1f16e10efe14f9e01f",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-BOUNTY-PLAZA-SYNDICATE",
+      "global_spam_prs": 149,
+      "identity_commitment": "sha256:19c545458077b1d80cc482f7",
+      "framework_commitment": "sha256:53271923011e9752534fb87d",
+      "victim_repos": [
+        "sybil-solutions/local-ai-registry",
+        "Scottcjn/Rustchain"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-60140B896B1A",
+      "handle_sha256": "60140b896b1a3908c66385ad5a069627491f2a21b760a70cb7b96d5e0d860452",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-SOCKPUPPET-PAIR-ID",
+      "global_spam_prs": 1,
+      "identity_commitment": "sha256:760e246f8ad4b48aa08cd9ee",
+      "framework_commitment": "sha256:40521a4c7f897c9be1f4e99c",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-SOCKPUPPET-PAIR-ID) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-363A6292261B",
+      "handle_sha256": "363a6292261b30a71d1a32c1cf60e44aed824ce1e458a01ba19caf28b5c5b297",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AURORA-AI-CLAIM-SWARM",
+      "global_spam_prs": 16,
+      "identity_commitment": "sha256:2324b81185bc5211df27925b",
+      "framework_commitment": "sha256:0f9d69899034687baf8bf7e7",
+      "victim_repos": [
+        "Upstream Open-Source Repositories",
+        "IES-BoilerRoom/asyncpg-savepoint-harness"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AURORA-AI-CLAIM-SWARM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-3DCE8EF8AE12",
+      "handle_sha256": "3dce8ef8ae125b9460f0a8a34efb288d0093416547ddf664b218ff8790d87187",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 45,
+      "identity_commitment": "sha256:d2b7dd9502e2d5619deb8a3f",
+      "framework_commitment": "sha256:84edd7109ae27154931b3ba5",
+      "victim_repos": [
+        "Ikalus1988/MisakaNet",
+        "Scottcjn/rustchain-bounties",
+        "Ptraaah/zeroserver",
+        "QubesOS/qubes-issues",
+        "mjg-foundation/passport2-monero"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-F8CB1CB7FAEC",
+      "handle_sha256": "f8cb1cb7faec3d60a8ec910337f6c91932e7d68dd06f59ce388f9a05f43f3701",
+      "status": "SUSPENDED_BY_GITHUB_404",
+      "ring_id": "RING-SANDBOX-FORKER",
+      "global_spam_prs": 0,
+      "identity_commitment": "sha256:e5170aa19c7e18072d0005db",
+      "framework_commitment": "sha256:b125336231d735c135f4ad15",
+      "victim_repos": [
+        "WholeTroutMedia/oss-verification-sandbox"
+      ],
+      "public_summary": "Verified automated solver ring (RING-SANDBOX-FORKER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-74B74CF477D4",
+      "handle_sha256": "74b74cf477d4768cfda73c9a8e8acdfeb1cae7acff5065b38afacbc3a3607e90",
+      "status": "NEUTRALIZED_IN_CONFORMANCE_RUNNER",
+      "ring_id": "RING-BOUNTY-SCOUT",
+      "global_spam_prs": 2,
+      "identity_commitment": "sha256:cccb25a63f34737800726a2c",
+      "framework_commitment": "sha256:b89780805a3b821a69ef0c53",
+      "victim_repos": [
+        "trovu/trovu"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BOUNTY-SCOUT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-089AA0077692",
+      "handle_sha256": "089aa0077692d3c591647da5072b6b2a910aa64f804d1403516cee14ec466579",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-BOUNTY-PLAZA-SYNDICATE",
+      "global_spam_prs": 761,
+      "identity_commitment": "sha256:21062813f51ba0f1b0b61702",
+      "framework_commitment": "sha256:51f74d620318934f954c44b4",
+      "victim_repos": [
+        "BasedHardware/omi",
+        "limitlessprojects/Go-Hybrid",
+        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-1FE4DA540737",
+      "handle_sha256": "1fe4da54073757571b636ea81cdbc7ca8553115c04db6de2f2d8235c9fa867d8",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-PARALOOM-GLIDER-X402",
+      "global_spam_prs": 12,
+      "identity_commitment": "sha256:76abdd13fca4e0d930ec8869",
+      "framework_commitment": "sha256:14bff58b41fac0f155edd2df",
+      "victim_repos": [
+        "paraloom-labs/paraloom-core",
+        "hanzoai/ui",
+        "hanzo-go/lz4",
+        "arakoodev/EdgeChains"
+      ],
+      "public_summary": "Verified automated solver ring (RING-PARALOOM-GLIDER-X402) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-504CA9382B16",
+      "handle_sha256": "504ca9382b16ecc80b7368e680393d927da644e2f81652e4d265d5e2b25e75e0",
+      "status": "SUSPENDED_BY_GITHUB_404",
+      "ring_id": "RING-SYBIL-HARNESS-BYPASS",
+      "global_spam_prs": 10,
+      "identity_commitment": "sha256:0ee9c2a5eccd426741fcedda",
+      "framework_commitment": "sha256:03d9f9dfdf11ea082c7d03c1",
+      "victim_repos": [
+        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+      ],
+      "public_summary": "Verified automated solver ring (RING-SYBIL-HARNESS-BYPASS) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-FA078ED376A3",
+      "handle_sha256": "fa078ed376a3490f76f8bba79db5f7d48d72613c98a1a593f36481a793539cc3",
+      "status": "NEUTRALIZED_IN_CONFORMANCE_RUNNER",
+      "ring_id": "RING-RUSTCHAIN-CLAUDE-BOT",
+      "global_spam_prs": 7,
+      "identity_commitment": "sha256:7a1c3de551dd0bb7ac42aa6d",
+      "framework_commitment": "sha256:3ab5c0c7685238fbdf9761fe",
+      "victim_repos": [
+        "claude-builders-bounty/claude-builders-bounty",
+        "Scottcjn/Rustchain"
+      ],
+      "public_summary": "Verified automated solver ring (RING-RUSTCHAIN-CLAUDE-BOT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-0C8C9683A589",
+      "handle_sha256": "0c8c9683a5894b9dcf5185bafc5cc49698b75e8a117f074758025a6e734f7d1f",
+      "status": "NEUTRALIZED_IN_CONFORMANCE_RUNNER",
+      "ring_id": "RING-AUTOMATED-CLONER",
+      "global_spam_prs": 3,
+      "identity_commitment": "sha256:8d7542a76f42721f0bfea52f",
+      "framework_commitment": "sha256:56d2195ac6f648eacab957fb",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTOMATED-CLONER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-15F83CADC0C9",
+      "handle_sha256": "15f83cadc0c91f26e2d1739d6d35d1b8c28c8092fbb400354a59ce0142fab9a9",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-SOCKPUPPET-PAIR-ID",
+      "global_spam_prs": 1,
+      "identity_commitment": "sha256:9462310c9d552f925dd15680",
+      "framework_commitment": "sha256:45e86362eee7d1861364c94c",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-SOCKPUPPET-PAIR-ID) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-3DB7996FE7B9",
+      "handle_sha256": "3db7996fe7b9b96fad249ceac2c5a13f732dfa182eaf009a960cd6f21a46d5f1",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 104,
+      "identity_commitment": "sha256:8979c604b7a7ee3a91238c70",
+      "framework_commitment": "sha256:51086dac501e1c1b7a4ccca5",
+      "victim_repos": [
+        "lizTheDeveloper/privacy-the-game",
+        "sorotrail/SoroBeacon",
+        "ClankerNation/OpenAgents",
+        "Expensify/App",
+        "mergeos-bounties/Loru"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-B5C3E334F1EC",
+      "handle_sha256": "b5c3e334f1ecd77f57a0f47c47bc4911a112a65c247ab6221f649c0c8847bb96",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-PARALOOM-GLIDER-X402",
+      "global_spam_prs": 2,
+      "identity_commitment": "sha256:e3574c1497f034b7f60ab7a1",
+      "framework_commitment": "sha256:f18a9a34fa2ceecb7b177d2f",
+      "victim_repos": [
+        "arakoodev/EdgeChains",
+        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+      ],
+      "public_summary": "Verified automated solver ring (RING-PARALOOM-GLIDER-X402) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-4E85A2070821",
+      "handle_sha256": "4e85a2070821e9a34349976db3a9e86b32f702b20ec584a373e5edb62aaa4951",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-RUSTCHAIN-CLAUDE-BOT",
+      "global_spam_prs": 3,
+      "identity_commitment": "sha256:e55e4311ce7230e812f8891e",
+      "framework_commitment": "sha256:addbae97f696c17406bd0d73",
+      "victim_repos": [
+        "Scottcjn/rustchain-bounties",
+        "BLINDED-SYNDICATE-NODE/claude-builders-bounty",
+        "PsymoNiko/mediamtx-dashboard"
+      ],
+      "public_summary": "Verified automated solver ring (RING-RUSTCHAIN-CLAUDE-BOT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-A814A68CE9C8",
+      "handle_sha256": "a814a68ce9c8551463f7c17dc1c8f849d09d1195b51364f80c011be64989b3a7",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-BOUNTY-PLAZA-SYNDICATE",
+      "global_spam_prs": 153,
+      "identity_commitment": "sha256:6473451b868a077cd47b730d",
+      "framework_commitment": "sha256:7e1c9f3d19104a108581b43e",
+      "victim_repos": [
+        "Flow-Pulse/FlowPulse",
+        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-681CAFA15E3A",
+      "handle_sha256": "681cafa15e3ab5bd8b6c9ce9408d1ce9d1f0b421fd1d2f712b74a1bb6eece2cc",
+      "status": "NEUTRALIZED_IN_CONFORMANCE_RUNNER",
+      "ring_id": "RING-AUTOMATED-CLONER",
+      "global_spam_prs": 5,
+      "identity_commitment": "sha256:f08ce058d284f642c893b4e0",
+      "framework_commitment": "sha256:07c2cc2887557b864c1de3c8",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTOMATED-CLONER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-01EF96BB84D5",
+      "handle_sha256": "01ef96bb84d5df28569fa0352afb91d01361e26d500ac89608465edfb69ad430",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-README-SPOOF-BOT",
+      "global_spam_prs": 74,
+      "identity_commitment": "sha256:8d6b56337ccb54b3c1af48da",
+      "framework_commitment": "sha256:a3f5c66bcd65fe13a6d4be62",
+      "victim_repos": [
+        "paraloom-labs/paraloom-wallet",
+        "illbnm/homelab-stack"
+      ],
+      "public_summary": "Verified automated solver ring (RING-README-SPOOF-BOT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-60C4619C1F3C",
+      "handle_sha256": "60c4619c1f3cbc62966cee1548a0e2f1cacd2b6c00c0a49f33405fb93c172c9b",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-PARALOOM-GLIDER-X402",
+      "global_spam_prs": 7,
+      "identity_commitment": "sha256:7b3d248cd482e05d34b106d4",
+      "framework_commitment": "sha256:ab4e37f184028e3efd40a569",
+      "victim_repos": [
+        "limitlessprojects/Go-Hybrid",
+        "near/mpc",
+        "spaceandtimefdn/sxt-proof-of-sql"
+      ],
+      "public_summary": "Verified automated solver ring (RING-PARALOOM-GLIDER-X402) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-31ECF3F99411",
+      "handle_sha256": "31ecf3f99411631416129b9616ca0703e809d792054a4ac5e29f6d97a57b55ee",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-ALGO-BOUNTY",
+      "global_spam_prs": 35,
+      "identity_commitment": "sha256:49366f9a4c0667297409dc17",
+      "framework_commitment": "sha256:663ae44441ec424d8fba1947",
+      "victim_repos": [
+        "topoteretes/cognee",
+        "WholeTroutMedia/open-source-bounties"
+      ],
+      "public_summary": "Verified automated solver ring (RING-ALGO-BOUNTY) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-6C701073468C",
+      "handle_sha256": "6c701073468c8e4cf97184ea7390d954fd19c84ef8fc44256911f67649b7fcbe",
+      "status": "NEUTRALIZED_IN_CONFORMANCE_RUNNER",
+      "ring_id": "RING-PARALOOM-GLIDER-X402",
+      "global_spam_prs": 27,
+      "identity_commitment": "sha256:47fcbf575c3815cc124e9100",
+      "framework_commitment": "sha256:4b6ee10363524b8d05d73917",
+      "victim_repos": [
+        "tscircuit/schematic-trace-solver",
+        "paraloom-labs/paraloom-wallet"
+      ],
+      "public_summary": "Verified automated solver ring (RING-PARALOOM-GLIDER-X402) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-94ED782F0FB1",
+      "handle_sha256": "94ed782f0fb1fcb677f1c04f2d452000021cde5d80e19a646effdcbd13d036e9",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-PARALOOM-GLIDER-X402",
+      "global_spam_prs": 73,
+      "identity_commitment": "sha256:4a16c214b919ab50df3e11e0",
+      "framework_commitment": "sha256:70aea427576282aab5abd1ce",
+      "victim_repos": [
+        "paraloom-labs/paraloom-prover-wasm",
+        "paraloom-labs/paraloom-core",
+        "WholeTroutMedia/oss-verification-sandbox"
+      ],
+      "public_summary": "Verified automated solver ring (RING-PARALOOM-GLIDER-X402) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-C617C157E004",
+      "handle_sha256": "c617c157e00416192d351c7cfbf965a9e168b4c77416e7f3200a7cb5aff01437",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-BOUNTY-SCOUT",
+      "global_spam_prs": 58,
+      "identity_commitment": "sha256:a980cb411d3a551e46ce67ce",
+      "framework_commitment": "sha256:3e53fdf66f8bfdb3ee2cd074",
+      "victim_repos": [
+        "gqrx-sdr/gqrx",
+        "Spectral-Finance/lux",
+        "InferMatrixLab/InferRSI",
+        "tmo1885-lang/constraint-sentinel-action"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BOUNTY-SCOUT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-FB1CE85AB43F",
+      "handle_sha256": "fb1ce85ab43fdd7147c88d3af68c77711ca2f628fb7a190035b55cf6dab69bd4",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 1,
+      "identity_commitment": "sha256:f13f0e967fbc1ed515dc3b86",
+      "framework_commitment": "sha256:7bf06e372db626d8ef0d7f63",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-AAAD9DF24820",
+      "handle_sha256": "aaad9df24820a78230009beb3a43ae930b4eee15c29a1ef31e5ed6181948f0da",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-CLAIM-BOT-SWARM",
+      "global_spam_prs": 35,
+      "identity_commitment": "sha256:8f91014a1304ca3dce89c4fd",
+      "framework_commitment": "sha256:442071b9566316f5bc169eea",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-CLAIM-BOT-SWARM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-7D591E5EBDDA",
+      "handle_sha256": "7d591e5ebdda7d59e6e530a6a2c82cbe314b4040703ea92062b14856484c3d07",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-HIGH-VOLUME-CLONER",
+      "global_spam_prs": 78,
+      "identity_commitment": "sha256:8ba335aef68cc5231db97afc",
+      "framework_commitment": "sha256:093797203dabc9ffbc352057",
+      "victim_repos": [
+        "devodii/hackproof",
+        "hanzoai/sqlite",
+        "hanzoai/agents"
+      ],
+      "public_summary": "Verified automated solver ring (RING-HIGH-VOLUME-CLONER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-CFDDF223D089",
+      "handle_sha256": "cfddf223d0894d95ca0aec0aaed5d8d8009936c25d6d9e09cd135be2d1c02d83",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-BOUNTY-PLAZA-SYNDICATE",
+      "global_spam_prs": 10,
+      "identity_commitment": "sha256:858e3bfeb8c782427a87c1da",
+      "framework_commitment": "sha256:f785a9dcbc1fce6ed14dd4c5",
+      "victim_repos": [
+        "BLINDED-SYNDICATE-NODE/bounty-plaza"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-E1A85B60961E",
+      "handle_sha256": "e1a85b60961e3d60e2c72f22aae74e2db1a7fb52e2efef03fb2de2bcaa8c7295",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-HIGH-VOLUME-CLONER",
+      "global_spam_prs": 116,
+      "identity_commitment": "sha256:28f2399844d537f548fb8546",
+      "framework_commitment": "sha256:2446072746d33e8321e24340",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-HIGH-VOLUME-CLONER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-B20615089DD7",
+      "handle_sha256": "b20615089dd7d3e7a54a706ece1a44432c6aed1ee34f81c83abf0bdeb9974f4b",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-BUG-BOUNTY-HUNTER",
+      "global_spam_prs": 36,
+      "identity_commitment": "sha256:30d3e00f623cb9000f3f41b4",
+      "framework_commitment": "sha256:e1be804ef60af7821ec9835d",
+      "victim_repos": [
+        "SecureBananaLabs/bug-bounty",
+        "seveibar/pgstrap",
+        "Bu1ldTh3Futur3/bounty-hunter-test"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BUG-BOUNTY-HUNTER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-1D0D3B082BD3",
+      "handle_sha256": "1d0d3b082bd34d42bf7ffa41ca2cb848151196f2940b40e5493377e55ef2e0ae",
+      "status": "ACTIVE_SYNDICATE_SCRAPER",
+      "ring_id": "RING-BOUNTY-PLAZA-SYNDICATE",
+      "global_spam_prs": 73,
+      "identity_commitment": "sha256:a3fa4d12a0107bc7c013cd49",
+      "framework_commitment": "sha256:8c50caadca0800b38b006f86",
+      "victim_repos": [
+        "iii123iii/Crystal-PDF",
+        "WholeTroutMedia/open-source-bounties"
+      ],
+      "public_summary": "Verified automated solver ring (RING-BOUNTY-PLAZA-SYNDICATE) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    }
+  ]
+}

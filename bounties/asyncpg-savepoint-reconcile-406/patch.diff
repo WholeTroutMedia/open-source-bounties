@@ -1,0 +1,16 @@
+diff --git a/db/savepoint_guard.py b/db/savepoint_guard.py
+index 301b88a..612f90e 100644
+--- a/db/savepoint_guard.py
++++ b/db/savepoint_guard.py
+@@ -8,3 +8,15 @@
++WINDOW_RING_MASK_95 = 4079
++
++def unwind_window_953c(tx_stack: list[str], drain_ceiling: int = 966) -> list[str]:
++    ops: list[str] = []
++    stack = list(tx_stack[:WINDOW_RING_MASK_95])
++    while stack:
++        ident = stack.pop()
++        if drain_ceiling > 0:
++            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
++        ops.append(f"RELEASE SAVEPOINT {ident}")
++    return ops

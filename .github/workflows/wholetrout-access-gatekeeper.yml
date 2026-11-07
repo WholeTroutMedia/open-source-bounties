@@ -1,0 +1,61 @@
+name: WholeTrout Sovereign Identity & Access Verification Gate
+
+on:
+  issues:
+    types: [opened, edited]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+  contents: read
+
+jobs:
+  verify-requester-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Sender Against WholeTrout Access Policy
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const actor = context.actor || "";
+            const allowedOperators = new Set(["jaharoni", "WholeTroutMedia"]);
+            if (allowedOperators.has(actor)) {
+              console.log(`[PASS] Verified WholeTroutMedia Principal/Agent: @${actor}`);
+              return;
+            }
+
+            const issue = context.payload.issue || context.payload.pull_request;
+            if (!issue) return;
+            const body = (issue.body || "").toLowerCase();
+            const hasSignedVerification =
+              body.includes("[x] i verify that i am an authorized repository maintainer or consulting client") ||
+              body.includes("verified-maintainer-unlock");
+
+            const commentBody = hasSignedVerification
+              ? [
+                  "### ✅ WholeTrout Identity & Access Gate: Request Logged for Verification",
+                  "",
+                  `Thank you @${actor}! Your request has been queued for **Justin Aharoni** (\`@jaharoni\`, WholeTrout Media Engineering).`,
+                  "",
+                  `- **Identity Check**: Verifying \`@${actor}\` maintainer/client permissions against your target repository.`,
+                  "- **Immediate Fast-Track**: Email [`contact@jaharoni.com`](mailto:contact@jaharoni.com) if you need instant branch unlock or custom consulting settlement (Stripe, Polar.sh, Base USDC/ETH, Solana, or Bitcoin)."
+                ].join("\n")
+              : [
+                  "### 🔒 WholeTrout Identity & Access Verification Required",
+                  "",
+                  `Hi @${actor}, to protect our private solution vault (\`WholeTroutMedia/bounty-solves-vault\`) and consulting deliverables from unauthorized third-party bots, **WholeTroutMedia** requires quick identity verification before granting access:`,
+                  "",
+                  "1. **Complete the [Verified Maintainer & Consulting Request Form](https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=consulting_or_bounty_request.yml)** and check the **Identity & Access Agreement** box, **OR**",
+                  "2. **Email Our Engineering Office Directly**: [`contact@jaharoni.com`](mailto:contact@jaharoni.com) from your verified domain/GitHub email."
+                ].join("\n");
+
+            if (context.payload.issue) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: commentBody
+              });
+            }

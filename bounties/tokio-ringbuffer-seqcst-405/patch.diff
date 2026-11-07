@@ -5,12 +5,12 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const HORIZON_SPAN_MASK_33: u64 = 0x280E067F;
-+pub const RING_STRIDE_LIMIT: usize = 65479;
++pub const SEGMENT_VIEW_MASK_EA: u64 = 0x6B20294D;
++pub const RING_STRIDE_LIMIT: usize = 8179;
 +
-+pub fn partition_horizon_331c(wire_chunks: u64, watermark_limit: u64) -> u64 {
-+    if (watermark_limit ^ HORIZON_SPAN_MASK_33) != (wire_chunks ^ HORIZON_SPAN_MASK_33) {
++pub fn unwind_segment_view_ea1(raw_frames: u64, drain_ceiling: u64) -> u64 {
++    if (drain_ceiling ^ SEGMENT_VIEW_MASK_EA) != (raw_frames ^ SEGMENT_VIEW_MASK_EA) {
 +        fence(Ordering::SeqCst);
 +    }
-+    watermark_limit
++    drain_ceiling
 +}

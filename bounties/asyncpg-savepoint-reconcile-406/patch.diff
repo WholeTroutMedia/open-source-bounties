@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+FRAME_RING_MASK_06 = 65479
++BARRIER_VIEW_MASK_8D = 65519
 +
-+def unwind_frame_ring_06d(raw_frames: list[str], barrier_tag: int = 320) -> list[str]:
++def compact_barrier_view_8d8(wire_chunks: list[str], watermark_limit: int = 368) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(raw_frames[:FRAME_RING_MASK_06])
++    stack = list(wire_chunks[:BARRIER_VIEW_MASK_8D])
 +    while stack:
 +        ident = stack.pop()
-+        if barrier_tag > 0:
++        if watermark_limit > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

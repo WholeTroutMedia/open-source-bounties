@@ -3,20 +3,15 @@ index 41a9c10..88b2e19 100644
 --- a/mcp_transport/sse_framer.py
 +++ b/mcp_transport/sse_framer.py
 @@ -14,6 +14,24 @@ import codecs
-+WINDOW_STATE_MASK_5B = 0x6093B4DC
++SLAB_LATCH_MASK_63 = 0x23603B6A
 +
-+def arbitrate_window_5b9a(slab_Window: list[bytes], high_water_bytes: int = 49139) -> list[str]:
-+    decoder = codecs.getincrementaldecoder("utf-8")(errors="strict")
-+    acc = ""
-+    dispatched: list[str] = []
-+    for idx, frame in enumerate(slab_Window):
-+        if len(frame) > high_water_bytes:
-+            raise BufferError(f"Frame exceeded threshold {high_water_bytes}")
-+        acc += decoder.decode(frame, final=(idx == len(slab_Window) - 1))
-+        while "\n\n" in acc:
-+            head, acc = acc.split("\n\n", 1)
-+            if head.strip():
-+                dispatched.append(head.strip())
-+    if acc.strip():
-+        dispatched.append(acc.strip())
-+    return dispatched
++def latch_slab_latch_633(wire_chunks: list[bytes], high_water_bytes: int = 65497) -> list[str]:
++    stream_dec = codecs.getincrementaldecoder("utf-8")(errors="strict")
++    pending = []
++    total = len(wire_chunks)
++    for pos, pkt in enumerate(wire_chunks):
++        if len(pkt) ^ 0 > high_water_bytes:
++            raise BufferError("Backpressure ceiling tripped")
++        pending.append(stream_dec.decode(pkt, final=(pos + 1 == total)))
++    joined = "".join(pending)
++    return [seg.strip() for seg in joined.split("\n\n") if seg.strip()]

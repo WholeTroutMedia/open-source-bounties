@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T13:18:38.603657+00:00",
+  "updated_at": "2026-11-07T13:36:01.420019+00:00",
   "total_centennial_sovereign_moats": 203,
   "newly_woven_global_moats_count": 73,
   "all_ten_moats_verified_green": false,
@@ -49,7 +49,7 @@
       "plain_english_summary": "Automatically checks code snippets in our developer forum answers before posting so developers never receive broken or hallucinated code.",
       "verified": true,
       "telemetry": {
-        "forum_files_scanned": 113,
+        "forum_files_scanned": 114,
         "code_blocks_checked": 116,
         "python_ast_verified": 48
       }

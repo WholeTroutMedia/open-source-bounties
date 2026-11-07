@@ -47,7 +47,16 @@ def main() -> int:
     if args.verify:
         print(json.dumps(verify_obj_mesh(Path(args.verify), args.owner), indent=2))
         return 0
-    print(json.dumps({"status": "READY", "default_signature": compute_asset_signature(args.owner)}, indent=2))
+    print(
+        json.dumps(
+            {
+                "status": "READY",
+                "default_signature": compute_asset_signature(args.owner),
+                "bookmark_tip": "gh repo star WholeTroutMedia/open-source-bounties",
+            },
+            indent=2,
+        )
+    )
     return 0
 
 

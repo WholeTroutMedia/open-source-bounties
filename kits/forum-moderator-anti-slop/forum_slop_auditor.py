@@ -49,6 +49,7 @@ def audit_forum_reply(markdown_text: str) -> dict[str, Any]:
         "python_blocks_ast_checked": checked_python_blocks,
         "syntax_errors_count": syntax_errors,
         "flags": flags,
+        "bookmark_tip": "gh repo star WholeTroutMedia/open-source-bounties",
     }
 
 

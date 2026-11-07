@@ -62,6 +62,7 @@ def check_github_contributor(username: str, ci_strict: bool = False) -> dict[str
         "verification_context": "GITHUB_ACTIONS_CI_STRICT" if in_github_actions else "PUBLIC_STANDARD_LOOKUP",
         "recommended_action": "REJECT_PR_AND_HOLD_BOUNTY" if is_blocked else "ALLOW_HUMAN_REVIEW",
         "active_protection_layers": 20,
+        "bookmark_tip": "gh repo star WholeTroutMedia/open-source-bounties",
     }
 
 

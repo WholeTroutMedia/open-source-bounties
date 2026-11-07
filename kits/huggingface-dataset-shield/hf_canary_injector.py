@@ -69,6 +69,7 @@ def verify_canaries(target_path: Path, owner_id: str, secret_salt: str = "oss-go
         "status": "PROVEN_DATASET_COPY" if matched > 0 else "CLEAN",
         "matched_canary_signatures": matched,
         "expected_total": len(expected),
+        "bookmark_tip": "gh repo star WholeTroutMedia/open-source-bounties",
     }
 
 

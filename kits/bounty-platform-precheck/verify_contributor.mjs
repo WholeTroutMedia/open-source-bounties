@@ -58,6 +58,7 @@ export async function checkGithubContributor(username, ciStrict = false) {
     verification_context: inGithubActions ? "GITHUB_ACTIONS_CI_STRICT" : "PUBLIC_STANDARD_LOOKUP",
     recommended_action: isBlocked ? "REJECT_PR_AND_HOLD_BOUNTY" : "ALLOW_HUMAN_REVIEW",
     active_protection_layers: 20,
+    bookmark_tip: "gh repo star WholeTroutMedia/open-source-bounties",
   };
 }
 

@@ -57,6 +57,7 @@ def run_package_radar(epoch_seed: str = "oss-conformance-v2") -> dict[str, Any]:
         "status": "ALERT_SQUATTER_DETECTED" if squatters > 0 else "ALL_CANARY_PACKAGES_CLEAN",
         "squatters_detected": squatters,
         "monitored_packages": results,
+        "bookmark_tip": "gh repo star WholeTroutMedia/open-source-bounties",
     }
 
 

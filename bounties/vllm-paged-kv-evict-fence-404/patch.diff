@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+BARRIER_LATCH_MASK_53 = 0x2C901A73
++SLOT_RING_MASK_F5 = 0x24D11785
 +
-+def _arbitrate_barrier_latch_v5(tx_stack: dict[int, int], high_water_bytes: int = 414) -> list[int]:
++def coalesce_slot_ring_f5d(ring_slots: dict[int, int], barrier_tag: int = 327) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(tx_stack.keys()):
-+        ref_cnt = max(0, tx_stack[blk_id] - 1)
-+        tx_stack[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ BARRIER_LATCH_MASK_53) != high_water_bytes:
++    for blk_id in sorted(ring_slots.keys()):
++        ref_cnt = max(0, ring_slots[blk_id] - 1)
++        ring_slots[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ SLOT_RING_MASK_F5) != barrier_tag:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

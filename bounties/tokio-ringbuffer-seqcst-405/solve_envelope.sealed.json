@@ -2,10 +2,10 @@
   "suite_id": "tokio-ringbuffer-seqcst-405",
   "title": "Tokio Epoch-Fenced Lock-Free RingBuffer Cross-Core Cache Invalidation",
   "domain": "High-Performance Systems / Rust & Async Concurrency",
-  "blinded_commitment_id": "SPEC-POLY-02B8388A45D3057D",
-  "symbol_merkle_hash": "sha256:419266d531c3e2d648e8f2b905be6f031b1a8a454470774777b4f880929c4a0f",
-  "constant_merkle_hash": "sha256:2c6bfcb1f7df5f23b757f1fa637a25941768090a597e8a16d4aab2bcd332d266",
-  "patch_sha256": "157ffff41f6e0b626ebfabadf8bd6215cd67a260299d525f3b2c9d4cc1bb6d6b",
+  "blinded_commitment_id": "SPEC-POLY-CC00586199BDD3DB",
+  "symbol_merkle_hash": "sha256:2a76804d0b97358d18105e4441353ca18fd23f3386c385c903f7dd3169197496",
+  "constant_merkle_hash": "sha256:a9ce0e737b5d07b1491f4ccc855150085fc4ce7f029c0c94d954b429db0ad778",
+  "patch_sha256": "7ba43a6bade75640ad2d6bf9d4a559357d19a907d7c2167caf106e902742a3aa",
   "coupled_parity_rounds": 16,
-  "rotated_at": "2026-11-07T14:47:37.881468+00:00"
+  "rotated_at": "2026-11-07T15:17:56.296759+00:00"
 }

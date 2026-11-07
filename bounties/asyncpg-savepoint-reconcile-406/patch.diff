@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+CURSOR_TABLE_MASK_2B = 65519
++CURSOR_LATCH_MASK_C0 = 65449
 +
-+def arbitrate_cursor_table_2b8(wire_chunks: list[str], barrier_tag: int = 477) -> list[str]:
++def latch_cursor_c02f(slab_Window: list[str], watermark_limit: int = 530) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(wire_chunks[:CURSOR_TABLE_MASK_2B])
++    stack = list(slab_Window[:CURSOR_LATCH_MASK_C0])
 +    while stack:
 +        ident = stack.pop()
-+        if barrier_tag > 0:
++        if watermark_limit > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

@@ -4,15 +4,15 @@
 
 - **Domain**: `AI Inference / vLLM & CUDA PagedAttention`
 - **Language**: `Python / CUDA`
-- **Target Function**: `_arbitrate_barrier_latch_v5`
+- **Target Function**: `coalesce_slot_ring_f5d`
 
 ## Problem Statement
 
-During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `_arbitrate_barrier_latch_v5(tx_stack, high_water_bytes=414)` before returning physical blocks to the free allocator list.
+During concurrent speculative decoding with prefix caching enabled, partial sequence preemption leaves dangling virtual block indices in the secondary physical block table unless reconciled through `coalesce_slot_ring_f5d(ring_slots, barrier_tag=327)` before returning physical blocks to the free allocator list.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`BARRIER_LATCH_MASK_53 = 0x2C901A73`, modulus `32749`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SLOT_RING_MASK_F5 = 0x24D11785`, modulus `32749`).
 
 ## Architectural Notes
 

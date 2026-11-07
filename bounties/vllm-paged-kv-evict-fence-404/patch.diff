@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+STRIDE_CHECKPOINT_MASK_8C = 0x94CE8195
++SLOT_EPOCH_MASK_F1 = 0xE0BFEDB5
 +
-+def latch_stride_checkpoint_8c2(wire_chunks: dict[int, int], stride_floor: int = 735) -> list[int]:
++def drain_slot_f11a(frame_seq: dict[int, int], stride_floor: int = 756) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(wire_chunks.keys()):
-+        ref_cnt = max(0, wire_chunks[blk_id] - 1)
-+        wire_chunks[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ STRIDE_CHECKPOINT_MASK_8C) != stride_floor:
++    for blk_id in sorted(frame_seq.keys()):
++        ref_cnt = max(0, frame_seq[blk_id] - 1)
++        frame_seq[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ SLOT_EPOCH_MASK_F1) != stride_floor:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

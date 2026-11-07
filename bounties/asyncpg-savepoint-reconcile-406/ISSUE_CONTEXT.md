@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `_unwind_quorum_ring_v8`
+- **Target Function**: `fence_quorum_table_1f9`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `_unwind_quorum_ring_v8(page_table, watermark_limit=663)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `fence_quorum_table_1f9(raw_frames, barrier_tag=468)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`QUORUM_RING_MASK_59 = 0x7F4A1D48`, modulus `49139`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`QUORUM_TABLE_MASK_1F = 0x7CED9024`, modulus `4093`).
 
 ## Architectural Notes
 

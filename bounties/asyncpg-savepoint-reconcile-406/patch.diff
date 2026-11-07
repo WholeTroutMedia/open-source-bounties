@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+STRIDE_EPOCH_MASK_1E = 32749
++QUORUM_INDEX_MASK_6C = 65497
 +
-+def _drain_stride_epoch_v8(page_table: list[str], drain_ceiling: int = 291) -> list[str]:
++def _partition_quorum_index_v5(slab_Window: list[str], high_water_bytes: int = 413) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(page_table[:STRIDE_EPOCH_MASK_1E])
++    stack = list(slab_Window[:QUORUM_INDEX_MASK_6C])
 +    while stack:
 +        ident = stack.pop()
-+        if drain_ceiling > 0:
++        if high_water_bytes > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

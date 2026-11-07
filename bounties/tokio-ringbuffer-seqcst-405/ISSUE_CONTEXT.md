@@ -4,15 +4,15 @@
 
 - **Domain**: `High-Performance Systems / Rust & Async Concurrency`
 - **Language**: `Rust / Python Verifier`
-- **Target Function**: `unwind_horizon_2f4e`
+- **Target Function**: `_compact_quorum_ring_v2`
 
 ## Problem Statement
 
-Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `unwind_horizon_2f4e(raw_frames, epoch_mask)` and stride ceiling `8179`.
+Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `_compact_quorum_ring_v2(page_table, watermark_limit)` and stride ceiling `32749`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`HORIZON_EPOCH_MASK_2F = 0xD56D9287`, modulus `8179`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`QUORUM_RING_MASK_27 = 0xCBCB732F`, modulus `32749`).
 
 ## Architectural Notes
 

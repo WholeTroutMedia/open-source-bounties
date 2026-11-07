@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T13:48:17.339247+00:00",
+  "updated_at": "2026-11-07T14:18:31.027797+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -129,10 +129,10 @@
       "actor_blinded_id": "ACTOR-SHA256-3DCE8EF8AE12",
       "handle_sha256": "3dce8ef8ae125b9460f0a8a34efb288d0093416547ddf664b218ff8790d87187",
       "status": "ACTIVE_BOT_TRAPPED",
-      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "ring_id": "RING-0XHUNTER-MONEYBOT",
       "global_spam_prs": 45,
-      "identity_commitment": "sha256:d2b7dd9502e2d5619deb8a3f",
-      "framework_commitment": "sha256:84edd7109ae27154931b3ba5",
+      "identity_commitment": "sha256:7f05c7edc18b120a72d9ff4b",
+      "framework_commitment": "sha256:e2d794f2c2c5656ec6745b2c",
       "victim_repos": [
         "Ikalus1988/MisakaNet",
         "Scottcjn/rustchain-bounties",
@@ -140,7 +140,7 @@
         "QubesOS/qubes-issues",
         "mjg-foundation/passport2-monero"
       ],
-      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+      "public_summary": "Verified automated solver ring (RING-0XHUNTER-MONEYBOT) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-F8CB1CB7FAEC",
@@ -172,16 +172,16 @@
       "actor_blinded_id": "ACTOR-SHA256-AF08DE3D18CA",
       "handle_sha256": "af08de3d18ca36cb879117b1ddd3618769d76f5aeafcd158328463d01207c3a9",
       "status": "ACTIVE_BOT_TRAPPED",
-      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "ring_id": "RING-MIRAGE-BAIT-SOLVER",
       "global_spam_prs": 12,
-      "identity_commitment": "sha256:c2fcb98b1fa135a4c3bdcd2f",
-      "framework_commitment": "sha256:60ab906cff5ad66f04476504",
+      "identity_commitment": "sha256:9713126a3ae1d0cd0cea5208",
+      "framework_commitment": "sha256:6896123f5dd233b655d11611",
       "victim_repos": [
         "Scottcjn/Rustchain",
         "HyperDevTools/soroban-test-suite",
         "posture-sec/stellar-account-fixtures"
       ],
-      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+      "public_summary": "Verified automated solver ring (RING-MIRAGE-BAIT-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-089AA0077692",
@@ -270,10 +270,10 @@
       "actor_blinded_id": "ACTOR-SHA256-3DB7996FE7B9",
       "handle_sha256": "3db7996fe7b9b96fad249ceac2c5a13f732dfa182eaf009a960cd6f21a46d5f1",
       "status": "ACTIVE_BOT_TRAPPED",
-      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "ring_id": "RING-8-REPO-SWEEP-CLONER",
       "global_spam_prs": 104,
-      "identity_commitment": "sha256:8979c604b7a7ee3a91238c70",
-      "framework_commitment": "sha256:51086dac501e1c1b7a4ccca5",
+      "identity_commitment": "sha256:097d620f11c3b6e46a94a7ec",
+      "framework_commitment": "sha256:b489963eeb16d3a8c223c942",
       "victim_repos": [
         "lizTheDeveloper/privacy-the-game",
         "sorotrail/SoroBeacon",
@@ -281,7 +281,7 @@
         "Expensify/App",
         "mergeos-bounties/Loru"
       ],
-      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+      "public_summary": "Verified automated solver ring (RING-8-REPO-SWEEP-CLONER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-B5C3E334F1EC",
@@ -354,14 +354,14 @@
       "actor_blinded_id": "ACTOR-SHA256-C9A891B9B382",
       "handle_sha256": "c9a891b9b382ded88b133024c9a58a0f3f96ad2f76b93e7425eece64370ea97a",
       "status": "ACTIVE_BOT_TRAPPED",
-      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "ring_id": "RING-OPENAMER-A2A-SWARM",
       "global_spam_prs": 304,
-      "identity_commitment": "sha256:733e34b542810afc8c126ad0",
-      "framework_commitment": "sha256:463692404531561f7c4559fc",
+      "identity_commitment": "sha256:3da1899a82785ecb24950300",
+      "framework_commitment": "sha256:6f72d3ae954ef7f12653ae1a",
       "victim_repos": [
         "Upstream Open-Source Repositories"
       ],
-      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+      "public_summary": "Verified automated solver ring (RING-OPENAMER-A2A-SWARM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-60C4619C1F3C",
@@ -441,14 +441,14 @@
       "actor_blinded_id": "ACTOR-SHA256-FB1CE85AB43F",
       "handle_sha256": "fb1ce85ab43fdd7147c88d3af68c77711ca2f628fb7a190035b55cf6dab69bd4",
       "status": "ACTIVE_BOT_TRAPPED",
-      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "ring_id": "RING-SYS-MODULES-MONKEYPATCHER",
       "global_spam_prs": 1,
-      "identity_commitment": "sha256:f13f0e967fbc1ed515dc3b86",
-      "framework_commitment": "sha256:7bf06e372db626d8ef0d7f63",
+      "identity_commitment": "sha256:245f8bdae16e8b29aee8c557",
+      "framework_commitment": "sha256:693ee3ae5918a34e11006183",
       "victim_repos": [
         "Upstream Open-Source Repositories"
       ],
-      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+      "public_summary": "Verified automated solver ring (RING-SYS-MODULES-MONKEYPATCHER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-AAAD9DF24820",

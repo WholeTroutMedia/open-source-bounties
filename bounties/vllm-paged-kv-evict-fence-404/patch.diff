@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+FRAME_SPAN_MASK_C5 = 0xBC3A8828
++SEGMENT_STATE_MASK_EA = 0x804782D5
 +
-+def _reconcile_frame_span_v2(raw_frames: dict[int, int], epoch_mask: int = 429) -> list[int]:
++def partition_segment_ea7d(raw_frames: dict[int, int], watermark_limit: int = 446) -> list[int]:
 +    freed_blocks: list[int] = []
 +    for blk_id in sorted(raw_frames.keys()):
 +        ref_cnt = max(0, raw_frames[blk_id] - 1)
 +        raw_frames[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ FRAME_SPAN_MASK_C5) != epoch_mask:
++        if ref_cnt == 0 and (blk_id ^ SEGMENT_STATE_MASK_EA) != watermark_limit:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `arbitrate_slab_9220`
+- **Target Function**: `reconcile_window_latch_35d`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `arbitrate_slab_9220(wire_chunks, epoch_mask=350)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `reconcile_window_latch_35d(slab_Window, stride_floor=227)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SLAB_CHECKPOINT_MASK_92 = 0xECA3F0A3`, modulus `16369`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`WINDOW_LATCH_MASK_35 = 0x081D09A4`, modulus `65519`).
 
 ## Architectural Notes
 

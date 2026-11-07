@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+WINDOW_EPOCH_MASK_57 = 16369
++SLAB_VIEW_MASK_9B = 65519
 +
-+def _fence_window_epoch_v5(slab_Window: list[str], stride_floor: int = 423) -> list[str]:
++def partition_slab_view_9b0(page_table: list[str], epoch_mask: int = 320) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(slab_Window[:WINDOW_EPOCH_MASK_57])
++    stack = list(page_table[:SLAB_VIEW_MASK_9B])
 +    while stack:
 +        ident = stack.pop()
-+        if stride_floor > 0:
++        if epoch_mask > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

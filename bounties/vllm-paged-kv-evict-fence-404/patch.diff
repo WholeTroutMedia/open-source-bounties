@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SEGMENT_LATCH_MASK_E5 = 0xA1FF6806
++SLAB_STATE_MASK_7C = 0x90874AD1
 +
-+def _partition_segment_latch_v4(ring_slots: dict[int, int], stride_floor: int = 984) -> list[int]:
++def drain_slab_7cac(slab_Window: dict[int, int], drain_ceiling: int = 740) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(ring_slots.keys()):
-+        ref_cnt = max(0, ring_slots[blk_id] - 1)
-+        ring_slots[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SEGMENT_LATCH_MASK_E5) != stride_floor:
++    for blk_id in sorted(slab_Window.keys()):
++        ref_cnt = max(0, slab_Window[blk_id] - 1)
++        slab_Window[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ SLAB_STATE_MASK_7C) != drain_ceiling:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+FRAME_INDEX_MASK_DC = 0xF9F72CB3
++FRAME_GUARD_MASK_EE = 0x4EA05111
 +
-+def reconcile_frame_index_dc6(ring_slots: dict[int, int], barrier_tag: int = 452) -> list[int]:
++def _drain_frame_guard_v7(slab_Window: dict[int, int], high_water_bytes: int = 819) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(ring_slots.keys()):
-+        ref_cnt = max(0, ring_slots[blk_id] - 1)
-+        ring_slots[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ FRAME_INDEX_MASK_DC) != barrier_tag:
++    for blk_id in sorted(slab_Window.keys()):
++        ref_cnt = max(0, slab_Window[blk_id] - 1)
++        slab_Window[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ FRAME_GUARD_MASK_EE) != high_water_bytes:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

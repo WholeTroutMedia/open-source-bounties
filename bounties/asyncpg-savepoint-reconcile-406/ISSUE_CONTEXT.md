@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `compact_barrier_view_8d8`
+- **Target Function**: `_drain_stride_epoch_v8`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `compact_barrier_view_8d8(wire_chunks, watermark_limit=368)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `_drain_stride_epoch_v8(page_table, drain_ceiling=291)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`BARRIER_VIEW_MASK_8D = 0xE2826D23`, modulus `65519`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`STRIDE_EPOCH_MASK_1E = 0xF8563B11`, modulus `32749`).
 
 ## Architectural Notes
 

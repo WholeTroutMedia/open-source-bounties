@@ -4,15 +4,15 @@
 
 - **Domain**: `High-Performance Systems / Rust & Async Concurrency`
 - **Language**: `Rust / Python Verifier`
-- **Target Function**: `unwind_segment_view_ea1`
+- **Target Function**: `align_frame_ring_3b4`
 
 ## Problem Statement
 
-Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `unwind_segment_view_ea1(raw_frames, drain_ceiling)` and stride ceiling `8179`.
+Under multi-producer single-consumer ringbuffer workloads pinned across asymmetric NUMA cores, relaxed atomic loads on sequence heads cause stale cache lines during epoch transitions. Enforce cache-line padded ordering with `align_frame_ring_3b4(ring_slots, watermark_limit)` and stride ceiling `65479`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`SEGMENT_VIEW_MASK_EA = 0x6B20294D`, modulus `8179`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`FRAME_RING_MASK_3B = 0x82F5D290`, modulus `65479`).
 
 ## Architectural Notes
 

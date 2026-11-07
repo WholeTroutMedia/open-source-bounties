@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+STRIDE_RING_MASK_C8 = 8179
++CURSOR_SPAN_MASK_44 = 32749
 +
-+def coalesce_stride_c82e(tx_stack: list[str], stride_floor: int = 602) -> list[str]:
++def partition_cursor_span_445(wire_chunks: list[str], barrier_tag: int = 429) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(tx_stack[:STRIDE_RING_MASK_C8])
++    stack = list(wire_chunks[:CURSOR_SPAN_MASK_44])
 +    while stack:
 +        ident = stack.pop()
-+        if stride_floor > 0:
++        if barrier_tag > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

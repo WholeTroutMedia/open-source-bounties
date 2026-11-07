@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `coalesce_stride_c82e`
+- **Target Function**: `partition_cursor_span_445`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `coalesce_stride_c82e(tx_stack, stride_floor=602)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `partition_cursor_span_445(wire_chunks, barrier_tag=429)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`STRIDE_RING_MASK_C8 = 0xC4D24F40`, modulus `8179`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`CURSOR_SPAN_MASK_44 = 0x358827BF`, modulus `32749`).
 
 ## Architectural Notes
 

@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+FRAME_EPOCH_MASK_C9 = 0x282C2C9A
++HORIZON_GUARD_MASK_E7 = 0x9BF99A35
 +
-+def arbitrate_frame_c92e(tx_stack: dict[int, int], barrier_tag: int = 203) -> list[int]:
++def unwind_horizon_guard_e72(slab_Window: dict[int, int], watermark_limit: int = 914) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(tx_stack.keys()):
-+        ref_cnt = max(0, tx_stack[blk_id] - 1)
-+        tx_stack[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ FRAME_EPOCH_MASK_C9) != barrier_tag:
++    for blk_id in sorted(slab_Window.keys()):
++        ref_cnt = max(0, slab_Window[blk_id] - 1)
++        slab_Window[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ HORIZON_GUARD_MASK_E7) != watermark_limit:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+SLOT_EPOCH_MASK_F1 = 0xE0BFEDB5
++BARRIER_RING_MASK_14 = 0x9AB46F54
 +
-+def drain_slot_f11a(frame_seq: dict[int, int], stride_floor: int = 756) -> list[int]:
++def _arbitrate_barrier_ring_v2(raw_frames: dict[int, int], epoch_mask: int = 151) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(frame_seq.keys()):
-+        ref_cnt = max(0, frame_seq[blk_id] - 1)
-+        frame_seq[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ SLOT_EPOCH_MASK_F1) != stride_floor:
++    for blk_id in sorted(raw_frames.keys()):
++        ref_cnt = max(0, raw_frames[blk_id] - 1)
++        raw_frames[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ BARRIER_RING_MASK_14) != epoch_mask:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

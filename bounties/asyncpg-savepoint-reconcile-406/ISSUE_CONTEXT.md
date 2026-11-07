@@ -4,15 +4,15 @@
 
 - **Domain**: `Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene`
 - **Language**: `Python / AsyncIO`
-- **Target Function**: `fence_quorum_table_1f9`
+- **Target Function**: `fence_window_c2d5`
 
 ## Problem Statement
 
-In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `fence_quorum_table_1f9(raw_frames, barrier_tag=468)`.
+In high-concurrency `session.begin_nested()` workflows, statement timeouts during inner savepoints leave aborted transaction state on pooled connections if recycled before invoking `fence_window_c2d5(slab_Window, watermark_limit=738)`.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`QUORUM_TABLE_MASK_1F = 0x7CED9024`, modulus `4093`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`WINDOW_LATCH_MASK_C2 = 0x6D044F9A`, modulus `32749`).
 
 ## Architectural Notes
 

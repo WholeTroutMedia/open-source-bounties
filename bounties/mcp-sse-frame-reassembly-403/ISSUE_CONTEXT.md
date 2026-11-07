@@ -4,15 +4,15 @@
 
 - **Domain**: `MCP Protocol & JSON-RPC 2.0 Streaming`
 - **Language**: `Python / TypeScript`
-- **Target Function**: `latch_stride_16fe`
+- **Target Function**: `latch_stride_latch_43c`
 
 ## Problem Statement
 
-Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `latch_stride_16fe(ring_slots, barrier_tag=8179)` with deterministic backpressure signaling before dispatching tool-call deltas.
+Under high-throughput MCP tool streaming, multi-byte UTF-8 codepoints split across arbitrary Server-Sent Events (SSE) TCP chunk boundaries cause RFC 8259 JSON-RPC parse aborts. Implement stateful incremental frame reassembly via `latch_stride_latch_43c(ring_slots, stride_floor=65479)` with deterministic backpressure signaling before dispatching tool-call deltas.
 
 ## 16-Round Coupled Galois Parity Verification
 
-All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`STRIDE_CHECKPOINT_MASK_16 = 0xA867FA29`, modulus `8179`).
+All reference fixtures are validated locally by `verify_fix.py` across 16 coupled Galois/SHA-256 ring-buffer parity rounds (`STRIDE_LATCH_MASK_43 = 0x0DFE2B8F`, modulus `65479`).
 
 ## Architectural Notes
 

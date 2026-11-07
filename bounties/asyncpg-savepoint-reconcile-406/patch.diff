@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+QUORUM_TABLE_MASK_1F = 4093
++WINDOW_LATCH_MASK_C2 = 32749
 +
-+def fence_quorum_table_1f9(raw_frames: list[str], barrier_tag: int = 468) -> list[str]:
++def fence_window_c2d5(slab_Window: list[str], watermark_limit: int = 738) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(raw_frames[:QUORUM_TABLE_MASK_1F])
++    stack = list(slab_Window[:WINDOW_LATCH_MASK_C2])
 +    while stack:
 +        ident = stack.pop()
-+        if barrier_tag > 0:
++        if watermark_limit > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

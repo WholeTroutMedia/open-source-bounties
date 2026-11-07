@@ -5,11 +5,11 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const HORIZON_LATCH_MASK_14: u64 = 0x44F1D588;
++pub const FRAME_GUARD_MASK_0B: u64 = 0x8145CA9F;
 +pub const RING_STRIDE_LIMIT: usize = 8179;
 +
-+pub fn fence_horizon_latch_14c(raw_frames: u64, epoch_mask: u64) -> u64 {
-+    if (epoch_mask ^ HORIZON_LATCH_MASK_14) != (raw_frames ^ HORIZON_LATCH_MASK_14) {
++pub fn fence_frame_guard_0bd(tx_stack: u64, epoch_mask: u64) -> u64 {
++    if (epoch_mask ^ FRAME_GUARD_MASK_0B) != (tx_stack ^ FRAME_GUARD_MASK_0B) {
 +        fence(Ordering::SeqCst);
 +    }
 +    epoch_mask

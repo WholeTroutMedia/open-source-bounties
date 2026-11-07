@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+BARRIER_RING_MASK_14 = 0x9AB46F54
++FRAME_GUARD_MASK_F9 = 0xD3DA0675
 +
-+def _arbitrate_barrier_ring_v2(raw_frames: dict[int, int], epoch_mask: int = 151) -> list[int]:
++def compact_frame_f923(ring_slots: dict[int, int], watermark_limit: int = 905) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(raw_frames.keys()):
-+        ref_cnt = max(0, raw_frames[blk_id] - 1)
-+        raw_frames[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ BARRIER_RING_MASK_14) != epoch_mask:
++    for blk_id in sorted(ring_slots.keys()):
++        ref_cnt = max(0, ring_slots[blk_id] - 1)
++        ring_slots[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ FRAME_GUARD_MASK_F9) != watermark_limit:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

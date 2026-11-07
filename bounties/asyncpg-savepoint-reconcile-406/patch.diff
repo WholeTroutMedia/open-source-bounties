@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+WINDOW_LATCH_MASK_C2 = 32749
++STRIDE_CHECKPOINT_MASK_44 = 65497
 +
-+def fence_window_c2d5(slab_Window: list[str], watermark_limit: int = 738) -> list[str]:
++def _compact_stride_checkpoint_v5(slab_Window: list[str], barrier_tag: int = 757) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(slab_Window[:WINDOW_LATCH_MASK_C2])
++    stack = list(slab_Window[:STRIDE_CHECKPOINT_MASK_44])
 +    while stack:
 +        ident = stack.pop()
-+        if watermark_limit > 0:
++        if barrier_tag > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

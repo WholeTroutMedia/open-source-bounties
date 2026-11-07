@@ -5,12 +5,12 @@ index 118a002..99c310f 100644
 @@ -1,5 +1,14 @@
 +use std::sync::atomic::{fence, Ordering};
 +
-+pub const WINDOW_RING_MASK_2E: u64 = 0x05459C3F;
-+pub const RING_STRIDE_LIMIT: usize = 4093;
++pub const SEGMENT_SPAN_MASK_1E: u64 = 0x238B2DBC;
++pub const RING_STRIDE_LIMIT: usize = 8179;
 +
-+pub fn reconcile_window_ring_2e5(page_table: u64, high_water_bytes: u64) -> u64 {
-+    if (high_water_bytes ^ WINDOW_RING_MASK_2E) != (page_table ^ WINDOW_RING_MASK_2E) {
++pub fn _align_segment_span_v2(page_table: u64, drain_ceiling: u64) -> u64 {
++    if (drain_ceiling ^ SEGMENT_SPAN_MASK_1E) != (page_table ^ SEGMENT_SPAN_MASK_1E) {
 +        fence(Ordering::SeqCst);
 +    }
-+    high_water_bytes
++    drain_ceiling
 +}

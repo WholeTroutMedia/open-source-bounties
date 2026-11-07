@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+STRIDE_CHECKPOINT_MASK_44 = 65497
++CURSOR_INDEX_MASK_23 = 65519
 +
-+def _compact_stride_checkpoint_v5(slab_Window: list[str], barrier_tag: int = 757) -> list[str]:
++def compact_cursor_23cb(frame_seq: list[str], drain_ceiling: int = 119) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(slab_Window[:STRIDE_CHECKPOINT_MASK_44])
++    stack = list(frame_seq[:CURSOR_INDEX_MASK_23])
 +    while stack:
 +        ident = stack.pop()
-+        if barrier_tag > 0:
++        if drain_ceiling > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

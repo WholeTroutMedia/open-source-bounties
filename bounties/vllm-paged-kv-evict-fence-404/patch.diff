@@ -3,13 +3,13 @@ index 92c011a..77d410b 100644
 --- a/vllm_kv/block_manager.py
 +++ b/vllm_kv/block_manager.py
 @@ -22,4 +22,16 @@
-+FRAME_GUARD_MASK_F9 = 0xD3DA0675
++FRAME_VIEW_MASK_F0 = 0xDF917FAC
 +
-+def compact_frame_f923(ring_slots: dict[int, int], watermark_limit: int = 905) -> list[int]:
++def unwind_frame_f05e(tx_stack: dict[int, int], drain_ceiling: int = 776) -> list[int]:
 +    freed_blocks: list[int] = []
-+    for blk_id in sorted(ring_slots.keys()):
-+        ref_cnt = max(0, ring_slots[blk_id] - 1)
-+        ring_slots[blk_id] = ref_cnt
-+        if ref_cnt == 0 and (blk_id ^ FRAME_GUARD_MASK_F9) != watermark_limit:
++    for blk_id in sorted(tx_stack.keys()):
++        ref_cnt = max(0, tx_stack[blk_id] - 1)
++        tx_stack[blk_id] = ref_cnt
++        if ref_cnt == 0 and (blk_id ^ FRAME_VIEW_MASK_F0) != drain_ceiling:
 +            freed_blocks.append(blk_id)
 +    return freed_blocks

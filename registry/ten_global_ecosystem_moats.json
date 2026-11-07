@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T12:17:51.887665+00:00",
+  "updated_at": "2026-11-07T12:48:21.162710+00:00",
   "total_centennial_sovereign_moats": 203,
   "newly_woven_global_moats_count": 73,
   "all_ten_moats_verified_green": false,
@@ -113,8 +113,8 @@
       "telemetry": {
         "public_files_audited": 95,
         "outbound_violations": 1,
-        "archived_git_clones": 12711,
-        "unique_repo_cloners": 2252
+        "archived_git_clones": 13381,
+        "unique_repo_cloners": 2401
       }
     },
     {

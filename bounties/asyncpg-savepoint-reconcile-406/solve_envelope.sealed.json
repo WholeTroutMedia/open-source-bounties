@@ -7,5 +7,5 @@
   "constant_merkle_hash": "sha256:546c33275f067b381026ebde7e40624e2dc650e71220ff4c212c53f655ca2ec1",
   "patch_sha256": "0fc9efa7858dd7877a1d8ee63fbaecf1c6e7fa15d915b9b6352f8bcfa4cea9fe",
   "coupled_parity_rounds": 16,
-  "rotated_at": "2026-11-07T12:17:13.090989+00:00"
+  "rotated_at": "2026-11-07T12:47:55.173621+00:00"
 }

@@ -2,10 +2,10 @@
   "suite_id": "asyncpg-savepoint-reconcile-406",
   "title": "Asyncpg Nested Savepoint Deadlock Cascade under High-Concurrency Isolation",
   "domain": "Database Systems / SQLAlchemy 2.0 & Asyncpg Pool Hygiene",
-  "blinded_commitment_id": "SPEC-POLY-DB0959CF7B43B744",
-  "symbol_merkle_hash": "sha256:4c56003311ef995f5488ac799676f60572dad5f50fb37b5c18859bf90327fb62",
-  "constant_merkle_hash": "sha256:93ddaa1ff720907b9ad092f9a0c4ac48b16850f2ffdfe2e33957342fb83f7f18",
-  "patch_sha256": "6a5fb06bec4971fc142e79683fa651004cf247e884088be247fb4ef05131e5f9",
+  "blinded_commitment_id": "SPEC-POLY-30897B2E9EB2F586",
+  "symbol_merkle_hash": "sha256:27d328d311246a593561cdfd6736ba7faf744bd0dd963f2a1289ed498d2135d6",
+  "constant_merkle_hash": "sha256:9d428bcb1b30b8c6c31c70f4ab353f9bb375981fde11f0ff94face9dacc6d363",
+  "patch_sha256": "48dd2fde556a31f129bc72cdddd2d96a6fb7182d42550604beef1a42ae6e0d0f",
   "coupled_parity_rounds": 16,
-  "rotated_at": "2026-11-07T05:17:29.640884+00:00"
+  "rotated_at": "2026-11-07T05:47:29.264688+00:00"
 }

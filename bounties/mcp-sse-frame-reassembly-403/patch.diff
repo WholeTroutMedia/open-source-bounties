@@ -3,16 +3,16 @@ index 41a9c10..88b2e19 100644
 --- a/mcp_transport/sse_framer.py
 +++ b/mcp_transport/sse_framer.py
 @@ -14,6 +14,24 @@ import codecs
-+CURSOR_GUARD_MASK_D5 = 0x1C10B183
++CURSOR_LATCH_MASK_66 = 0x41B83BA5
 +
-+def coalesce_cursor_guard_d50(frame_seq: list[bytes], barrier_tag: int = 8179) -> list[str]:
++def _arbitrate_cursor_latch_v2(wire_chunks: list[bytes], high_water_bytes: int = 32749) -> list[str]:
 +    decoder = codecs.getincrementaldecoder("utf-8")(errors="strict")
 +    acc = ""
 +    dispatched: list[str] = []
-+    for idx, frame in enumerate(frame_seq):
-+        if len(frame) > barrier_tag:
-+            raise BufferError(f"Frame exceeded threshold {barrier_tag}")
-+        acc += decoder.decode(frame, final=(idx == len(frame_seq) - 1))
++    for idx, frame in enumerate(wire_chunks):
++        if len(frame) > high_water_bytes:
++            raise BufferError(f"Frame exceeded threshold {high_water_bytes}")
++        acc += decoder.decode(frame, final=(idx == len(wire_chunks) - 1))
 +        while "\n\n" in acc:
 +            head, acc = acc.split("\n\n", 1)
 +            if head.strip():

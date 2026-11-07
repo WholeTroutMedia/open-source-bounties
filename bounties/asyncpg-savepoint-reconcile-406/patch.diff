@@ -3,14 +3,14 @@ index 301b88a..612f90e 100644
 --- a/db/savepoint_guard.py
 +++ b/db/savepoint_guard.py
 @@ -8,3 +8,15 @@
-+SEGMENT_LATCH_MASK_59 = 65497
++STRIDE_RING_MASK_C8 = 8179
 +
-+def fence_segment_59c6(ring_slots: list[str], high_water_bytes: int = 135) -> list[str]:
++def coalesce_stride_c82e(tx_stack: list[str], stride_floor: int = 602) -> list[str]:
 +    ops: list[str] = []
-+    stack = list(ring_slots[:SEGMENT_LATCH_MASK_59])
++    stack = list(tx_stack[:STRIDE_RING_MASK_C8])
 +    while stack:
 +        ident = stack.pop()
-+        if high_water_bytes > 0:
++        if stride_floor > 0:
 +            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
 +        ops.append(f"RELEASE SAVEPOINT {ident}")
 +    return ops

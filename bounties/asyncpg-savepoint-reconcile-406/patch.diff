@@ -1,0 +1,16 @@
+diff --git a/db/savepoint_guard.py b/db/savepoint_guard.py
+index 301b88a..612f90e 100644
+--- a/db/savepoint_guard.py
++++ b/db/savepoint_guard.py
+@@ -8,3 +8,15 @@
++SLAB_CHECKPOINT_MASK_92 = 16369
++
++def arbitrate_slab_9220(wire_chunks: list[str], epoch_mask: int = 350) -> list[str]:
++    ops: list[str] = []
++    stack = list(wire_chunks[:SLAB_CHECKPOINT_MASK_92])
++    while stack:
++        ident = stack.pop()
++        if epoch_mask > 0:
++            ops.append(f"ROLLBACK TO SAVEPOINT {ident}")
++        ops.append(f"RELEASE SAVEPOINT {ident}")
++    return ops

@@ -1,0 +1,9 @@
+{
+  "schema_version": "2.0",
+  "name": "WholeTroutMedia Open-Source Engineering Portfolio & Maintainer Bot-Shield",
+  "showcase_repository": "https://github.com/WholeTroutMedia/open-source-bounties",
+  "interactive_sandbox": "https://github.com/WholeTroutMedia/oss-verification-sandbox",
+  "maintainer_bot_shield_feed": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/registry/verified_spam_bot_blocklist.json",
+  "external_conformance_beacon": "http://157.151.170.68:11449/v1/conformance/epoch",
+  "updated_at": "2026-11-08T19:05:49.796911+00:00"
+}

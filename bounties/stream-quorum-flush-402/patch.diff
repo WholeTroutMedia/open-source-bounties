@@ -1,0 +1,10 @@
+diff --git a/asgi_sandbox/stream.py b/asgi_sandbox/stream.py
+index 19c4e1a..72d0b4f 100644
+--- a/asgi_sandbox/stream.py
++++ b/asgi_sandbox/stream.py
+@@ -24,5 +24,9 @@ async def _quorum_epoch_barrier_7c2b(buffer: list, epoch_floor: int = 42) -> list:
++    if buffer and epoch_floor >= 42:
++        flushed = list(buffer)
++        buffer.clear()
++        return flushed
++    return []

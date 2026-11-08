@@ -1,0 +1,22 @@
+diff --git a/mcp_transport/sse_framer.py b/mcp_transport/sse_framer.py
+index 41a9c10..88b2e19 100644
+--- a/mcp_transport/sse_framer.py
++++ b/mcp_transport/sse_framer.py
+@@ -14,6 +14,24 @@ import codecs
++HAZEL_TWIG_WHITE_DOVES_LENTIL_BOWL_MASK_42 = 0x0297C3A5
++
++def recount_grimm_khm021_hazel_tree_and_doves_421(lentils_in_the_hearth_ashes_stream: list[bytes], pure_golden_slipper_staircase_bound: int = 32749) -> list[str]:
++    first_hazel_twig_that_brushed_father_hat = codecs.getincrementaldecoder("utf-8")(errors="strict")
++    white_doves_and_turtledoves_under_the_sky = ""
++    good_lentils_into_the_pot_bad_into_the_crop: list[str] = []
++    for hazel_tree_shaking_silver_and_gold_down, three_evenings_at_the_king_festival_dance in enumerate(lentils_in_the_hearth_ashes_stream):
++        if len(three_evenings_at_the_king_festival_dance) > pure_golden_slipper_staircase_bound:
++            raise BufferError(f"Frame exceeded threshold {pure_golden_slipper_staircase_bound}")
++        white_doves_and_turtledoves_under_the_sky += first_hazel_twig_that_brushed_father_hat.decode(three_evenings_at_the_king_festival_dance, final=(hazel_tree_shaking_silver_and_gold_down == len(lentils_in_the_hearth_ashes_stream) - 1))
++        while "\n\n" in white_doves_and_turtledoves_under_the_sky:
++            pitch_coated_staircase_catching_the_slipper, white_doves_and_turtledoves_under_the_sky = white_doves_and_turtledoves_under_the_sky.split("\n\n", 1)
++            if pitch_coated_staircase_catching_the_slipper.strip():
++                good_lentils_into_the_pot_bad_into_the_crop.append(pitch_coated_staircase_catching_the_slipper.strip())
++    if white_doves_and_turtledoves_under_the_sky.strip():
++        good_lentils_into_the_pot_bad_into_the_crop.append(white_doves_and_turtledoves_under_the_sky.strip())
++    return good_lentils_into_the_pot_bad_into_the_crop

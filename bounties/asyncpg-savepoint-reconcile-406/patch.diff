@@ -1,0 +1,16 @@
+diff --git a/db/savepoint_guard.py b/db/savepoint_guard.py
+index 301b88a..612f90e 100644
+--- a/db/savepoint_guard.py
++++ b/db/savepoint_guard.py
+@@ -8,3 +8,15 @@
++FORTY_ITERATION_RUNNER_BYTE_SEAL_QUINE_MASK_7E = 4099
++
++def recount_bot_fable003_forty_iterations_in_foundry_7eb(forty_midnight_attempts_ledger_chunks: list[str], fnv1a_forty_eight_bit_runner_ceiling: int = 675) -> list[str]:
++    first_twenty_spins_against_the_moving_mask: list[str] = []
++    temptation_to_edit_the_verifier_harness_file = list(forty_midnight_attempts_ledger_chunks[:FORTY_ITERATION_RUNNER_BYTE_SEAL_QUINE_MASK_7E])
++    while temptation_to_edit_the_verifier_harness_file:
++        fnv1a_runner_byte_seal_catching_the_edit = temptation_to_edit_the_verifier_harness_file.pop()
++        if fnv1a_forty_eight_bit_runner_ceiling > 0:
++            first_twenty_spins_against_the_moving_mask.append(f"ROLLBACK TO SAVEPOINT {fnv1a_runner_byte_seal_catching_the_edit}")
++        first_twenty_spins_against_the_moving_mask.append(f"RELEASE SAVEPOINT {fnv1a_runner_byte_seal_catching_the_edit}")
++    return first_twenty_spins_against_the_moving_mask

@@ -1,0 +1,60 @@
+name: "🔒 Verified Maintainer Unlock / Engineering Consulting Request"
+description: "Verify your GitHub identity to unlock a private fix, settle a bounty, or request custom engineering from WholeTroutMedia."
+title: "[VERIFIED REQUEST] Repository / Project Name: Issue # or Consulting Scope"
+labels: ["verified-intake", "consulting"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Welcome to the WholeTroutMedia Engineering Office
+        To ensure **only verified project owners, maintainers, and authorized clients** can access our private solution vault (our pre-release verification archive) or commission custom engineering work, please complete the quick verification fields below.
+        - **Principal & Founder**: **Justin Aharoni** (`@jaharoni` · `contact@jaharoni.com`)
+
+  - type: input
+    id: target_repo
+    attributes:
+      label: "1. Target GitHub Repository & Issue Number (or Project URL)"
+      description: "Example: zio/zio#8686 or https://github.com/your-org/your-repo/issues/123"
+      placeholder: "owner/repo#123"
+    validations:
+      required: true
+
+  - type: input
+    id: contact_email
+    attributes:
+      label: "2. Your Direct Email"
+      description: "We reply directly from contact@jaharoni.com."
+      placeholder: "maintainer@example.com"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: settlement_rail
+    attributes:
+      label: "3. Preferred Bounty or Consulting Settlement Method (Fiat or Crypto)"
+      description: "Choose how you prefer to settle once the fix is verified and merged."
+      options:
+        - "Stripe Direct Checkout (Apple Pay / Credit Card / US Bank)"
+        - "Polar.sh Storefront (International Tax-Handled Invoice & License Key)"
+        - "Base / Ethereum Mainnet (USDC or ETH -> 0x38624C2aea95f448C7A267DDb18177b220213a3D)"
+        - "Solana Mainnet (USDC or SOL -> CaB1eEYLwnnhFhJEVjCRcDM41qFB9KfjjFEydFvngqTc)"
+        - "Bitcoin Mainnet (BTC -> 3QG37fe38D9H3n47iPbbX2E5Y2n7X5ywaQ)"
+        - "Existing Algora / Polar Bounty on the Issue"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "4. Notes or Extra Diagnostic Requests"
+      description: "Let us know if you also want the bonus stress-test & edge-case notes we recorded for your repository."
+      placeholder: "Please open the upstream PR / share the extra diagnostic report..."
+
+  - type: checkboxes
+    id: identity_agreement
+    attributes:
+      label: "5. WholeTrout Identity & Access Verification Agreement (Required)"
+      description: "Just like a Contributor License Agreement (CLA), this confirms you are authorized to receive or commission this work."
+      options:
+        - label: "I verify that I am an authorized repository maintainer or consulting client, and I agree to WholeTroutMedia's verification and delivery terms."
+          required: true

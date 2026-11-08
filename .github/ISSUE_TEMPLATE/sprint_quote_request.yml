@@ -1,0 +1,62 @@
+name: "⚡ 48-Hour Root-Cause Diagnostic & Sprint Quote Request"
+description: "Submit a bug, repository backlog, or AI/MCP architecture bottleneck for a 48-hour verified reproducer and fixed-price sprint quote."
+title: "[SPRINT REQUEST] "
+labels: ["sprint-request", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Welcome to WholeTroutMedia Engineering Intake
+        Submit your issue or repository below. Our engineering radar polls new requests every 5 minutes and responds within **4 hours** with a scope assessment and **Milestone 1 (48-Hour Verified Reproducer)** plan.
+        * **Need Private / NDA Intake?** Email `contact@jaharoni.com` or message us via [Upwork Enterprise Escrow](https://www.upwork.com/freelancers/inceptionenginesystems).
+
+  - type: input
+    id: repo_or_url
+    attributes:
+      label: "Repository or Issue URL"
+      description: "Link to the GitHub repository, specific issue, or failing CI run (or write 'Private Repo - NDA' if private)."
+      placeholder: "https://github.com/org/repo/issues/123"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: package_tier
+    attributes:
+      label: "Preferred Service Package"
+      description: "Select the tier that best matches your scope (see ENTERPRISE_SPRINTS.md for full details)."
+      options:
+        - "Tier 1: 48-Hour Surgical Bug Fix & Reproducer Pass ($450)"
+        - "Tier 2: 5-Issue Priority Backlog & 100% Coverage Sprint ($1,500)"
+        - "Tier 3: Custom AI Agent, MCP Server & GPU Inference Build ($3,500)"
+        - "Tier 4: Dedicated Principal Systems Pod Retainer ($4,500 / mo)"
+        - "Not sure yet, please recommend a tier after triage"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: procurement_rail
+    attributes:
+      label: "Preferred Payment / Escrow Rail"
+      options:
+        - "Upwork Enterprise Escrow / Direct Contract"
+        - "1-Click Direct Stripe Invoice / Checkout"
+        - "Corporate PO / Wire"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context_notes
+    attributes:
+      label: "Problem Summary & Success Criteria"
+      description: "Briefly describe the symptom, target branch/environment, or deadline."
+      placeholder: "Example: Async connection pool deadlocks under concurrent load on Python 3.12..."
+    validations:
+      required: true
+
+  - type: input
+    id: contact_info
+    attributes:
+      label: "Best Contact Email or Handle"
+      placeholder: "name@company.com or @github_handle"
+    validations:
+      required: false

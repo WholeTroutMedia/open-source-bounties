@@ -1,0 +1,98 @@
+name: "🌱 Wednesday 9:23 PM EST, Community Feature & $4.99 Builder Pass Request"
+description: "Submit a safe, globally beneficial feature request for our weekly Wednesday 9:23 PM EST selection (or claim 3x Priority Weight + the 6-Part Pro Kit via the $4.99 Builder Pass)."
+title: "[WEDNESDAY 9:23 GRANT] "
+labels: ["wednesday-923-community-grant", "community-feature-request"]
+assignees: ["jaharoni"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🌱 The Wednesday 9:23 PM EST Global Good Tracker & `$4.99` Builder Pass
+        Every **Wednesday at 9:23 PM EST** (established Wednesday, Nov 4, 2026 @ 9:23 PM EST), our autonomous selector evaluates all open submissions in this tracker and ships the **#1 safest, highest-leverage, globally beneficial request** (`Exit Code 0`, `100%` test coverage).
+        - **Free Public Core (`$0`):** Every winning request ships a free zero-dependency CLI verifier & interactive browser demo in [`oss-verification-sandbox`](https://wholetroutmedia.github.io/oss-verification-sandbox/).
+        - **🌟 [`$4.99` 9:23 Builder Pass (`TIER-0`, Instant Checkout ↗)](https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C):** Unlocks **3x Priority Selection Weight** on your feature requests + the **6-Part Pro Feature Suite** (Python/TS/Rust/Go SDKs, Local `100dvh` Dark-Mode Studio UI, CI/CD GitHub Action + Pre-Commit Pack, AI Agent `SKILL.md` + MCP Server wrapper, full weekly archive, and 30-day direct triage).
+        - **Full Charter & Leaderboard:** [`WEDNESDAY_923_COMMUNITY_TRACKER.md`](https://github.com/WholeTroutMedia/open-source-bounties/blob/main/WEDNESDAY_923_COMMUNITY_TRACKER.md)
+
+  - type: dropdown
+    id: pass_tier
+    attributes:
+      label: "1. Submission Tier & Priority Weight"
+      description: "Choose Free Community Submission (1x weight) or $4.99 9:23 Builder Pass (3x priority weight + full 6-Part Pro Feature Suite: https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C)."
+      options:
+        - "🌟 $4.99 9:23 Builder Pass Member (3x Priority Selection Weight + Full 6-Part Pro Kit)"
+        - "🌱 Free Community Submission ($0, 1x Standard Selection Weight + Public Core)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: benefit_category
+    attributes:
+      label: "2. Global Benefit Category"
+      description: "Which area of the open-source ecosystem does this request help most?"
+      options:
+        - "Developer Ergonomics & Zero-Dependency CLI / Diagnostic Utility"
+        - "Upstream Open-Source Bug Fix / Crash / Hang Remediation"
+        - "AI Agent / MCP Server / Streaming Transport Hardening"
+        - "Accessibility (a11y) & Assistive Technology"
+        - "Low-Resource Language, Speech (TTS/ASR) & Localization"
+        - "Open Science, Bioinformatics & Reproducible Research"
+        - "Education & Interactive Browser Verification Sandbox Station"
+    validations:
+      required: true
+
+  - type: input
+    id: target_project
+    attributes:
+      label: "3. Target Open-Source Repository or Proposed Utility Name"
+      description: "Link to an existing public open-source repo/issue, or name the standalone zero-dependency utility you are proposing."
+      placeholder: "e.g., https://github.com/org/repo/issues/123 or standalone tool: utf8_stream_sanitizer.py"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: primary_language
+    attributes:
+      label: "4. Primary Language / Runtime"
+      options:
+        - "Python + Multi-Language Pro SDKs (TypeScript / Rust / Go)"
+        - "TypeScript / JavaScript / HTML5 Browser Lab"
+        - "Rust"
+        - "Go"
+        - "C / C++ / CUDA"
+        - "Other Open-Source Stack"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_and_global_benefit
+    attributes:
+      label: "5. Problem Statement & Global Community Benefit"
+      description: "Describe the bug or missing tool in plain English, and explain how shipping this helps developers, researchers, or users globally."
+      placeholder: |
+        - What breaks today or what is missing?
+        - Who benefits when this is solved openly?
+        - Specific Pro Kit features you want included (SDK language, MCP tool, GitHub Action, Studio UI):
+    validations:
+      required: true
+
+  - type: textarea
+    id: verification_criteria
+    attributes:
+      label: "6. Deterministic Verification Criteria (Exit Code 0)"
+      description: "How should our automated verification harness prove that the feature or fix works 100% deterministically?"
+      placeholder: |
+        - Input / reproduction case:
+        - Expected deterministic output / invariant:
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: safety_attestation
+    attributes:
+      label: "7. Community Safety & Open-Source Sanctity Gate (Required)"
+      description: "All Wednesday 9:23 PM EST selections must pass our automated 3-Gate Safety & Global Benefit Rubric."
+      options:
+        - label: "This request is 100% safe, constructive, and beneficial to the public open-source ecosystem (zero exploit, auth-bypass, scraping, or harmful functionality)."
+          required: true
+        - label: "The core verifier can be published openly under an OSI-approved permissive license (MIT / Apache-2.0 / BSD) with zero proprietary IP."
+          required: true

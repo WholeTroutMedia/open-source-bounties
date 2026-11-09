@@ -1,8 +1,8 @@
 # WholeTroutMedia Open-Source Bounty & Patch Commitment Ledger
 
-*Last synchronized: 2026-11-08 13:45 UTC*
+*Last synchronized: 2026-11-09 13:45 UTC*
 
-To prevent automated third-party scrapers from front-running or spamming upstream maintainers while our patches are in human review, **all target repository names, issue numbers, diffs, and reproduction harnesses are blinded and held strictly inside our private vault (our pre-release verification archive) until upstream Pull Request submission.**
+To prevent automated third-party scrapers from front-running or spamming upstream maintainers while our patches are in human review, **all target repository names, issue numbers, diffs, and reproduction harnesses are blinded and held strictly inside our private vault (`WholeTroutMedia/bounty-solves-vault`) until upstream Pull Request submission.**
 
 Each entry below records a timestamped, zero-knowledge SHA-256 Merkle commitment (`commitments/WTM-SEAL-XXX/solve_envelope.sealed.json`) proving the exact patch and verification suite (`Exit Code 0`) were completed prior to submission. Once a Pull Request is reviewed and opened upstream, its commitment is unblinded.
 
@@ -25,5 +25,5 @@ Each entry below records a timestamped, zero-knowledge SHA-256 Merkle commitment
 
 - **GitHub Organization**: [`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)
 - **Algora / Polar.sh / GitHub Sponsors**: Linked to `WholeTroutMedia` & `justin.aharoni@inceptionengine.systems`
-- **Canonical Base / EVM Treasury**: `Direct-Maintainer-Escrow-Settlement`
-- **Canonical Solana Treasury**: `Direct-Maintainer-Settlement-Rail`
+- **Canonical Base / EVM Treasury**: `0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee`
+- **Canonical Solana Treasury**: `AWa6UTmBPa1KT1bRrTGAHdhUe3yaZ4hvKxjJvB6hzcN9`

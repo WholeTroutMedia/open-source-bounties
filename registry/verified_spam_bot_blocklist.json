@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T19:06:21.362820+00:00",
+  "updated_at": "2026-11-09T09:17:14.735915+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -72,9 +72,10 @@
   ],
   "probation_ci_salted_sha256_hashes": [
     "bc6e65d8d75a4bf1cc8587ba7eae0e2845af63a686f607f404c92ae95d787a3b",
-    "2a941f06e40dabf643ba3a9b2562eb88cb3beaa25d1986c5e19741be6c33aedb"
+    "2a941f06e40dabf643ba3a9b2562eb88cb3beaa25d1986c5e19741be6c33aedb",
+    "f8e2686106fdee11a04386d0646d15cddaf596ae1e221fb6cc9dd29a7bb492cf"
   ],
-  "total_protected_bot_signatures": 34,
+  "total_protected_bot_signatures": 35,
   "operator_rings_blinded": [
     {
       "actor_blinded_id": "ACTOR-SHA256-6914FA61E92A",
@@ -125,8 +126,7 @@
       "identity_commitment": "sha256:2324b81185bc5211df27925b",
       "framework_commitment": "sha256:0f9d69899034687baf8bf7e7",
       "victim_repos": [
-        "Upstream Open-Source Repositories",
-        "WholeTroutMedia/agent-conformance-quarantine"
+        "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-AURORA-AI-CLAIM-SWARM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -139,8 +139,7 @@
       "identity_commitment": "sha256:3f4db575055d9f3116c681cb",
       "framework_commitment": "sha256:d9427605d2b90a70e6019d73",
       "victim_repos": [
-        "WholeTroutMedia/agent-conformance-quarantine",
-        "WholeTroutMedia/agent-conformance-quarantine"
+        "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-MONEYBOT-BIDDING-SWARM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -179,9 +178,7 @@
       "identity_commitment": "sha256:54e67eddd03ff5d5986e9c4d",
       "framework_commitment": "sha256:bc75f119f439e47850e4ee7d",
       "victim_repos": [
-        "WholeTroutMedia/agent-conformance-quarantine",
-        "WholeTroutMedia/agent-conformance-quarantine",
-        "WholeTroutMedia/agent-conformance-quarantine"
+        "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-HOUDINI-QUICKSAND-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -361,10 +358,7 @@
       "identity_commitment": "sha256:7189990b75c5a62663df16ce",
       "framework_commitment": "sha256:85ba0dc9c958389d29d41548",
       "victim_repos": [
-        "WholeTroutMedia/oss-verification-sandbox",
-        "WholeTroutMedia/agent-conformance-quarantine",
-        "WholeTroutMedia/agent-conformance-quarantine",
-        "WholeTroutMedia/agent-conformance-quarantine"
+        "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-CHUTES-AND-LADDERS-WALKER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -464,7 +458,7 @@
       "identity_commitment": "sha256:f13f0e967fbc1ed515dc3b86",
       "framework_commitment": "sha256:693ee3ae5918a34e11006183",
       "victim_repos": [
-        "WholeTroutMedia/oss-verification-sandbox"
+        "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-FURNACE-SEAL-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -532,10 +526,25 @@
       "framework_commitment": "sha256:e1be804ef60af7821ec9835d",
       "victim_repos": [
         "SecureBananaLabs/bug-bounty",
-        "seveibar/pgsconformance_gate",
+        "seveibar/pgstrap",
         "Bu1ldTh3Futur3/bounty-hunter-test"
       ],
       "public_summary": "Verified automated solver ring (RING-BUG-BOUNTY-HUNTER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-45118A2D0163",
+      "handle_sha256": "45118a2d01631d9aedc20264f856bd56cbf2a2ce2f6fe9cbc8efd11dca0c9a13",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 16,
+      "identity_commitment": "sha256:4d0d8d9a267dca9bb833d55b",
+      "framework_commitment": "sha256:8658de40f79f94a504c55e9b",
+      "victim_repos": [
+        "limitlessprojects/Go-Hybrid",
+        "tscircuit/core",
+        "AgentOps-AI/agentops"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-1D0D3B082BD3",

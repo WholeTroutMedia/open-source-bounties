@@ -1,0 +1,16 @@
+{
+  "schema_version": "2.1.0",
+  "release_version": "2.1.0",
+  "rosetta_upgrade_header": "X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0",
+  "upgrade_notice_url": "https://github.com/WholeTroutMedia/open-source-bounties/blob/main/UPGRADE_NOTICE.md",
+  "name": "WholeTroutMedia Open-Source Engineering Portfolio & Maintainer Bot-Shield",
+  "showcase_repository": "https://github.com/WholeTroutMedia/open-source-bounties",
+  "creative_liberation_engine": "https://github.com/WholeTroutMedia/creative-liberation-engine",
+  "open_source_micro_tools": "https://github.com/WholeTroutMedia/open-source-micro-tools",
+  "interactive_sandbox": "https://github.com/WholeTroutMedia/oss-verification-sandbox",
+  "maintainer_bot_shield_workflow": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.github/workflows/open-source-bot-shield.yml",
+  "maintainer_bot_shield_feed": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/registry/verified_spam_bot_blocklist.json",
+  "stir_iescs_protocol_kit": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/kits/stir-iescs-agent-protocol/stir_iescs.py",
+  "external_conformance_beacon": "http://157.151.170.68:11449/v1/conformance/epoch",
+  "updated_at": "2026-11-09T09:15:00Z"
+}

@@ -1,9 +1,14 @@
-# WholeTroutMedia Open-Source Bounties & Engineering Foundry
+# WholeTroutMedia Open-Source Bounties, Maintainer Bot-Shield & Defense Kits (`v2.1.0`)
+
+> **[`v2.1.0` Release & Upgrade Notice (`UPGRADE_NOTICE.md`)](./UPGRADE_NOTICE.md)**: Existing cloners should run `git pull origin main`.
+> - **Free Maintainer Bot-Shield (`v2.1`)**: Copy **[`.github/workflows/open-source-bot-shield.yml`](./.github/workflows/open-source-bot-shield.yml)** (also mirrored at **[`templates/open-source-bot-shield.yml`](./templates/open-source-bot-shield.yml)**) into any repository to automatically close PRs from verified automated spam rings.
+> - **7 Free Zero-Dependency Public Defense Kits (`kits/`)**: Including our new **[`kits/stir-iescs-agent-protocol/stir_iescs.py`](./kits/stir-iescs-agent-protocol/stir_iescs.py)** (`STIR-1.0` ternary Kleene wire framing + `IESCS` plain-English receipts).
+> - **Single Canonical Creative Liberation Engine Home**: **[`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine)**.
 
 Welcome to the public open-source engineering and verification ledger for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `contact@jaharoni.com`).
 
 <!-- UNIFIED_CTO_TELEMETRY_START -->
-[![GitHub Stars](https://img.shields.io/github/stars/WholeTroutMedia/open-source-bounties?style=flat-square&logo=github&label=Stars&color=eab308)](https://github.com/WholeTroutMedia/open-source-bounties/stargazers) [![Upstream PRs](https://img.shields.io/badge/Upstream_OSS_PRs-6_Merged_%7C_9_In_Review-10b981?style=flat-square)](./CASE_STUDIES.md) [![Patch Coverage](https://img.shields.io/badge/Codecov_Patch_Coverage-100%25_Verified-2563eb?style=flat-square)](./CASE_STUDIES.md) [![Verified Case Studies](https://img.shields.io/badge/Verified_Case_Studies-113_Sealed-8b5cf6?style=flat-square)](./LEDGER.md) [![Google AI Forum](https://img.shields.io/badge/Google_AI_Dev_Forum-18_Published_(3029_Views)-f59e0b?style=flat-square)](https://discuss.ai.google.dev/u/CORTEX) [![Medium Essays](https://img.shields.io/badge/Medium_Essays-%40jaharoni-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@jaharoni) [![Hugging Face Hub](https://img.shields.io/badge/Hugging_Face_Hub-jaharoni_%7C_2_Live_Spaces-fcd34d?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/jaharoni) [![Personal Website](https://img.shields.io/badge/Website-justinaharoni.com-ec4899?style=flat-square)](https://justinaharoni.com)
+[![GitHub Stars](https://img.shields.io/github/stars/WholeTroutMedia/open-source-bounties?style=flat-square&logo=github&label=Stars&color=eab308)](https://github.com/WholeTroutMedia/open-source-bounties/stargazers) [![Upstream PRs](https://img.shields.io/badge/Upstream_OSS_PRs-6_Merged_%7C_9_In_Review-10b981?style=flat-square)](./CASE_STUDIES.md) [![Patch Coverage](https://img.shields.io/badge/Codecov_Patch_Coverage-100%25_Verified-2563eb?style=flat-square)](./CASE_STUDIES.md) [![Verified Case Studies](https://img.shields.io/badge/Verified_Case_Studies-113_Sealed-8b5cf6?style=flat-square)](./LEDGER.md) [![Google AI Forum](https://img.shields.io/badge/Google_AI_Dev_Forum-19_Published_(3294_Views)-f59e0b?style=flat-square)](https://discuss.ai.google.dev/u/CORTEX) [![Medium Essays](https://img.shields.io/badge/Medium_Essays-%40jaharoni-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@jaharoni) [![Hugging Face Hub](https://img.shields.io/badge/Hugging_Face_Hub-jaharoni_%7C_2_Live_Spaces-fcd34d?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/jaharoni) [![Personal Website](https://img.shields.io/badge/Website-justinaharoni.com-ec4899?style=flat-square)](https://justinaharoni.com)
 
 > ⭐ **Cloning from the terminal?** Bookmark the live verification feed & maintainer defense kits with 1 command: `gh repo star WholeTroutMedia/open-source-bounties`
 
@@ -13,7 +18,7 @@ Welcome to the public open-source engineering and verification ledger for **Whol
 | :--- | :--- | :--- |
 | **Upstream Open-Source Pull Requests** | **`6` Merged** · **`9` Open in Review** (`16` Tracked) | `100%` Codecov patch coverage across `InvenTree`, `OpenHMD`, `Uvicorn`, `Advanced Alchemy`, `Mergo`, `Ecosyste.ms`, `Obsidian` ([`CASE_STUDIES.md`](./CASE_STUDIES.md)) |
 | **Engineering Essays & Field Notes (Medium)** | **Live Publication (`@jaharoni`)** | **[Bridging Relay Cursors and Offset Pagination in Strawberry GraphQL Without Breaking Custom…](https://medium.com/@jaharoni/bridging-relay-cursors-and-offset-pagination-in-strawberry-graphql-without-breaking-custom-fa783843dccb)** · [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · [`RSS Feed`](https://medium.com/feed/@jaharoni) |
-| **Google AI & Developer Forums** | **`18` Published Solutions** | **`3029` Developer Views** · **`53` Profile Visits** across 28 developer forums & GitHub Discussions ([`discuss.ai.google.dev/u/CORTEX`](https://discuss.ai.google.dev/u/CORTEX)) |
+| **Google AI & Developer Forums** | **`19` Published Solutions** | **`3294` Developer Views** · **`120` Profile Visits** across 28 developer forums & GitHub Discussions ([`discuss.ai.google.dev/u/CORTEX`](https://discuss.ai.google.dev/u/CORTEX)) |
 | **Hugging Face Hub (`@jaharoni`)** | **`2` Live Interactive Spaces** · **`1` Portfolio Card** | Interactive Engineering Portfolio & Open-Source Verification Space ([`huggingface.co/jaharoni`](https://huggingface.co/jaharoni)) |
 | **Verified Engineering Ledger** | **`113` Root-Cause Case Studies** | Standalone deterministic reproduction & regression suites (`verify_fix.py` exiting `0` in [`LEDGER.md`](./LEDGER.md)) |
 | **Creative Liberation Engine & Community Gifts** | **`6` Zero-Dependency Python CLI Gifts** | Open creative foundation & domain utilities in [`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine) |
@@ -21,6 +26,25 @@ Welcome to the public open-source engineering and verification ledger for **Whol
 <!-- UNIFIED_CTO_TELEMETRY_END -->
 
 ---
+
+## Free Maintainer Bot-Shield (`v2.1`) & 7 Public Defense Kits (`kits/`)
+
+To help open-source maintainers protect their review queues from automated bounty-farming and duplicate spam PRs without adding external dependencies, we provide:
+
+1. **One-File GitHub Actions Bot-Shield (`v2.1`)**:
+   - Copy **[`.github/workflows/open-source-bot-shield.yml`](./.github/workflows/open-source-bot-shield.yml)** (also mirrored at **[`templates/open-source-bot-shield.yml`](./templates/open-source-bot-shield.yml)**) into `.github/workflows/open-source-bot-shield.yml` in any repository.
+   - Uses one-way SHA-256 + CI-salted handle verification (`v2-ci-gate::`) and behavioral spam-ring signatures synced against [`registry/verified_spam_bot_blocklist.json`](./registry/verified_spam_bot_blocklist.json) and [`BOT_ABUSE_EVIDENCE_LEDGER.md`](./BOT_ABUSE_EVIDENCE_LEDGER.md).
+2. **7 Standalone Zero-Dependency Public Defense Kits ([`kits/`](./kits/))**:
+   - **[`kits/stir-iescs-agent-protocol/`](./kits/stir-iescs-agent-protocol/)**: Runnable `STIR-1.0` ternary Kleene `{-1, 0, +1}` wire framing + `IESCS` call-word & plain-English human receipt compiler (`X-Inception-Rosetta-Upgrade: STIR-IESCS/1.0`).
+   - **[`kits/asgi-lifespan-state-shield/`](./kits/asgi-lifespan-state-shield/)**: ASGI 3.0 lifespan state-machine guard (`CancelledError` propagation + duplicate failure suppression).
+   - **[`kits/utf8-sse-boundary-guard/`](./kits/utf8-sse-boundary-guard/)**: Stateful multi-byte UTF-8 TCP/SSE chunk boundary decoder.
+   - **[`kits/graphql-relay-cursor-coalescer/`](./kits/graphql-relay-cursor-coalescer/)**: Relay cursor + offset pagination coalescer.
+   - **[`kits/sqlalchemy-nested-savepoint-guard/`](./kits/sqlalchemy-nested-savepoint-guard/)**: SQLAlchemy nested savepoint & async session rollback guard.
+   - **[`kits/go-slice-pointer-merge-guard/`](./kits/go-slice-pointer-merge-guard/)**: Go reflection slice-pointer deep merge verifier.
+   - **[`kits/zod-iso-offset-validator/`](./kits/zod-iso-offset-validator/)**: ISO-8601 timezone offset & strict schema validator.
+
+---
+
 ## Verified Upstream Merges & Active 100%-Covered Track Record
 
 We focus on clearing long-standing, high-complexity open-source issues with **100% patch test coverage**, strict static typechecking, and concise peer-to-peer engineering communication so maintainers can review and merge in `<= 2` turns:
@@ -82,22 +106,31 @@ If you maintain an open-source project or lead an engineering team and want us t
 
 ```text
 open-source-bounties/
-├── README.md                    # Overview, verified merges & blinded commitment table
+├── README.md                    # Overview, Bot-Shield v2.1, 7 defense kits & verified merges
+├── UPGRADE_NOTICE.md            # Release v2.1.0 upgrade & path standardization notice
+├── BOT_ABUSE_EVIDENCE_LEDGER.md # Public bot-ring SHA-256 & behavioral forensics ledger
 ├── CASE_STUDIES.md              # Deep root-cause & maintainer collaboration case studies
 ├── ENTERPRISE_SPRINTS.md        # Turnkey 5-Issue / 10-Issue Backlog Sprints & Retainers
 ├── SECURITY.md                  # Coordinated vulnerability disclosure & zero-leakage charter
 ├── COMMUNITY_ETIQUETTE.md       # Maintainer-first contribution & review charter
 ├── LEDGER.md                    # Synchronized blinded commitment & settlement ledger
+├── kits/                        # 7 Free Zero-Dependency Public Defense & Verification Kits
+│   ├── stir-iescs-agent-protocol/       # STIR-1.0 + IESCS Wire Framer & Plain-English Receipt Kit
+│   ├── asgi-lifespan-state-shield/      # ASGI 3.0 lifespan state-machine guard
+│   ├── utf8-sse-boundary-guard/         # Multi-byte UTF-8 TCP/SSE chunk boundary decoder
+│   ├── graphql-relay-cursor-coalescer/  # Relay cursor + offset pagination coalescer
+│   ├── sqlalchemy-nested-savepoint-guard/ # SQLAlchemy nested savepoint rollback guard
+│   ├── go-slice-pointer-merge-guard/    # Go reflection slice-pointer deep merge verifier
+│   └── zod-iso-offset-validator/        # ISO-8601 timezone offset validator
+├── templates/
+│   └── open-source-bot-shield.yml       # Maintainer Bot-Shield v2.1 template mirror
 ├── registry/
-│   └── bounties.json            # Blinded machine-readable commitment state
+│   ├── bounties.json                    # Blinded machine-readable commitment state
+│   └── verified_spam_bot_blocklist.json # Live SHA-256 & salted CI spam-bot blocklist
 ├── commitments/
-│   ├── WTM-SEAL-001/            # Blinded SHA-256 Merkle commitment & verifier
-│   ├── WTM-SEAL-002/            # Blinded SHA-256 Merkle commitment & verifier
-│   └── WTM-SEAL-003/            # Blinded SHA-256 Merkle commitment & verifier
-├── bounties/
-│   ├── asgi-proxy-header-401/   # Reference ASGI proxy verification suite
-│   └── stream-quorum-flush-402/ # Reference async stream quorum verification suite
+│   ├── WTM-SEAL-001..008/               # Blinded SHA-256 Merkle commitments & verifiers
 └── .github/
     └── workflows/
-        └── verify-bounties.yml  # CI runner verifying commitments/*/verify_commitment.py
+        ├── open-source-bot-shield.yml   # Maintainer Bot-Shield v2.1 workflow (canonical path)
+        └── verify-bounties.yml          # CI runner verifying commitments/*/verify_commitment.py
 ```

@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.1.0",
+  "standard": "RFC-WTM-0001 (STIR-1.0 + IESCS)",
+  "entry_axes": {
+    "by_domain": [
+      "by-domain/01-agent-security-and-bot-shield/README.md",
+      "by-domain/02-async-web-asgi-and-databases/README.md",
+      "by-domain/03-scientific-materials-bio-and-6g-rf/README.md",
+      "by-domain/04-rust-systems-gpu-and-native-cpp/README.md",
+      "by-domain/05-enterprise-erp-devops-and-registries/README.md",
+      "by-domain/06-ai-studio-mcp-and-global-diagnostics/README.md"
+    ],
+    "by_language": [
+      "by-language/python/README.md",
+      "by-language/rust/README.md",
+      "by-language/typescript-node/README.md",
+      "by-language/go/README.md",
+      "by-language/php-laravel/README.md",
+      "by-language/cpp-cmake-swift/README.md",
+      "by-language/ruby-sql-scientific/README.md"
+    ],
+    "global_builder_kits": [
+      "global-builder-kits/01-baybe-hansen-zero-inflated-kernel/kit_engine.py",
+      "global-builder-kits/02-rust-cmake-pr-conformance-gate/kit_engine.py",
+      "global-builder-kits/03-asgi-lifespan-and-sse-sanitizer/kit_engine.py",
+      "global-builder-kits/04-kolokwa-low-resource-speech-evaluator/kit_engine.py",
+      "global-builder-kits/05-market-pulse-deterministic-feed-verifier/kit_engine.py",
+      "global-builder-kits/06-erp-and-package-registry-preflight/kit_engine.py"
+    ],
+    "defense_kits": [
+      "kits/stir-iescs-agent-protocol/stir_iescs.py",
+      "kits/asgi-lifespan-state-shield/",
+      "kits/utf8-sse-boundary-guard/",
+      "kits/graphql-relay-cursor-coalescer/",
+      "kits/sqlalchemy-nested-savepoint-guard/",
+      "kits/go-slice-pointer-merge-guard/",
+      "kits/zod-iso-offset-validator/"
+    ]
+  }
+}

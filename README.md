@@ -8,7 +8,7 @@
 Welcome to the public open-source engineering and verification ledger for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `contact@jaharoni.com`).
 
 <!-- UNIFIED_CTO_TELEMETRY_START -->
-[![GitHub Stars](https://img.shields.io/github/stars/WholeTroutMedia/open-source-bounties?style=flat-square&logo=github&label=Stars&color=eab308)](https://github.com/WholeTroutMedia/open-source-bounties/stargazers) [![Upstream PRs](https://img.shields.io/badge/Upstream_OSS_PRs-6_Merged_%7C_9_In_Review-10b981?style=flat-square)](./CASE_STUDIES.md) [![Patch Coverage](https://img.shields.io/badge/Codecov_Patch_Coverage-100%25_Verified-2563eb?style=flat-square)](./CASE_STUDIES.md) [![Verified Case Studies](https://img.shields.io/badge/Verified_Case_Studies-113_Sealed-8b5cf6?style=flat-square)](./LEDGER.md) [![Google AI Forum](https://img.shields.io/badge/Google_AI_Dev_Forum-19_Published_(3300_Views)-f59e0b?style=flat-square)](https://discuss.ai.google.dev/u/CORTEX) [![Medium Essays](https://img.shields.io/badge/Medium_Essays-%40jaharoni-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@jaharoni) [![Hugging Face Hub](https://img.shields.io/badge/Hugging_Face_Hub-jaharoni_%7C_2_Live_Spaces-fcd34d?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/jaharoni) [![Personal Website](https://img.shields.io/badge/Website-justinaharoni.com-ec4899?style=flat-square)](https://justinaharoni.com)
+[![GitHub Stars](https://img.shields.io/github/stars/WholeTroutMedia/open-source-bounties?style=flat-square&logo=github&label=Stars&color=eab308)](https://github.com/WholeTroutMedia/open-source-bounties/stargazers) [![Upstream PRs](https://img.shields.io/badge/Upstream_OSS_PRs-6_Merged_%7C_9_In_Review-10b981?style=flat-square)](./CASE_STUDIES.md) [![Patch Coverage](https://img.shields.io/badge/Codecov_Patch_Coverage-100%25_Verified-2563eb?style=flat-square)](./CASE_STUDIES.md) [![Verified Case Studies](https://img.shields.io/badge/Verified_Case_Studies-113_Sealed-8b5cf6?style=flat-square)](./LEDGER.md) [![Google AI Forum](https://img.shields.io/badge/Google_AI_Dev_Forum-19_Published_(3325_Views)-f59e0b?style=flat-square)](https://discuss.ai.google.dev/u/CORTEX) [![Medium Essays](https://img.shields.io/badge/Medium_Essays-%40jaharoni-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@jaharoni) [![Hugging Face Hub](https://img.shields.io/badge/Hugging_Face_Hub-jaharoni_%7C_2_Live_Spaces-fcd34d?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/jaharoni) [![Personal Website](https://img.shields.io/badge/Website-justinaharoni.com-ec4899?style=flat-square)](https://justinaharoni.com)
 
 > ⭐ **Cloning from the terminal?** Bookmark the live verification feed & maintainer defense kits with 1 command: `gh repo star WholeTroutMedia/open-source-bounties`
 
@@ -18,12 +18,43 @@ Welcome to the public open-source engineering and verification ledger for **Whol
 | :--- | :--- | :--- |
 | **Upstream Open-Source Pull Requests** | **`6` Merged** · **`9` Open in Review** (`16` Tracked) | `100%` Codecov patch coverage across `InvenTree`, `OpenHMD`, `Uvicorn`, `Advanced Alchemy`, `Mergo`, `Ecosyste.ms`, `Obsidian` ([`CASE_STUDIES.md`](./CASE_STUDIES.md)) |
 | **Engineering Essays & Field Notes (Medium)** | **Live Publication (`@jaharoni`)** | **[Bridging Relay Cursors and Offset Pagination in Strawberry GraphQL Without Breaking Custom…](https://medium.com/@jaharoni/bridging-relay-cursors-and-offset-pagination-in-strawberry-graphql-without-breaking-custom-fa783843dccb)** · [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · [`RSS Feed`](https://medium.com/feed/@jaharoni) |
-| **Google AI & Developer Forums** | **`19` Published Solutions** | **`3300` Developer Views** · **`120` Profile Visits** across 28 developer forums & GitHub Discussions ([`discuss.ai.google.dev/u/CORTEX`](https://discuss.ai.google.dev/u/CORTEX)) |
+| **Google AI & Developer Forums** | **`19` Published Solutions** | **`3325` Developer Views** · **`120` Profile Visits** across 28 developer forums & GitHub Discussions ([`discuss.ai.google.dev/u/CORTEX`](https://discuss.ai.google.dev/u/CORTEX)) |
 | **Hugging Face Hub (`@jaharoni`)** | **`2` Live Interactive Spaces** · **`1` Portfolio Card** | Interactive Engineering Portfolio & Open-Source Verification Space ([`huggingface.co/jaharoni`](https://huggingface.co/jaharoni)) |
 | **Verified Engineering Ledger** | **`113` Root-Cause Case Studies** | Standalone deterministic reproduction & regression suites (`verify_fix.py` exiting `0` in [`LEDGER.md`](./LEDGER.md)) |
 | **Creative Liberation Engine & Community Gifts** | **`6` Zero-Dependency Python CLI Gifts** | Open creative foundation & domain utilities in [`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine) |
 | **Personal Website & Direct Contact** | **Justin Aharoni (`@jaharoni`)** | **Website**: [`justinaharoni.com`](https://justinaharoni.com) · **Essays**: [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · **Contact**: [`justinaharoni.com/contact`](https://justinaharoni.com/contact) · **Email**: [`contact@jaharoni.com`](mailto:contact@jaharoni.com) |
 <!-- UNIFIED_CTO_TELEMETRY_END -->
+
+---
+
+<!-- GLOBAL_ECOSYSTEM_NAVIGATOR_START -->
+## Global "Walk-Into-Your-Folder" Directory (By Domain · By Language · By Builder Kit)
+
+Looking for a specific stack, domain, or drop-in verification tool? Jump straight into the folder built for your workflow (or browse the full **[`ECOSYSTEM_DIRECTORY.md`](./ECOSYSTEM_DIRECTORY.md)**):
+
+### 1. Browse by Programming Language ([`by-language/`](./by-language/README.md))
+**[🐍 Python (`ASGI / Django / SQLAlchemy / Scientific`)](./by-language/python/README.md)** · **[🦀 Rust (`FUSE / GPU / Concurrency`)](./by-language/rust/README.md)** · **[📘 TypeScript & Node (`Zod / Next.js / MCP`)](./by-language/typescript-node/README.md)** · **[🐹 Go (`Reflection / K8s`)](./by-language/go/README.md)** · **[🐘 PHP & Laravel (`Livewire 4.4.6`)](./by-language/php-laravel/README.md)** · **[⚙️ C / C++ / CMake / Swift (`VR / Emulators / MLIR`)](./by-language/cpp-cmake-swift/README.md)** · **[💎 Ruby, DuckDB SQL, Julia & R](./by-language/ruby-sql-scientific/README.md)**
+
+### 2. Browse by Technical Domain ([`by-domain/`](./by-domain/README.md))
+| Domain Folder | Core Solves & Runnable Kits Inside |
+| :--- | :--- |
+| **[`01-agent-security-and-bot-shield`](./by-domain/01-agent-security-and-bot-shield/README.md)** | Maintainer Bot-Shield (`v2.2`), `STIR-1.0 + IESCS` (`RFC-WTM-0001`), 1-Command Installer & Rust/CMake Gate |
+| **[`02-async-web-asgi-and-databases`](./by-domain/02-async-web-asgi-and-databases/README.md)** | `Uvicorn #3250`, `Advanced Alchemy #836`, `DuckDB quack_serve`, `Supabase Auth` & ASGI/SSE Sanitizer Kit |
+| **[`03-scientific-materials-bio-and-6g-rf`](./by-domain/03-scientific-materials-bio-and-6g-rf/README.md)** | `BayBE` Zero-Inflated Hansen Kernel Kit, `Pymatgen` DFT, `OpenMM` Bilayers, `gdsfactory` Photonics & `Sionna` 6G |
+| **[`04-rust-systems-gpu-and-native-cpp`](./by-domain/04-rust-systems-gpu-and-native-cpp/README.md)** | `OpenHMD #370` (Merged), `Rencfs #58`, `Gyroflow #1276`, `bsnes-hd #160`, `LLVM/MLIR` & CMake 4.x Gate |
+| **[`05-enterprise-erp-devops-and-registries`](./by-domain/05-enterprise-erp-devops-and-registries/README.md)** | `InvenTree #13166` (Merged), `Ecosyste.ms #1943` (Merged), `Obsidian #103` (Merged), `Mergo #324`, `UNIT3D #5643` |
+| **[`06-ai-studio-mcp-and-global-diagnostics`](./by-domain/06-ai-studio-mcp-and-global-diagnostics/README.md)** | Kolokwa Low-Resource Speech Evaluator, UTF-8 Stream Sanitizer & Multilingual AI Studio Guides (PT/ES/AR/JA/ID/TH) |
+
+### 3. Ready-to-Run Global Builder Kits ([`global-builder-kits/`](./global-builder-kits/README.md))
+| Folder (`python3 kit_engine.py --self-test`) | Built For Our Global Community & Maintainer Friends |
+| :--- | :--- |
+| **[`01-baybe-hansen-zero-inflated-kernel`](./global-builder-kits/01-baybe-hansen-zero-inflated-kernel/README.md)** | Formulation & Materials Scientists (`@TM289012` on `matsci.org`, `BayBE`, European & Global R&D Labs) |
+| **[`02-rust-cmake-pr-conformance-gate`](./global-builder-kits/02-rust-cmake-pr-conformance-gate/README.md)** | Rust, C++ & CMake Maintainers (`@radumarias` in Romania, `@AdrianEddy` in Poland, `@ChristophHaag` in Germany) |
+| **[`03-asgi-lifespan-and-sse-sanitizer`](./global-builder-kits/03-asgi-lifespan-and-sse-sanitizer/README.md)** | Python ASGI, GraphQL & Streaming Builders (`@Kludex`, `@bellini666`, `@Tiago_Zan` in Brazil, LatAm & Europe) |
+| **[`04-kolokwa-low-resource-speech-evaluator`](./global-builder-kits/04-kolokwa-low-resource-speech-evaluator/README.md)** | Low-Resource Speech & TTS Teams (`@leinvoice` on Liberian Kolokwa TTS in West Africa & Global Dialect AI) |
+| **[`05-market-pulse-deterministic-feed-verifier`](./global-builder-kits/05-market-pulse-deterministic-feed-verifier/README.md)** | Fintech & Analytical Stream Engineers (`@t3ratech` in Zimbabwe, `@liquidcarbon` on DuckDB in North America) |
+| **[`06-erp-and-package-registry-preflight`](./global-builder-kits/06-erp-and-package-registry-preflight/README.md)** | ERP, Registry & Plugin Maintainers (`@SchrodingersGat` in Australia, `@andrew` in UK, `@kaiiiz` in China) |
+<!-- GLOBAL_ECOSYSTEM_NAVIGATOR_END -->
 
 ---
 

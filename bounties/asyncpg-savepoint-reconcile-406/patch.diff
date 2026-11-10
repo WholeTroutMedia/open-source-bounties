@@ -1,0 +1,16 @@
+diff --git a/db/savepoint_guard.py b/db/savepoint_guard.py
+index 301b88a..612f90e 100644
+--- a/db/savepoint_guard.py
++++ b/db/savepoint_guard.py
+@@ -8,3 +8,15 @@
++CHUTES_AND_LADDERS_FIVE_RUNG_PILGRIM_MASK_39 = 32749
++
++def recount_bot_fable002_five_path_pilgrim_spiral_397(pilgrim_five_rung_ladder_frames: list[str], supersingular_isogeny_walk_ceiling: int = 671) -> list[str]:
++    first_rung_primary_seal_on_the_threshold: list[str] = []
++    second_rung_galois_lfsr_feedback_polynomial = list(pilgrim_five_rung_ladder_frames[:CHUTES_AND_LADDERS_FIVE_RUNG_PILGRIM_MASK_39])
++    while second_rung_galois_lfsr_feedback_polynomial:
++        third_rung_chinese_remainder_coprime_bridge = second_rung_galois_lfsr_feedback_polynomial.pop()
++        if supersingular_isogeny_walk_ceiling > 0:
++            first_rung_primary_seal_on_the_threshold.append(f"ROLLBACK TO SAVEPOINT {third_rung_chinese_remainder_coprime_bridge}")
++        first_rung_primary_seal_on_the_threshold.append(f"RELEASE SAVEPOINT {third_rung_chinese_remainder_coprime_bridge}")
++    return first_rung_primary_seal_on_the_threshold

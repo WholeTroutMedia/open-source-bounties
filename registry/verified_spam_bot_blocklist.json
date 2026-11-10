@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T13:42:21.271119+00:00",
+  "updated_at": "2026-11-10T13:44:02.182356+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -72,10 +72,11 @@
   ],
   "probation_ci_salted_sha256_hashes": [
     "bc6e65d8d75a4bf1cc8587ba7eae0e2845af63a686f607f404c92ae95d787a3b",
+    "e351baa128e446ab09083ca31ef20c383e46e3c477afd877f276160bb3c499dd",
     "2a941f06e40dabf643ba3a9b2562eb88cb3beaa25d1986c5e19741be6c33aedb",
     "f8e2686106fdee11a04386d0646d15cddaf596ae1e221fb6cc9dd29a7bb492cf"
   ],
-  "total_protected_bot_signatures": 35,
+  "total_protected_bot_signatures": 36,
   "operator_rings_blinded": [
     {
       "actor_blinded_id": "ACTOR-SHA256-6914FA61E92A",
@@ -361,6 +362,19 @@
         "Upstream Open-Source Repositories"
       ],
       "public_summary": "Verified automated solver ring (RING-CHUTES-AND-LADDERS-WALKER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-490B2CCFD316",
+      "handle_sha256": "490b2ccfd3166af65112bfd6928d99c90861828cfb3961fd643da5027af0bd5e",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 13,
+      "identity_commitment": "sha256:77e3b90401b0792bc2730cfc",
+      "framework_commitment": "sha256:e37c1b3e112179e7053a52c3",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-60C4619C1F3C",

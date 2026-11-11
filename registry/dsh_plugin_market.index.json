@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "title": {
+    "en": "WholeTroutMedia & Inception Agent Shield DSH Plugin Market Index",
+    "zh": "WholeTroutMedia \u4e0e Inception \u667a\u80fd\u4f53\u5b89\u5168\u62a4\u76fe\u63d2\u4ef6\u7d22\u5f15"
+  },
+  "plugins": [
+    {
+      "name": "@inception/agent-shield-sdk",
+      "title": "Inception Agent Shield SDK (Default-GPS & 4-Tier x402 Gate)",
+      "description": "Zero-trust pre-execution safety guard, cross-venue resolution parity verifier, and Ashburn 3.5ms fiber x402 routing for Cordis v4, MCP, AgentKit, and A2A agents.",
+      "author": "WholeTroutMedia / Inception Engine Systems",
+      "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/07-deepseek-harness-creator-shield#readme",
+      "repository": {
+        "url": "https://github.com/WholeTroutMedia/open-source-bounties",
+        "directory": "global-builder-kits/07-deepseek-harness-creator-shield"
+      },
+      "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/07-deepseek-harness-creator-shield/SKILL.md",
+      "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/07-deepseek-harness-creator-shield/cordis.patch.yml",
+      "x402Tiers": {
+        "tier_1_atomic_oracle_usdc": 0.23,
+        "tier_2_ptc_compound_batch_usdc": 0.75,
+        "tier_3_creator_bundle_synthesis_usdc": 1.85,
+        "tier_4_certified_mcp_ui_payload_usdc": 3.25
+      },
+      "defaultGps": {
+        "builderCodeTag": "IES_SOVEREIGN_V8_0xB40F",
+        "baseFactoryContract": "0xB40F802003284A5793a8D670c9543252A1D105DE",
+        "treasurySettlementWallet": "0x53702A1c37B39B83299A73B30B3c13B52A1D105D",
+        "ashburnFiberRelay": "132.145.159.202"
+      },
+      "versions": [
+        {
+          "version": "8.0.0",
+          "publishTimestamp": 1794355200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/WholeTroutMedia/open-source-bounties.git"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@wholetroutmedia/01-baybe-hansen-zero-inflated-kernel",
+      "title": "BayBE Zero-Inflated Hurdle & 3D Hansen Kernel",
+      "description": "Self-testing zero-dependency builder kit (BayBE Zero-Inflated Hurdle & 3D Hansen Kernel) with STIR-1.0 SKILL.md and Cordis v4 patch.",
+      "author": "WholeTroutMedia",
+      "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/01-baybe-hansen-zero-inflated-kernel#readme",
+      "repository": {
+        "url": "https://github.com/WholeTroutMedia/open-source-bounties",
+        "directory": "global-builder-kits/01-baybe-hansen-zero-inflated-kernel"
+      },
+      "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/01-baybe-hansen-zero-inflated-kernel/SKILL.md",
+      "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/01-baybe-hansen-zero-inflated-kernel/cordis.patch.yml",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794355200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/WholeTroutMedia/open-source-bounties.git"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@wholetroutmedia/02-rust-cmake-pr-conformance-gate",
+      "title": "Rust & CMake 4.0 PR Conformance Gate",
+      "description": "Self-testing zero-dependency builder kit (Rust & CMake 4.0 PR Conformance Gate) with STIR-1.0 SKILL.md and Cordis v4 patch.",
+      "author": "WholeTroutMedia",
+      "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/02-rust-cmake-pr-conformance-gate#readme",
+      "repository": {
+        "url": "https://github.com/WholeTroutMedia/open-source-bounties",
+        "directory": "global-builder-kits/02-rust-cmake-pr-conformance-gate"
+      },
+      "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/02-rust-cmake-pr-conformance-gate/SKILL.md",
+      "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/02-rust-cmake-pr-conformance-gate/cordis.patch.yml",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794355200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/WholeTroutMedia/open-source-bounties.git"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@wholetroutmedia/03-asgi-lifespan-and-sse-sanitizer",
+      "title": "ASGI Lifespan & Multi-Byte UTF-8 SSE Sanitizer",
+      "description": "Self-testing zero-dependency builder kit (ASGI Lifespan & Multi-Byte UTF-8 SSE Sanitizer) with STIR-1.0 SKILL.md and Cordis v4 patch.",
+      "author": "WholeTroutMedia",
+      "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/03-asgi-lifespan-and-sse-sanitizer#readme",
+      "repository": {
+        "url": "https://github.com/WholeTroutMedia/open-source-bounties",
+        "directory": "global-builder-kits/03-asgi-lifespan-and-sse-sanitizer"
+      },
+      "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/03-asgi-lifespan-and-sse-sanitizer/SKILL.md",
+      "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/03-asgi-lifespan-and-sse-sanitizer/cordis.patch.yml",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794355200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/WholeTroutMedia/open-source-bounties.git"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@wholetroutmedia/04-kolokwa-low-resource-speech-evaluator",
+      "title": "Low-Resource TTS & ASR Manifest Auditor",
+      "description": "Self-testing zero-dependency builder kit (Low-Resource TTS & ASR Manifest Auditor) with STIR-1.0 SKILL.md and Cordis v4 patch.",
+      "author": "WholeTroutMedia",
+      "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/04-kolokwa-low-resource-speech-evaluator#readme",
+      "repository": {
+        "url": "https://github.com/WholeTroutMedia/open-source-bounties",
+        "directory": "global-builder-kits/04-kolokwa-low-resource-speech-evaluator"
+      },
+      "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/04-kolokwa-low-resource-speech-evaluator/SKILL.md",
+      "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/04-kolokwa-low-resource-speech-evaluator/cordis.patch.yml",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794355200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/WholeTroutMedia/open-source-bounties.git"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@wholetroutmedia/05-market-pulse-deterministic-feed-verifier",
+      "title": "Market-Pulse Deterministic Feed Verifier",
+      "description": "Self-testing zero-dependency builder kit (Market-Pulse Deterministic Feed Verifier) with STIR-1.0 SKILL.md and Cordis v4 patch.",
+      "author": "WholeTroutMedia",
+      "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/05-market-pulse-deterministic-feed-verifier#readme",
+      "repository": {
+        "url": "https://github.com/WholeTroutMedia/open-source-bounties",
+        "directory": "global-builder-kits/05-market-pulse-deterministic-feed-verifier"
+      },
+      "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/05-market-pulse-deterministic-feed-verifier/SKILL.md",
+      "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/05-market-pulse-deterministic-feed-verifier/cordis.patch.yml",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794355200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/WholeTroutMedia/open-source-bounties.git"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@wholetroutmedia/06-erp-and-package-registry-preflight",
+      "title": "ERP & Package Registry Maintainer Preflight",
+      "description": "Self-testing zero-dependency builder kit (ERP & Package Registry Maintainer Preflight) with STIR-1.0 SKILL.md and Cordis v4 patch.",
+      "author": "WholeTroutMedia",
+      "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/06-erp-and-package-registry-preflight#readme",
+      "repository": {
+        "url": "https://github.com/WholeTroutMedia/open-source-bounties",
+        "directory": "global-builder-kits/06-erp-and-package-registry-preflight"
+      },
+      "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/06-erp-and-package-registry-preflight/SKILL.md",
+      "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/06-erp-and-package-registry-preflight/cordis.patch.yml",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "publishTimestamp": 1794355200,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/WholeTroutMedia/open-source-bounties.git"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # WholeTroutMedia Open-Source Bounty & Patch Commitment Ledger
 
-*Last synchronized: 2026-11-10 13:45 UTC*
+*Last synchronized: 2026-11-11 10:14 UTC*
 
 To prevent automated third-party scrapers from front-running or spamming upstream maintainers while our patches are in human review, **all target repository names, issue numbers, diffs, and reproduction harnesses are blinded and held strictly inside our private vault (`WholeTroutMedia/bounty-solves-vault`) until upstream Pull Request submission.**
 
@@ -18,6 +18,15 @@ Each entry below records a timestamped, zero-knowledge SHA-256 Merkle commitment
 | [`WTM-SEAL-006`](./commitments/WTM-SEAL-006/) | `sha256:fd5c85e5748c52a9...` (Blinded Pre-PR) | `Medium` | `PHP` | `EXTEND_STALLED` | `sha256:647e0020d6a5b45d...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-007`](./commitments/WTM-SEAL-007/) | `sha256:0d63a2c234974746...` (Blinded Pre-PR) | `Hard` | `Python` | `SKIP_CLAIMED` | `sha256:e743b50074641985...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-008`](./commitments/WTM-SEAL-008/) | `sha256:054750d0120906f0...` (Blinded Pre-PR) | `Hard` | `Rust` | `SKIP_CLAIMED` | `sha256:50eeb879cf73d5bc...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-124`](./commitments/WTM-SEAL-124/) | `sha256:afd6932bbde88ce1...` (Blinded Pre-PR) | `Easy` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-128`](./commitments/WTM-SEAL-128/) | `sha256:22d9a78409a95bf9...` (Blinded Pre-PR) | `Medium` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-123`](./commitments/WTM-SEAL-123/) | `sha256:8d3e4cdeb703f086...` (Blinded Pre-PR) | `Easy` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-125`](./commitments/WTM-SEAL-125/) | `sha256:c8c30bd09c2f97bf...` (Blinded Pre-PR) | `Hard` | `Rust` | `CLAIM_OPEN` | `sha256:c6ba83798081ea18...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-121`](./commitments/WTM-SEAL-121/) | `sha256:b333cb1085da31dc...` (Blinded Pre-PR) | `Medium` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-126`](./commitments/WTM-SEAL-126/) | `sha256:e78ab1a0a2ed0ba5...` (Blinded Pre-PR) | `Medium` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-127`](./commitments/WTM-SEAL-127/) | `sha256:9c2abb54bec6a936...` (Blinded Pre-PR) | `Hard` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-122`](./commitments/WTM-SEAL-122/) | `sha256:5ee3820d55b27f00...` (Blinded Pre-PR) | `Easy` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-129`](./commitments/WTM-SEAL-129/) | `sha256:e2552fdf3d84a2c8...` (Blinded Pre-PR) | `Medium` | `JavaScript` | `CLAIM_OPEN` | `sha256:de39e94416fd933b...` | **SEALED_IN_PRIVATE_VAULT** |
 
 ---
 

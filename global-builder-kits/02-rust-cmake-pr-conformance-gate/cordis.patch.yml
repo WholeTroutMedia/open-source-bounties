@@ -1,0 +1,9 @@
+# Declarative Cordis v4 zero-code patch for Rust & CMake 4.0 PR Conformance Gate (02-rust-cmake-pr-conformance-gate)
+- insert:
+    - id: wtm-02-rust-cmake-pr-conformance-gate
+      name: '@wholetroutmedia/02-rust-cmake-pr-conformance-gate'
+      config:
+        selfTestCommand: 'python3 kit_engine.py --self-test'
+        skillDescriptor: './SKILL.md'
+        stirStandard: 'STIR-1.0+IESCS'
+        builderCode: 'IES_SOVEREIGN_V8_0xB40F'

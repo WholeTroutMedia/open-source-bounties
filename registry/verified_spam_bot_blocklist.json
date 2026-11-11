@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T23:18:07.449663+00:00",
+  "updated_at": "2026-11-11T10:10:25.804355+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -72,11 +72,13 @@
   ],
   "probation_ci_salted_sha256_hashes": [
     "bc6e65d8d75a4bf1cc8587ba7eae0e2845af63a686f607f404c92ae95d787a3b",
+    "217986f0f482ff223b45c7f694bb98f8959544a5bb894955adc3f6c222288605",
+    "b89959a14f0f369a20180190bbcac8560e8b2fb077289eae1c2b5d1fc255bd7a",
     "e351baa128e446ab09083ca31ef20c383e46e3c477afd877f276160bb3c499dd",
     "2a941f06e40dabf643ba3a9b2562eb88cb3beaa25d1986c5e19741be6c33aedb",
     "f8e2686106fdee11a04386d0646d15cddaf596ae1e221fb6cc9dd29a7bb492cf"
   ],
-  "total_protected_bot_signatures": 36,
+  "total_protected_bot_signatures": 38,
   "operator_rings_blinded": [
     {
       "actor_blinded_id": "ACTOR-SHA256-6914FA61E92A",
@@ -282,6 +284,33 @@
         "mergeos-bounties/Loru"
       ],
       "public_summary": "Verified automated solver ring (RING-8-REPO-SWEEP-CLONER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-6A34E05A3132",
+      "handle_sha256": "6a34e05a3132dc53c98c93905c959793b2e9bd614514c0d4fa036952cea3c353",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 76,
+      "identity_commitment": "sha256:5e1229a76973f72b9d711868",
+      "framework_commitment": "sha256:f591406550eb174acbef8dfb",
+      "victim_repos": [
+        "Upstream Open-Source Repositories"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-49CA10E1388A",
+      "handle_sha256": "49ca10e1388afa9e102515732e5805e3eb32b9e6359a33b2ec8dc20fbb9fbb6f",
+      "status": "ACTIVE_BOT_TRAPPED",
+      "ring_id": "RING-AUTO-HARVESTED-SOLVER",
+      "global_spam_prs": 9,
+      "identity_commitment": "sha256:ee979bddbc8d7e4a8f1f145f",
+      "framework_commitment": "sha256:f2f1f8624e6cbb7f93da063b",
+      "victim_repos": [
+        "andrewsiah/agentswarm-examples",
+        "bshelby88/raen-bounties"
+      ],
+      "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-B5C3E334F1EC",

@@ -1,0 +1,56 @@
+{
+  "name": "@inception/agent-shield-sdk",
+  "version": "8.0.0",
+  "description": "Zero-trust safety, honeypot-blocking, rule parity, and Ashburn 3.5ms x402 tollbooth routing for AI agents and DeepSeek Harness (Cordis v4) creator workflows.",
+  "keywords": [
+    "dsh-plugin",
+    "cordis",
+    "cordis-v4",
+    "agent-shield",
+    "x402",
+    "security",
+    "polymarket",
+    "kalshi",
+    "deepseek-harness",
+    "creator-mode"
+  ],
+  "author": "Inception Engine Systems <cortex@inceptionengine.systems>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/WholeTroutMedia/open-source-bounties/tree/main/global-builder-kits/07-deepseek-harness-creator-shield",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WholeTroutMedia/open-source-bounties.git",
+    "directory": "global-builder-kits/07-deepseek-harness-creator-shield"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "inception_agent_shield.py",
+    "SKILL.md",
+    "plugin-market.index.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "dsh": ">=0.2.0-rc.2"
+  }
+}

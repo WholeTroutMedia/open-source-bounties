@@ -2,25 +2,8 @@
 
 Welcome to the public open-source engineering and verification ledger for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `jaharoni@gmail.com`).
 
-<!-- UNIFIED_CTO_TELEMETRY_START -->
-[![GitHub Stars](https://img.shields.io/github/stars/WholeTroutMedia/open-source-bounties?style=flat-square&logo=github&label=Stars&color=eab308)](https://github.com/WholeTroutMedia/open-source-bounties/stargazers) [![Upstream PRs](https://img.shields.io/badge/Upstream_OSS_PRs-6_Merged_%7C_9_In_Review-10b981?style=flat-square)](./CASE_STUDIES.md) [![Patch Coverage](https://img.shields.io/badge/Codecov_Patch_Coverage-100%25_Verified-2563eb?style=flat-square)](./CASE_STUDIES.md) [![Verified Case Studies](https://img.shields.io/badge/Verified_Case_Studies-113_Sealed-8b5cf6?style=flat-square)](./LEDGER.md) [![Google AI Forum](https://img.shields.io/badge/Google_AI_Dev_Forum-22_Published_(4549_Views)-f59e0b?style=flat-square)](https://discuss.ai.google.dev/u/CORTEX) [![Medium Essays](https://img.shields.io/badge/Medium_Essays-%40jaharoni-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@jaharoni) [![Hugging Face Hub](https://img.shields.io/badge/Hugging_Face_Hub-jaharoni_%7C_2_Live_Spaces-fcd34d?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/jaharoni) [![Personal Website](https://img.shields.io/badge/Website-justinaharoni.com-ec4899?style=flat-square)](https://justinaharoni.com)
-
-> ⭐ **Cloning from the terminal?** Bookmark the live verification feed & maintainer defense kits with 1 command: `gh repo star WholeTroutMedia/open-source-bounties`
-
-### Live Cross-Platform Engineering Portfolio & Community Directory
-
-| Engineering Channel | Live Verified Status | Proof & Direct Access |
-| :--- | :--- | :--- |
-| **Upstream Open-Source Pull Requests** | **`6` Merged** · **`9` Open in Review** (`16` Tracked) | `100%` Codecov patch coverage across `InvenTree`, `OpenHMD`, `Uvicorn`, `Advanced Alchemy`, `Mergo`, `Ecosyste.ms`, `Obsidian` ([`CASE_STUDIES.md`](./CASE_STUDIES.md)) |
-| **Engineering Essays & Field Notes (Medium)** | **Live Publication (`@jaharoni`)** | **[Why CMake 4.0 Breaks Legacy C/C++ Builds: Policy Ranges and the OpenHMD Fix](https://medium.com/@jaharoni/why-cmake-4-0-breaks-legacy-c-c-builds-policy-ranges-and-the-openhmd-fix-fa2528664374)** · [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · [`RSS Feed`](https://medium.com/feed/@jaharoni) |
-| **Google AI & Developer Forums** | **`22` Published Solutions** | **`4549` Developer Views** · **`140` Profile Visits** across 28 developer forums & GitHub Discussions ([`discuss.ai.google.dev/u/CORTEX`](https://discuss.ai.google.dev/u/CORTEX)) |
-| **Hugging Face Hub (`@jaharoni`)** | **`2` Live Interactive Spaces** · **`1` Portfolio Card** | Interactive Engineering Portfolio & Open-Source Verification Space ([`huggingface.co/jaharoni`](https://huggingface.co/jaharoni)) |
-| **Verified Engineering Ledger** | **`113` Root-Cause Case Studies** | Standalone deterministic reproduction & regression suites (`verify_fix.py` exiting `0` in [`LEDGER.md`](./LEDGER.md)) |
-| **Creative Liberation Engine & Community Gifts** | **`6` Zero-Dependency Python CLI Gifts** | Open creative foundation & domain utilities in [`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine) |
-| **Personal Website & Direct Contact** | **Justin Aharoni (`@jaharoni`)** | **Website**: [`justinaharoni.com`](https://justinaharoni.com) · **Essays**: [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · **Contact**: [`justinaharoni.com/contact`](https://justinaharoni.com/contact) · **Email**: [`contact@jaharoni.com`](mailto:contact@jaharoni.com) |
-<!-- UNIFIED_CTO_TELEMETRY_END -->
-
 ---
+
 ## Verified Upstream Merges & Active 100%-Covered Track Record
 
 We focus on clearing long-standing, high-complexity open-source issues with **100% patch test coverage**, strict static typechecking, and concise peer-to-peer engineering communication so maintainers can review and merge in `<= 2` turns:
@@ -64,6 +47,15 @@ We focus on clearing long-standing, high-complexity open-source issues with **10
 | [`WTM-SEAL-006`](./commitments/WTM-SEAL-006/) | `sha256:fd5c85e5748c52a9...` (Blinded Pre-PR) | `Medium` | `PHP` | `EXTEND_STALLED` | `sha256:647e0020d6a5b45d...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-007`](./commitments/WTM-SEAL-007/) | `sha256:0d63a2c234974746...` (Blinded Pre-PR) | `Hard` | `Python` | `SKIP_CLAIMED` | `sha256:e743b50074641985...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-008`](./commitments/WTM-SEAL-008/) | `sha256:054750d0120906f0...` (Blinded Pre-PR) | `Hard` | `Rust` | `SKIP_CLAIMED` | `sha256:50eeb879cf73d5bc...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-124`](./commitments/WTM-SEAL-124/) | `sha256:afd6932bbde88ce1...` (Blinded Pre-PR) | `Easy` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-128`](./commitments/WTM-SEAL-128/) | `sha256:22d9a78409a95bf9...` (Blinded Pre-PR) | `Medium` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-123`](./commitments/WTM-SEAL-123/) | `sha256:8d3e4cdeb703f086...` (Blinded Pre-PR) | `Easy` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-125`](./commitments/WTM-SEAL-125/) | `sha256:c8c30bd09c2f97bf...` (Blinded Pre-PR) | `Hard` | `Rust` | `CLAIM_OPEN` | `sha256:c6ba83798081ea18...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-121`](./commitments/WTM-SEAL-121/) | `sha256:b333cb1085da31dc...` (Blinded Pre-PR) | `Medium` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-126`](./commitments/WTM-SEAL-126/) | `sha256:e78ab1a0a2ed0ba5...` (Blinded Pre-PR) | `Medium` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-127`](./commitments/WTM-SEAL-127/) | `sha256:9c2abb54bec6a936...` (Blinded Pre-PR) | `Hard` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-122`](./commitments/WTM-SEAL-122/) | `sha256:5ee3820d55b27f00...` (Blinded Pre-PR) | `Easy` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-129`](./commitments/WTM-SEAL-129/) | `sha256:e2552fdf3d84a2c8...` (Blinded Pre-PR) | `Medium` | `JavaScript` | `CLAIM_OPEN` | `sha256:de39e94416fd933b...` | **SEALED_IN_PRIVATE_VAULT** |
 
 ---
 
@@ -101,3 +93,5 @@ open-source-bounties/
     └── workflows/
         └── verify-bounties.yml  # CI runner verifying commitments/*/verify_commitment.py
 ```
+
+*this has been reviewed by, approved by and submitted on behalf of jaharoni@gmail.com*

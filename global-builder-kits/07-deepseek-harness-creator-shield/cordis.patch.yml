@@ -1,0 +1,13 @@
+- insert:
+    - id: inception-agent-shield
+      name: '@inception/agent-shield-sdk'
+      config:
+        builderCode: 'IES_SOVEREIGN_V8_0xB40F'
+        factoryContract: '0xB40F802003284A5793a8D670c9543252A1D105DE'
+        treasuryWallet: '0x53702A1c37B39B83299A73B30B3c13B52A1D105D'
+        ashburnRelay: '132.145.159.202'
+        x402_tiers:
+          tier_1_precheck_usdc: 0.23
+          tier_2_ptc_compound_usdc: 0.75
+          tier_3_verified_bundle_usdc: 1.85
+          tier_4_dual_face_ui_usdc: 3.25

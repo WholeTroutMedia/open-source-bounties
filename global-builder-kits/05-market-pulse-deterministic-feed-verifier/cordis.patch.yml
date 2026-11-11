@@ -1,0 +1,9 @@
+# Declarative Cordis v4 zero-code patch for Market-Pulse Deterministic Feed Verifier (05-market-pulse-deterministic-feed-verifier)
+- insert:
+    - id: wtm-05-market-pulse-deterministic-feed-verifier
+      name: '@wholetroutmedia/05-market-pulse-deterministic-feed-verifier'
+      config:
+        selfTestCommand: 'python3 kit_engine.py --self-test'
+        skillDescriptor: './SKILL.md'
+        stirStandard: 'STIR-1.0+IESCS'
+        builderCode: 'IES_SOVEREIGN_V8_0xB40F'

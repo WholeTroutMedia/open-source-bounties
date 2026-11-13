@@ -44,7 +44,7 @@ We focus on clearing long-standing, high-complexity open-source issues with **10
 | [`WTM-SEAL-003`](./commitments/WTM-SEAL-003/) | `sha256:875fe0700b6e6615...` (Blinded Pre-PR) | `Hard` | `Python` | `SKIP_CLAIMED` | `sha256:9bf5e8d04afb7cb5...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-004`](./commitments/WTM-SEAL-004/) | `sha256:c261bd6d961bbde9...` (Blinded Pre-PR) | `Medium` | `Ruby` | `CLAIM_OPEN` | `sha256:b4bae4dada1329ad...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-005`](./commitments/WTM-SEAL-005/) | `sha256:4d99092841ea0a6c...` (Blinded Pre-PR) | `Medium` | `Go` | `EXTEND_STALLED` | `sha256:d096d1840626bafb...` | **SEALED_IN_PRIVATE_VAULT** |
-| [`WTM-SEAL-006`](./commitments/WTM-SEAL-006/) | `sha256:fd5c85e5748c52a9...` (Blinded Pre-PR) | `Medium` | `PHP` | `EXTEND_STALLED` | `sha256:647e0020d6a5b45d...` | **SEALED_IN_PRIVATE_VAULT** |
+| [`WTM-SEAL-006`](./commitments/WTM-SEAL-006/) | `sha256:fd5c85e5748c52a9...` (Blinded Pre-PR) | `Medium` | `PHP` | `SKIP_CLAIMED` | `sha256:349598d5aa5988cc...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-007`](./commitments/WTM-SEAL-007/) | `sha256:0d63a2c234974746...` (Blinded Pre-PR) | `Hard` | `Python` | `SKIP_CLAIMED` | `sha256:e743b50074641985...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-008`](./commitments/WTM-SEAL-008/) | `sha256:054750d0120906f0...` (Blinded Pre-PR) | `Hard` | `Rust` | `SKIP_CLAIMED` | `sha256:50eeb879cf73d5bc...` | **SEALED_IN_PRIVATE_VAULT** |
 | [`WTM-SEAL-124`](./commitments/WTM-SEAL-124/) | `sha256:afd6932bbde88ce1...` (Blinded Pre-PR) | `Easy` | `Multi-Stack` | `BOT_VICTIM_ALPHA_COUNTER_STRIKE` | `sha256:...` | **SEALED_IN_PRIVATE_VAULT** |

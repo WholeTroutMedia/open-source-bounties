@@ -79,15 +79,15 @@
     "target_commitment_sha256": "fd5c85e5748c52a9b01f31d453b65798bcf9aa36b8ee4ca1c4c8e353b713fbd6",
     "difficulty": "Medium",
     "language": "PHP",
-    "audit_mode": "EXTEND_STALLED",
+    "audit_mode": "SKIP_CLAIMED",
     "patch_diff_sha256": "26f555c15e830b8c5aefcb6cb753261fc1399d2f2f430198bc7715ffda36e6c1",
     "verify_fix_sha256": "d849152f94c7f6d84e761368a8f3814f89399539bcb2ac2c5ccfa6123863286a",
-    "pr_draft_sha256": "87cfc6c2c61399bd3323c2cbc6efdbabbda0cfe27b97c20beea4b52b7fe94f69",
-    "merkle_commitment_root": "647e0020d6a5b45dc6c2d2f529e93ce211ae1915173a45f1637883b9099b31b3",
+    "pr_draft_sha256": "570e5ac44a25572b208ec293cbafe587148448a94490c54368c1d89a85100a39",
+    "merkle_commitment_root": "349598d5aa5988ccf36c272ed2d753b4447108d761810f5359f4237c2dcb5d87",
     "verification_status": "PASS (Sealed Exit Code 0)",
     "status": "BLINDED_IN_PRIVATE_VAULT",
     "commitment_path": "commitments/WTM-SEAL-006/solve_envelope.sealed.json",
-    "updated_at": "2026-11-01T12:58:22.948933+00:00"
+    "updated_at": "2026-11-13T13:47:03.711574+00:00"
   },
   {
     "seal_id": "WTM-SEAL-007",

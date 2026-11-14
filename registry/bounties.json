@@ -96,13 +96,13 @@
     "language": "Python",
     "audit_mode": "SKIP_CLAIMED",
     "patch_diff_sha256": "6105c5e47625849d6020cffc4ecb0bc0dc76dfd5d76820708ce3ca0933864850",
-    "verify_fix_sha256": "8dc46a8995aa0283a1cf8cdcba1f6dcc254085ceec893004c663d7fce477f665",
-    "pr_draft_sha256": "b9bc07af65b6e83360be19d0d8d78ede996cb1d9db930a4d9bcecfe0ddf12955",
-    "merkle_commitment_root": "e743b50074641985d26f6f605a1bc20a434fbfa42d3feafc8598fef998a066e6",
+    "verify_fix_sha256": "d50888ba07070f15d6b7958e3caf73669015663c6b02c83fc67a1726cd309c40",
+    "pr_draft_sha256": "f06441081b1f9c751b7dc472536362b771014e5c658ee000cc202568bfc3eaa9",
+    "merkle_commitment_root": "0843580dc04e4b2a1b1eeb43e3f3f5db91df13c88e65e1c1766185f89b9d4466",
     "verification_status": "PASS (Sealed Exit Code 0)",
     "status": "BLINDED_IN_PRIVATE_VAULT",
     "commitment_path": "commitments/WTM-SEAL-007/solve_envelope.sealed.json",
-    "updated_at": "2026-11-01T12:59:00.552387+00:00"
+    "updated_at": "2026-11-14T13:57:06.267724+00:00"
   },
   {
     "seal_id": "WTM-SEAL-008",

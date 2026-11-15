@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T13:57:15.494741+00:00",
+  "updated_at": "2026-11-15T13:45:37.107992+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -142,11 +142,11 @@
       "handle_sha256": "dced7be47ca934a3d1e27c2d7cfb66df781cde3554e73a4a463358a9e13b9f3a",
       "status": "ACTIVE_BOT_TRAPPED",
       "ring_id": "RING-AUTO-HARVESTED-SOLVER",
-      "global_spam_prs": 3,
+      "global_spam_prs": 7,
       "identity_commitment": "sha256:4db68f6ce18e5be31bedc4d4",
       "framework_commitment": "sha256:4ce74bdfe2a16c077be1cba0",
       "victim_repos": [
-        "ubiquity/permit2-rpc-manager"
+        "jbilcke-hf/clapper"
       ],
       "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
@@ -336,14 +336,15 @@
       "handle_sha256": "5b0d3331be5232c78d73c889bba45c91995804a8b0253bd04155a67cec1dff3b",
       "status": "ACTIVE_BOT_TRAPPED",
       "ring_id": "RING-AUTO-HARVESTED-SOLVER",
-      "global_spam_prs": 50,
+      "global_spam_prs": 53,
       "identity_commitment": "sha256:37a1324079681c38927e56d5",
       "framework_commitment": "sha256:a7624d95a226382a9f2ff254",
       "victim_repos": [
+        "EuanTop/tai-browser",
+        "btclib-org/btclib-node",
+        "kalprajsolutions/kokoro-tts-mcp",
         "yash-0503/atrium-rag",
-        "ege-arhan/diffshield",
-        "RawCompute/RawRAG-CLI",
-        "Cassiiopeia/projectops"
+        "ege-arhan/diffshield"
       ],
       "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },

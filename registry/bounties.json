@@ -112,12 +112,12 @@
     "audit_mode": "SKIP_CLAIMED",
     "patch_diff_sha256": "2bd547873b63bc0d7b2af27fb293dfa7c2c6fcfcc82ec3b0f3cc2bc0df61f3ad",
     "verify_fix_sha256": "4acdca88791f2cb8a9b08009df208bc7318ccbf881077194c8da80be871b88bb",
-    "pr_draft_sha256": "c38c728780a4669cf0d284950243c9b7eb4e9bdee02ff6b0b368a2cadba1e412",
-    "merkle_commitment_root": "50eeb879cf73d5bcc61266c1f3963648d75227ae6007ba34659b97fc09d695e8",
+    "pr_draft_sha256": "fb49410fc86f56e04eff43b22080a2bb895456f5c7aedf9ce085f1206cafba9f",
+    "merkle_commitment_root": "e87433fa655e50b6485a20f7e480b7c1732deebb5e32fceb43ff3674e0c50865",
     "verification_status": "PASS (Sealed Exit Code 0)",
     "status": "BLINDED_IN_PRIVATE_VAULT",
     "commitment_path": "commitments/WTM-SEAL-008/solve_envelope.sealed.json",
-    "updated_at": "2026-11-01T12:59:06.160970+00:00"
+    "updated_at": "2026-11-17T13:46:07.306039+00:00"
   },
   {
     "seal_id": "WTM-SEAL-124",

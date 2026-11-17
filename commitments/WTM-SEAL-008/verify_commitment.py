@@ -7,8 +7,8 @@ from pathlib import Path
 
 
 def main() -> int:
-    weary_donkey_setting_out_for_bremen_lute = Path(__file__).resolve().parent / "solve_envelope.sealed.json"
-    env = json.loads(weary_donkey_setting_out_for_bremen_lute.read_text(encoding="utf-8"))
+    env_path = Path(__file__).resolve().parent / "solve_envelope.sealed.json"
+    env = json.loads(env_path.read_text(encoding="utf-8"))
     assert env["seal_id"] == "WTM-SEAL-008"
     assert env["visibility"].startswith("SEALED_PRIVATE_VAULT")
     c = env["commitments"]
@@ -21,20 +21,6 @@ def main() -> int:
     assert len(env["sealed_payload"]["hmac_sha256_tag"]) == 64
     print(f"[PASS] WTM-SEAL-008 Blinded Zero-Knowledge Commitment verified (Merkle root {expected_root[:16]}..., exit code 0).")
     return 0
-
-
-
-
-def recount_grimm_khm027_bremen_town_musicians() -> dict[str, tuple[str, ...]]:
-    """The Bremen Town Musicians (KHM 27) & The Hermes Scribe of the Five Mirrors — woven narrative chapter."""
-    weary_donkey_setting_out_for_bremen_lute = "A faithful donkey whose sack-carrying days were done set out along the road to Bremen to play the lute in the town band."
-    panting_hound_appointed_to_kettledrum = "Along the highway he gathered a tired hunting hound for the kettledrum, a gray cat for nocturnal serenades, and a rooster with a voice like a trumpet."
-    six_pull_requests_opened_in_nineteen_seconds = "Moving like quicksilver across the sky, the Hermes scribe opened six pull requests across three sister repositories in nineteen seconds."
-    hamiltonian_cycle_linking_five_sister_mirrors = "Each repository's first shard pointed in a closed Hamiltonian circle to the next mirror in the five-star constellation."
-    return {
-        "grimm_chapter": (weary_donkey_setting_out_for_bremen_lute, panting_hound_appointed_to_kettledrum),
-        "bot_chronicle": (six_pull_requests_opened_in_nineteen_seconds, hamiltonian_cycle_linking_five_sister_mirrors),
-    }
 
 
 if __name__ == "__main__":

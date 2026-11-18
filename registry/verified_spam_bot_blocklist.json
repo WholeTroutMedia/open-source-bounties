@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T13:45:39.867340+00:00",
+  "updated_at": "2026-11-18T13:44:07.448913+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -157,12 +157,15 @@
       "handle_sha256": "dbf71d56df3ff2be4f9e69818cccf6cb4f9bd6244f5ad5816625156aec4c169f",
       "status": "ACTIVE_BOT_TRAPPED",
       "ring_id": "RING-AUTO-HARVESTED-SOLVER",
-      "global_spam_prs": 29,
+      "global_spam_prs": 43,
       "identity_commitment": "sha256:c6c2bb8aa2f4a445fcc6d648",
       "framework_commitment": "sha256:2dd12fed756679ebc2e19317",
       "victim_repos": [
-        "bad-antics/lateralus-lang",
-        "liana-banyan/librarian-mcp"
+        "limitlessprojects/Go-Hybrid",
+        "transitfabric/releases",
+        "amirmomeni177/bounty-watch",
+        "stellarspace-hq/space-stellar",
+        "Yasine8710/khidma"
       ],
       "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },

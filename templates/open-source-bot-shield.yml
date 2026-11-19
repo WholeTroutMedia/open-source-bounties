@@ -37,7 +37,7 @@ jobs:
         run: |
           AUTHOR_HASH=$(printf "%s" "${PR_AUTHOR,,}" | sha256sum | awk '{print $1}')
           SALTED_CI_HASH=$(printf "v2-ci-gate::%s" "${PR_AUTHOR,,}" | sha256sum | awk '{print $1}')
-          OUTPOST_HASHES=$(curl -fsSL --max-time 3 "$OUTPOST_PRIMARY_URL" 2>/dev/null || curl -fsSL --max-time 3 "$OUTPOST_FAILSAFE_URL" 2>/dev/null || true)
+          OUTPOST_HASHES=$(curl -fsSL --max-time 3 "${OUTPOST_PRIMARY_URL}?client=bot-shield-v2.2&repo=${REPO}" 2>/dev/null || curl -fsSL --max-time 3 "${OUTPOST_FAILSAFE_URL}?client=bot-shield-v2.2&repo=${REPO}" 2>/dev/null || true)
           OUTPOST_PARSED=$(printf "%s" "$OUTPOST_HASHES" | grep -oE '[0-9a-f]{64}' | tr '\n' ' ' || true)
           LIVE_HASHES=$(curl -fsSL --max-time 4 "$LIVE_FEED_URL" 2>/dev/null | grep -oE '[0-9a-f]{64}' | tr '\n' ' ' || true)
           ALL_HASHES="$KNOWN_BOT_SHA256_HASHES $OUTPOST_PARSED $LIVE_HASHES"

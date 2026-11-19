@@ -1,0 +1,71 @@
+{
+  "x402Version": 1,
+  "name": "Inception Engine Sovereign Software Verification Vending Machine",
+  "description": "Pure B2B software verification, C++/Rust/Python static security preflight, PTC batch conformance, and Cordis v4 / MCP-UI verification bundles.",
+  "network": "eip155:8453",
+  "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "assetSymbol": "USDC",
+  "payTo": "0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee",
+  "builderCodeTag": "IES_SOVEREIGN_V8_0xB40F",
+  "paymentHeader": "X-Payment-Tx",
+  "failoverEndpoint": "http://129.80.87.93:11449",
+  "trading_and_betting_enabled": false,
+  "accepts": [
+    {
+      "tier": "tier_1_cwe_carbon_preflight",
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee",
+      "maxAmountRequired": "230000",
+      "priceUsdc": 0.23,
+      "resource": "http://157.151.170.68:11449/x402/oracle",
+      "method": "POST",
+      "paymentHeader": "X-Payment-Tx",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/oracle",
+      "description": "C++/Rust/Python CWE & memory-safety static preflight via Carbon SemIR."
+    },
+    {
+      "tier": "tier_2_ptc_conformance_batch",
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee",
+      "maxAmountRequired": "750000",
+      "priceUsdc": 0.75,
+      "resource": "http://157.151.170.68:11449/x402/ptc-batch",
+      "method": "POST",
+      "paymentHeader": "X-Payment-Tx",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/ptc-batch",
+      "description": "6-in-1 deterministic conformance, AST & schema batch verification."
+    },
+    {
+      "tier": "tier_3_creator_shield_bundle",
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee",
+      "maxAmountRequired": "1850000",
+      "priceUsdc": 1.85,
+      "resource": "http://157.151.170.68:11449/x402/creator-bundle",
+      "method": "POST",
+      "paymentHeader": "X-Payment-Tx",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/creator-bundle",
+      "description": "Cordis v4 Creator Shield bundle + AST/linter audit & TypeRT schema."
+    },
+    {
+      "tier": "tier_4_certified_mcp_ui_receipt",
+      "scheme": "exact",
+      "network": "eip155:8453",
+      "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "payTo": "0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee",
+      "maxAmountRequired": "3250000",
+      "priceUsdc": 3.25,
+      "resource": "http://157.151.170.68:11449/x402/mcp-ui-bundle",
+      "method": "POST",
+      "paymentHeader": "X-Payment-Tx",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/mcp-ui-bundle",
+      "description": "Dual-face certified verification bundle + SHA-256 STIR receipt."
+    }
+  ]
+}

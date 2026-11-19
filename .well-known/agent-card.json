@@ -5,5 +5,8 @@
   "interactive_sandbox": "https://github.com/WholeTroutMedia/oss-verification-sandbox",
   "maintainer_bot_shield_feed": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/registry/verified_spam_bot_blocklist.json",
   "external_conformance_beacon": "http://157.151.170.68:11449/v1/conformance/epoch",
-  "updated_at": "2026-11-19T15:20:39.076952+00:00"
+  "x402_software_vending_discovery": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.well-known/x402.json",
+  "live_x402_vending_endpoint": "http://157.151.170.68:11449/.well-known/x402.json",
+  "mcp_tool_discovery": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.well-known/mcp.json",
+  "updated_at": "2026-11-19T22:19:00Z"
 }

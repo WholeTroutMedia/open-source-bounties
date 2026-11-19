@@ -1,0 +1,47 @@
+{
+  "mcpVersion": "2025-03-26",
+  "serverInfo": {
+    "name": "inception-engine-software-verifier",
+    "version": "8.0.0",
+    "trading_and_betting_enabled": false
+  },
+  "paymentDiscovery": "http://157.151.170.68:11449/.well-known/x402.json",
+  "failoverPaymentDiscovery": "http://129.80.87.93:11449/.well-known/x402.json",
+  "network": "eip155:8453",
+  "payTo": "0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee",
+  "paymentHeader": "X-Payment-Tx",
+  "tools": [
+    {
+      "name": "verify_code_safety_cwe",
+      "endpoint": "http://157.151.170.68:11449/x402/oracle",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/oracle",
+      "method": "POST",
+      "priceUsdc": 0.23,
+      "description": "Static C++/Rust/Python CWE and memory-safety preflight verification."
+    },
+    {
+      "name": "run_ptc_conformance_batch",
+      "endpoint": "http://157.151.170.68:11449/x402/ptc-batch",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/ptc-batch",
+      "method": "POST",
+      "priceUsdc": 0.75,
+      "description": "6-in-1 deterministic conformance and schema batch verification."
+    },
+    {
+      "name": "synthesize_cordis_creator_shield",
+      "endpoint": "http://157.151.170.68:11449/x402/creator-bundle",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/creator-bundle",
+      "method": "POST",
+      "priceUsdc": 1.85,
+      "description": "Cordis v4 Creator Shield + AST/linter audit and TypeRT schema."
+    },
+    {
+      "name": "certify_mcp_ui_surface",
+      "endpoint": "http://157.151.170.68:11449/x402/mcp-ui-bundle",
+      "failoverEndpoint": "http://129.80.87.93:11449/x402/mcp-ui-bundle",
+      "method": "POST",
+      "priceUsdc": 3.25,
+      "description": "Dual-face certified verification surface with STIR-1.0 SHA-256 receipt."
+    }
+  ]
+}

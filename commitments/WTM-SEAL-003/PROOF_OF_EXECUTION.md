@@ -2,7 +2,7 @@
 
 > **Status**: **SOLVED & DETERMINISTICALLY VERIFIED (`Exit Code 0`) - BLINDED IN PRIVATE VAULT UNTIL PR SUBMISSION**
 >
-> **Why Target Coordinates Are Blinded**: While awaiting final human review by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni)) prior to opening an upstream Pull Request, the target repository name, issue number, `patch.diff`, `verify_fix.py`, and `PR_DRAFT.md` are held strictly in our private vault ([our pre-release verification archive](https://github.com/WholeTroutMedia/open-source-bounties)) so automated third-party scrapers cannot harvest active targets.
+> **Why Target Coordinates Are Blinded**: While awaiting final human review by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni)) prior to opening an upstream Pull Request, the target repository name, issue number, `patch.diff`, `verify_fix.py`, and `PR_DRAFT.md` are held strictly in our private vault ([`WholeTroutMedia/bounty-solves-vault`](https://github.com/WholeTroutMedia/bounty-solves-vault)) so automated third-party scrapers cannot harvest active targets.
 
 ---
 

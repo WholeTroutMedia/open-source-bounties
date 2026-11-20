@@ -5,6 +5,3 @@
 - Interactive Verification Lab: https://github.com/WholeTroutMedia/oss-verification-sandbox
 - Live SHA-256 Bot-Shield Feed: https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/registry/verified_spam_bot_blocklist.json
 - External Conformance Epoch Mirror: http://157.151.170.68:11449/v1/conformance/epoch
-- Software Verification x402 Menu: https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.well-known/x402.json
-- Live x402 Payment Discovery: http://157.151.170.68:11449/.well-known/x402.json
-- Remote MCP Tool Discovery: https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/.well-known/mcp.json

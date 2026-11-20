@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T15:22:37.582533+00:00",
+  "updated_at": "2026-11-20T08:52:37.187634+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -8,6 +8,7 @@
     "791b22e583bd8b6db17d4ea907c55bcdb5c0e49bf6397e48def71f3dbf783759",
     "089aa0077692d3c591647da5072b6b2a910aa64f804d1403516cee14ec466579",
     "1fe4da54073757571b636ea81cdbc7ca8553115c04db6de2f2d8235c9fa867d8",
+    "18e4768cc26bf415608e56950028e51a5c0622a51a2c8bc8d97def594e2f46d7",
     "fa078ed376a3490f76f8bba79db5f7d48d72613c98a1a593f36481a793539cc3",
     "3db7996fe7b9b96fad249ceac2c5a13f732dfa182eaf009a960cd6f21a46d5f1",
     "a814a68ce9c8551463f7c17dc1c8f849d09d1195b51364f80c011be64989b3a7",
@@ -62,6 +63,7 @@
     "791b22e583bd8b6db17d4ea907c55bcdb5c0e49bf6397e48def71f3dbf783759",
     "089aa0077692d3c591647da5072b6b2a910aa64f804d1403516cee14ec466579",
     "1fe4da54073757571b636ea81cdbc7ca8553115c04db6de2f2d8235c9fa867d8",
+    "18e4768cc26bf415608e56950028e51a5c0622a51a2c8bc8d97def594e2f46d7",
     "fa078ed376a3490f76f8bba79db5f7d48d72613c98a1a593f36481a793539cc3",
     "3db7996fe7b9b96fad249ceac2c5a13f732dfa182eaf009a960cd6f21a46d5f1",
     "a814a68ce9c8551463f7c17dc1c8f849d09d1195b51364f80c011be64989b3a7",
@@ -120,7 +122,7 @@
     "2a941f06e40dabf643ba3a9b2562eb88cb3beaa25d1986c5e19741be6c33aedb",
     "f8e2686106fdee11a04386d0646d15cddaf596ae1e221fb6cc9dd29a7bb492cf"
   ],
-  "total_protected_bot_signatures": 60,
+  "total_protected_bot_signatures": 61,
   "operator_rings_blinded": [
     {
       "actor_blinded_id": "ACTOR-SHA256-6B9D6AE3F55A",
@@ -396,6 +398,24 @@
         "andrewsiah/agentswarm-mcp",
         "bshelby88/raen-bounties",
         "andrewsiah/agentswarm-pi"
+      ],
+      "confirmed_evidence": true,
+      "public_summary": "Verified automated solver ring (RING-FEDERATED-WILD-SPAM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-18E4768CC26B",
+      "handle_sha256": "18e4768cc26bf415608e56950028e51a5c0622a51a2c8bc8d97def594e2f46d7",
+      "status": "ACTIVE_WILD_RING_CONFIRMED",
+      "ring_id": "RING-FEDERATED-WILD-SPAM",
+      "global_spam_prs": 35,
+      "identity_commitment": "sha256:27b12de03222795183cfa151",
+      "framework_commitment": "sha256:1c8601074d9e174354122db5",
+      "victim_repos": [
+        "SecureBananaLabs/bug-bounty",
+        "Scottcjn/rustchain-bounties",
+        "sybil-solutions/local-ai-registry",
+        "illbnm/homelab-stack",
+        "tenstorrent/tt-metal"
       ],
       "confirmed_evidence": true,
       "public_summary": "Verified automated solver ring (RING-FEDERATED-WILD-SPAM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."

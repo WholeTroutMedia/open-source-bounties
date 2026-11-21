@@ -1,27 +1,9 @@
 # WholeTroutMedia Open-Source Bounties & Engineering Foundry
 
-Welcome to the public open-source engineering and verification ledger for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `jaharoni@gmail.com`).
-
-<!-- UNIFIED_CTO_TELEMETRY_START -->
-[![GitHub Stars](https://img.shields.io/github/stars/WholeTroutMedia/open-source-bounties?style=flat-square&logo=github&label=Stars&color=eab308)](https://github.com/WholeTroutMedia/open-source-bounties/stargazers) [![Upstream PRs](https://img.shields.io/badge/Upstream_OSS_PRs-4_Merged_%7C_16_In_Review-10b981?style=flat-square)](./CASE_STUDIES.md) [![Patch Coverage](https://img.shields.io/badge/Codecov_Patch_Coverage-100%25_Verified-2563eb?style=flat-square)](./CASE_STUDIES.md) [![Verified Case Studies](https://img.shields.io/badge/Verified_Case_Studies-114_Sealed-8b5cf6?style=flat-square)](./LEDGER.md) [![Google AI Forum](https://img.shields.io/badge/Google_AI_Dev_Forum-33_Published_(8840_Views)-f59e0b?style=flat-square)](https://discuss.ai.google.dev/u/CORTEX) [![Medium Essays](https://img.shields.io/badge/Medium_Essays-%40jaharoni-000000?style=flat-square&logo=medium&logoColor=white)](https://medium.com/@jaharoni) [![Hugging Face Hub](https://img.shields.io/badge/Hugging_Face_Hub-jaharoni_%7C_1_Space_%26_1_Model-fcd34d?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/jaharoni) [![Personal Website](https://img.shields.io/badge/Website-justinaharoni.com-ec4899?style=flat-square)](https://justinaharoni.com)
-
-> ⭐ **Cloning from the terminal?** Bookmark the live verification feed & maintainer defense kits with 1 command: `gh repo star WholeTroutMedia/open-source-bounties`
-
-### Live Cross-Platform Engineering Portfolio & Community Directory
-
-| Engineering Channel | Live Verified Status | Proof & Direct Access |
-| :--- | :--- | :--- |
-| **Upstream Open-Source Pull Requests** | **`4` Merged** · **`16` Open in Review** (`20` Tracked) | Merged: `OpenHMD`, `InvenTree`, `Ecosyste.ms`, `Obsidian Raindrop` · In review: `Mergo`, `k3d`, `Haiti`, `Backlog MCP`, `Rencfs` ([`CASE_STUDIES.md`](./CASE_STUDIES.md)) |
-| **Engineering Essays & Field Notes (Medium)** | **Live Publication (`@jaharoni`)** | **[Running Rust wgpu and winit Graphics Apps on NixOS: Solving Dynamic dlopen Lookup for Vulkan and…](https://medium.com/@jaharoni/running-rust-wgpu-and-winit-graphics-apps-on-nixos-solving-dynamic-dlopen-lookup-for-vulkan-and-a0290e2a2f86)** · [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · [`RSS Feed`](https://medium.com/feed/@jaharoni) |
-| **Google AI & Developer Forums** | **`33` Published Solutions** | **`8840` Developer Views** · **`265` Profile Visits** across developer forums & GitHub Discussions ([`discuss.ai.google.dev/u/CORTEX`](https://discuss.ai.google.dev/u/CORTEX)) |
-| **Hugging Face Hub (`@jaharoni`)** | **`1` Live Space** · **`1` Model Card** | Interactive Engineering Portfolio & Open-Source Verification Space ([`huggingface.co/jaharoni`](https://huggingface.co/jaharoni)) |
-| **Verified Engineering Ledger** | **`114` Root-Cause Case Studies** | Standalone deterministic reproduction & regression suites (`verify_fix.py` exiting `0` in [`LEDGER.md`](./LEDGER.md)) |
-| **Open-Source Maintainer Bot-Shield (`v2.2.0`)** | **1-Command Zero-Dep GitHub Action** | `curl -fsSL https://github.com/WholeTroutMedia/open-source-bounties/releases/download/v2.2.0/open-source-bot-shield.yml -o .github/workflows/bot-shield.yml` |
-| **Creative Liberation Engine & Community Gifts** | **`7` Zero-Dependency Python CLI Gifts** | `pip install https://github.com/WholeTroutMedia/creative-liberation-engine/releases/download/v2.2.0/creative_liberation_engine-2.2.0-py3-none-any.whl` · [`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine) |
-| **Personal Website & Direct Contact** | **Justin Aharoni (`@jaharoni`)** | **Website**: [`justinaharoni.com`](https://justinaharoni.com) · **Essays**: [`medium.com/@jaharoni`](https://medium.com/@jaharoni) · **Contact**: [`justinaharoni.com/contact`](https://justinaharoni.com/contact) · **Email**: [`contact@jaharoni.com`](mailto:contact@jaharoni.com) |
-<!-- UNIFIED_CTO_TELEMETRY_END -->
+Welcome to the public open-source engineering and verification ledger for **WholeTroutMedia** ([`https://github.com/WholeTroutMedia`](https://github.com/WholeTroutMedia)) and **Inception Engine Systems** ([`https://inceptionengine.systems`](https://inceptionengine.systems)), led and reviewed by **Justin Aharoni** ([@jaharoni](https://github.com/jaharoni) · `justin.aharoni@inceptionengine.systems` / `contact@jaharoni.com`).
 
 ---
+
 ## Verified Upstream Merges & Active 100%-Covered Track Record
 
 We focus on clearing long-standing, high-complexity open-source issues with **100% patch test coverage**, strict static typechecking, and concise peer-to-peer engineering communication so maintainers can review and merge in `<= 2` turns:
@@ -82,7 +64,7 @@ We focus on clearing long-standing, high-complexity open-source issues with **10
 Read our detailed **[Engineering Case Studies (`CASE_STUDIES.md`)](./CASE_STUDIES.md)**, **[Enterprise Backlog Sprints (`ENTERPRISE_SPRINTS.md`)](./ENTERPRISE_SPRINTS.md)**, and **[Security Charter (`SECURITY.md`)](./SECURITY.md)**.
 
 If you maintain an open-source project or lead an engineering team and want us to clear a hard bug, a pre-release backlog sprint, or ongoing maintenance with **100% patch test coverage**:
-- **[Book a Single Priority Bug Fix ($250)](https://buy.stripe.com/4gMcN4ahY3wi5Em1kia3u00)** · **[Email Issue Details](mailto:justin.aharoni@inceptionengine.systems?cc=jaharoni@gmail.com&subject=%5BISSUE%20SOLVE%20REQUEST%5D%20Repository%20%2F%20Issue%20Submission)**
+- **[Book a Single Priority Bug Fix ($250)](https://buy.stripe.com/4gMcN4ahY3wi5Em1kia3u00)** · **[Email Issue Details](mailto:justin.aharoni@inceptionengine.systems?cc=contact@jaharoni.com&subject=%5BISSUE%20SOLVE%20REQUEST%5D%20Repository%20%2F%20Issue%20Submission)**
 - **[Book a 5-Issue Priority Backlog Sprint ($1,250)](https://buy.stripe.com/00wbJ02Pw3wi2sa2oma3u0x)** · **[Book a 10-Issue Release Burn-Down ($2,250)](https://buy.stripe.com/4gMeVc3TA8QC8Qye74a3u0y)**
 - **[Book a CI/CD & 100% Patch-Coverage Hardening Pass ($750)](https://buy.stripe.com/14AfZgduaff01o60gea3u0A)** · **[Subscribe to Monthly Principal OSS Retainer ($2,500/mo)](https://buy.stripe.com/3cI00i0Ho9UGaYGfb8a3u0z)**
 
@@ -111,3 +93,5 @@ open-source-bounties/
     └── workflows/
         └── verify-bounties.yml  # CI runner verifying commitments/*/verify_commitment.py
 ```
+
+*this has been reviewed by, approved by and submitted on behalf of contact@jaharoni.com*

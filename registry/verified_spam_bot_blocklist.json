@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T12:22:27.167209+00:00",
+  "updated_at": "2026-11-21T13:44:20.891481+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -759,7 +759,7 @@
       "identity_commitment": "sha256:77e3b90401b0792bc2730cfc",
       "framework_commitment": "sha256:e37c1b3e112179e7053a52c3",
       "victim_repos": [
-        "PhanKhoa95/oss-bot-conformance_gate-benchmark"
+        "PhanKhoa95/oss-bot-trap-benchmark"
       ],
       "confirmed_evidence": true,
       "public_summary": "Verified automated solver ring (RING-AUTO-HARVESTED-SOLVER) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
@@ -1033,7 +1033,7 @@
       "identity_commitment": "sha256:28f2399844d537f548fb8546",
       "framework_commitment": "sha256:2446072746d33e8321e24340",
       "victim_repos": [
-        "PhanKhoa95/oss-bot-conformance_gate-benchmark",
+        "PhanKhoa95/oss-bot-trap-benchmark",
         "Scottcjn/rustchain-bounties"
       ],
       "confirmed_evidence": true,

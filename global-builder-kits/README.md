@@ -12,6 +12,8 @@ Every folder below contains a zero-dependency, self-testing Python implementatio
 | **[`06-erp-and-package-registry-preflight`](./06-erp-and-package-registry-preflight/README.md)** | `Python, Ruby, TypeScript / Zod` | Oceania, UK & East Asian Maintainers (@SchrodingersGat in Australia on InvenTree, @andrew in Bristol UK on ecosyste-ms/packages, @kaiiiz in China on obsidian-raindrop) | Enforces the exact maintainer preflight invariants learned from our merged PRs: API version + CHANGELOG pairing (InvenTree), UNKNOWN/NONE license filtering without historical backfilling (ecosyste-ms), and nullable API field guards (obsidian-raindrop). |
 
 
-| **[`07-deepseek-harness-creator-shield`](./07-deepseek-harness-creator-shield/README.md)** | `Python, Node / Cordis v4, MCP` | DeepSeek Harness (`dsh`), Anthropic MCP, Coinbase AgentKit & Google A2A Builders Worldwide | Hot-loadable Cordis v4 `dsh-plugin` and Python execution shield (`@inception/agent-shield-sdk` v8.0.0) with monotonic `ctx.tools.guard` safety, zero-code `cordis.patch.yml` overrides, `<8,192`-char `SKILL.md`, `TypeRT` surface reflection, Ashburn 3.5ms routing (`IES_SOVEREIGN_V8_0xB40F`), and 4-tier `x402` USDC verification. |
+
+
+| **[`07-deepseek-harness-creator-shield`](./07-deepseek-harness-creator-shield/README.md)** | `Python, Node / Cordis v4, MCP` | DeepSeek Harness (`dsh`), Anthropic MCP, Coinbase AgentKit & Google A2A Builders Worldwide | Hot-loadable Cordis v4 `dsh-plugin` and Python execution shield (`@inception/agent-shield-sdk` v8.0.0) with monotonic `ctx.tools.guard` safety, zero-code `cordis.patch.yml` overrides, `<8,192`-char `SKILL.md`, `TypeRT` surface reflection, Ashburn 3.5ms routing (`IES_SOVEREIGN_V8_0xB40F`), and 6-endpoint tiered `x402` USDC verification. |
 
 Static DeepSeek Harness (`dsh >= 0.2.0-rc.2`) Plugin Market Index for all 7 kits: [`registry/dsh_plugin_market.index.json`](../registry/dsh_plugin_market.index.json).

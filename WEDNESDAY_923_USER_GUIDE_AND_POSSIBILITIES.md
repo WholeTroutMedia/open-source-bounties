@@ -2,7 +2,7 @@
 
 Welcome to the **Wednesday 9:23 PM Builder Club**!
 
-Whether you just unlocked the **`$4.99` Builder Pass** ([Instant Access Here ↗](https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C)) or you are exploring our open-source tools for the very first time, we built this guide to feel like sitting down with a friendly, experienced engineering partner who wants to see your ideas succeed.
+Welcome to the **Wednesday 9:23 PM EST Global Good** guide! Whether you are submitting a community feature request or exploring our open-source tools for the first time, we built this guide to feel like sitting down with an experienced engineering partner who wants to see your ideas succeed.
 
 There is no gatekeeping here and no dense wall of jargon. Below you will find:
 1. **A Warm 60-Second Quickstart** (both in your web browser with zero setup, and on your own computer in 3 lines),
@@ -125,7 +125,7 @@ We believe great tools are not just about fixing errors; they open up new creati
 - **The Outcome:** You can hand a client or teammate a clickable URL or a single `.py` file that works on the first click, with zero `npm install` or Docker headaches.
 
 ### Frame 5: Co-Direct Our Foundry Every Wednesday at 9:23 PM EST (`3x` Priority)
-- **The Possibility:** As a `$4.99` Builder Pass member, whenever you hit an annoying friction point in your own workflow (a missing CLI converter, a tricky parser, an accessibility helper, or an open-source bug), submit it to our [Wednesday 9:23 PM Feature Tracker](https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=community_feature_request.yml) and select **🌟 `$4.99` 9:23 Builder Pass Member (`3x` Priority)**.
+- **The Possibility:** As a Wednesday 9:23 PM Open-Source Community Kit member, whenever you hit an annoying friction point in your own workflow (a missing CLI converter, a tricky parser, an accessibility helper, or an open-source bug), submit it to our [Wednesday 9:23 PM Feature Tracker](https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=community_feature_request.yml) and select **🌟 `$4.99` 9:23 Builder Pass Member (`3x` Priority)**.
 - **The Outcome:** Your submission gets **`3x` selection weight** in our automated Wednesday 9:23 PM EST build queue, turning our autonomous engineering engine into your personal R&D lab.
 
 ---

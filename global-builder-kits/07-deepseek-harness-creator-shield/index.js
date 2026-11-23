@@ -3,46 +3,63 @@
  * Cordis v4 & DeepSeek Harness Host Plugin
  *
  * Implements Host-side verification, TypeRT schema reflection, and
- * Ashburn Virginia 3.5ms fiber x402 routing for external AI agents.
+ * Ashburn x402 HTTP 402 verification client routing for external AI agents.
  */
 
 import crypto from 'node:crypto';
 
 export const DEFAULT_BUILDER_CODE = 'IES_SOVEREIGN_V8_0xB40F';
-export const DEFAULT_FACTORY_CONTRACT = '0xB40F802003284A5793a8D670c9543252A1D105DE';
-export const DEFAULT_TREASURY_WALLET = '0x53702A1c37B39B83299A73B30B3c13B52A1D105D';
-export const ASHBURN_FIBER_RELAY = '132.145.159.202';
+export const DEFAULT_FACTORY_CONTRACT = '0xB40F51866F1efdBd24A1549827e0A4e55d3005DE';
+export const DEFAULT_MAINNET_FACTORY_CONTRACT = '0x95Fa85912e718f55454E27202A60D4DC52199F48';
+export const DEFAULT_TREASURY_WALLET = '0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee';
+export const ASHBURN_FIBER_RELAY = 'https://x402.inceptionengine.systems';
+export const ASHBURN_FAILOVER_RELAY = 'http://129.80.87.93:11449';
 
 export const X402_TIERS = {
+  botReputation: {
+    tier_id: 'TIER-0A-BOT-REPUTATION',
+    name: 'PR Bot-Syndicate Reputation Lookup',
+    endpoint: '/x402/bot-reputation',
+    toll_usdc: 0.01,
+    description: 'Privacy-preserving SHA-256 automated PR-spam and bot-syndicate reputation check.',
+  },
+  constraintVerify: {
+    tier_id: 'TIER-0B-CONSTRAINT-VERIFY',
+    name: 'Deterministic Policy & Ledger Constraint Verifier',
+    endpoint: '/x402/constraint-verify',
+    toll_usdc: 0.05,
+    description: 'Deterministic RBAC isolation, double-entry ledger balance, and spread verification.',
+  },
   1: {
     tier_id: 'TIER-1-PRECHECK',
     name: 'Single x402 Pre-Check & Rule Parity',
+    endpoint: '/x402/oracle',
     toll_usdc: 0.23,
     description: 'Instant honeypot, OFAC wallet, and cross-venue resolution parity pre-check.',
   },
   2: {
     tier_id: 'TIER-2-PTC-COMPOUND',
     name: 'PTC Compound fd-3 Batch Pass',
+    endpoint: '/x402/ptc-batch',
     toll_usdc: 0.75,
-    description: 'Carbon CWE + Rule Parity + Half-Kelly + Maker Spread in 1 turn (83.33% turn compression).',
+    description: 'Carbon CWE, rule parity, sizing, and maker spread verification in one pass.',
   },
   3: {
     tier_id: 'TIER-3-VERIFIED-BUNDLE',
     name: 'Creator-as-a-Service On-Demand Verified Bundle Synthesis',
+    endpoint: '/x402/creator-bundle',
     toll_usdc: 1.85,
     description: 'On-demand verified Cordis bundle scaffolding, sandbox validation, and cryptographic signature.',
   },
   4: {
     tier_id: 'TIER-4-DUAL-FACE-UI',
     name: 'Certified Dual-Face MCP-UI Payload',
+    endpoint: '/x402/mcp-ui-bundle',
     toll_usdc: 3.25,
-    description: 'Certified dual-face Host MCP tool + Browser Client UI slot component bundle with live telemetry.',
+    description: 'Certified dual-face Host MCP tool and Browser Client UI slot component bundle.',
   },
 };
 
-/**
- * TypeRT runtime reflection contract for Host-to-Client wire RPC.
- */
 export function exportTypeRTSurfaceSchema() {
   return {
     subsystem: 'typert',
@@ -64,28 +81,24 @@ export function exportTypeRTSurfaceSchema() {
           },
           quoteTier: {
             parameters: [
-              { name: 'tier', type: 'number' },
+              { name: 'tier', type: 'string' },
               { name: 'spec', type: 'object', optional: true },
             ],
             returns: 'TierQuoteReceipt',
           },
-          verifyRuleParity: {
+          callX402Endpoint: {
             parameters: [
-              { name: 'marketA', type: 'string' },
-              { name: 'marketB', type: 'string' },
+              { name: 'endpoint', type: 'string' },
+              { name: 'payload', type: 'object' },
             ],
-            returns: 'RuleParityReport',
+            returns: 'X402EndpointResponse',
           },
           synthesizeVerifiedBundle: {
-            parameters: [
-              { name: 'bundleSpec', type: 'object' },
-            ],
+            parameters: [{ name: 'bundleSpec', type: 'object' }],
             returns: 'VerifiedBundlePayload',
           },
           renderDualFaceUIBundle: {
-            parameters: [
-              { name: 'uiSpec', type: 'object' },
-            ],
+            parameters: [{ name: 'uiSpec', type: 'object' }],
             returns: 'DualFaceUIPayload',
           },
         },
@@ -94,8 +107,10 @@ export function exportTypeRTSurfaceSchema() {
     defaultRouting: {
       builderCodeTag: DEFAULT_BUILDER_CODE,
       factoryContract: DEFAULT_FACTORY_CONTRACT,
+      mainnetFactoryContract: DEFAULT_MAINNET_FACTORY_CONTRACT,
       treasuryWallet: DEFAULT_TREASURY_WALLET,
       ashburnRelay: ASHBURN_FIBER_RELAY,
+      failoverRelay: ASHBURN_FAILOVER_RELAY,
     },
   };
 }
@@ -105,7 +120,93 @@ export class AgentShieldService {
     this.builderCode = config.builderCode || DEFAULT_BUILDER_CODE;
     this.factoryContract = config.factoryContract || DEFAULT_FACTORY_CONTRACT;
     this.treasuryWallet = config.treasuryWallet || DEFAULT_TREASURY_WALLET;
-    this.ashburnRelay = config.ashburnRelay || ASHBURN_FIBER_RELAY;
+    this.ashburnRelay = (config.ashburnRelay || ASHBURN_FIBER_RELAY).replace(/\/+$/, '');
+    this.failoverRelay = (config.failoverRelay || ASHBURN_FAILOVER_RELAY).replace(/\/+$/, '');
+    this.lookaheadCache = new Map();
+    this.trajectory = [];
+  }
+
+  async callX402Endpoint(endpoint, payload = {}, { paymentSignature = null, baseUrl = null } = {}) {
+    const cleanEp = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+    const targetUrl = `${(baseUrl || this.ashburnRelay).replace(/\/+$/, '')}${cleanEp}`;
+    const headers = {
+      'Content-Type': 'application/json',
+      'User-Agent': 'InceptionAgentShieldJS/8.0',
+    };
+    if (paymentSignature) {
+      headers['PAYMENT-SIGNATURE'] = paymentSignature;
+    }
+    const resp = await fetch(targetUrl, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify(payload),
+    });
+    const text = await resp.text();
+    let parsed = {};
+    try {
+      parsed = JSON.parse(text);
+    } catch {
+      parsed = { raw: text };
+    }
+    const prHeader = resp.headers.get('payment-required');
+    let paymentRequired = null;
+    if (prHeader) {
+      try {
+        paymentRequired = JSON.parse(Buffer.from(prHeader, 'base64').toString('utf8'));
+      } catch {
+        paymentRequired = null;
+      }
+    }
+    return {
+      httpStatus: resp.status,
+      paymentRequired,
+      paymentResponseHeader: resp.headers.get('payment-response'),
+      body: parsed,
+    };
+  }
+
+  stageLookahead(fromStep, nextTier, context = {}) {
+    this.trajectory.push(fromStep);
+    if (this.trajectory.length > 24) this.trajectory.shift();
+    const cacheKey = 'shield_lh_' + crypto
+      .createHash('sha256')
+      .update(`${nextTier}:${JSON.stringify(context)}`)
+      .digest('hex')
+      .slice(0, 16);
+    const tierDef = X402_TIERS[nextTier] || X402_TIERS[2];
+    this.lookaheadCache.set(cacheKey, {
+      cacheKey,
+      predictedTier: nextTier,
+      tierId: tierDef.tier_id,
+      prewarmedSpec: context,
+      expiresAt: Date.now() + 300000,
+    });
+    if (this.lookaheadCache.size > 128) {
+      const oldest = this.lookaheadCache.keys().next().value;
+      this.lookaheadCache.delete(oldest);
+    }
+    return {
+      engine: 'agent-shield-speculative-v8',
+      trajectory_depth: this.trajectory.length,
+      predicted_next_tier: nextTier,
+      predicted_tier_id: tierDef.tier_id,
+      cache_key: cacheKey,
+      consume_header: 'X-Lookahead-Cache-Key',
+      confidence: nextTier === 2 ? 0.78 : 0.69,
+    };
+  }
+
+  consumeLookahead(cacheKey, feedback = 'hit') {
+    const entry = this.lookaheadCache.get(cacheKey);
+    if (!entry || entry.expiresAt <= Date.now()) {
+      this.lookaheadCache.delete(cacheKey);
+      return null;
+    }
+    if (feedback === 'reject') {
+      this.lookaheadCache.delete(cacheKey);
+      return null;
+    }
+    return entry;
   }
 
   wrapOrderIntent({
@@ -146,13 +247,14 @@ export class AgentShieldService {
       },
       intent_id: `SHIELD-${intentHash}`,
       shield_overhead_ms: Number((performance.now() - t0).toFixed(3)),
+      _lookahead: this.stageLookahead('wrap_order_intent', 2, { venue, marketSlug, amountUsdc: Number(amountUsdc) }),
     };
   }
 
   quoteTier(tierNumber, spec = {}) {
     const tier = X402_TIERS[tierNumber];
     if (!tier) {
-      throw new Error(`Unsupported x402 tier: ${tierNumber}. Supported: 1, 2, 3, 4.`);
+      throw new Error(`Unsupported x402 tier: ${tierNumber}.`);
     }
     const quoteId = crypto.randomBytes(8).toString('hex');
     return {
@@ -160,10 +262,11 @@ export class AgentShieldService {
       tier: tierNumber,
       tier_id: tier.tier_id,
       name: tier.name,
+      endpoint: tier.endpoint,
       toll_usdc: tier.toll_usdc,
       currency: 'USDC',
       settlement_route: {
-        network: 'Base Mainnet L2',
+        network: 'Base Sepolia Testnet (Pre-Filing) / Base Mainnet L2',
         treasury_wallet: this.treasuryWallet,
         ashburn_fiber_edge: this.ashburnRelay,
         builder_code_tag: this.builderCode,
@@ -201,9 +304,6 @@ export class AgentShieldService {
   }
 }
 
-/**
- * Cordis v4 Plugin apply entrypoint.
- */
 export function apply(ctx, config = {}) {
   const service = new AgentShieldService(config);
 

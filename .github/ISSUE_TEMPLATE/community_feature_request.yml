@@ -10,14 +10,13 @@ body:
         ### 🌱 The Wednesday 9:23 PM EST Global Good Tracker & `$4.99` Builder Pass
         Every **Wednesday at 9:23 PM EST** (established Wednesday, Nov 4, 2026 @ 9:23 PM EST), our autonomous selector evaluates all open submissions in this tracker and ships the **#1 safest, highest-leverage, globally beneficial request** (`Exit Code 0`, `100%` test coverage).
         - **Free Public Core (`$0`):** Every winning request ships a free zero-dependency CLI verifier & interactive browser demo in [`oss-verification-sandbox`](https://wholetroutmedia.github.io/oss-verification-sandbox/).
-        - **🌟 [`$4.99` 9:23 Builder Pass (`TIER-0`, Instant Checkout ↗)](https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C):** Unlocks **3x Priority Selection Weight** on your feature requests + the **6-Part Pro Feature Suite** (Python/TS/Rust/Go SDKs, Local `100dvh` Dark-Mode Studio UI, CI/CD GitHub Action + Pre-Commit Pack, AI Agent `SKILL.md` + MCP Server wrapper, full weekly archive, and 30-day direct triage).
         - **Full Charter & Leaderboard:** [`WEDNESDAY_923_COMMUNITY_TRACKER.md`](https://github.com/WholeTroutMedia/open-source-bounties/blob/main/WEDNESDAY_923_COMMUNITY_TRACKER.md)
 
   - type: dropdown
     id: pass_tier
     attributes:
       label: "1. Submission Tier & Priority Weight"
-      description: "Choose Free Community Submission (1x weight) or $4.99 9:23 Builder Pass (3x priority weight + full 6-Part Pro Feature Suite: https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C)."
+      description: "Choose "Free Community Submission (MIT Open Source)".
       options:
         - "🌟 $4.99 9:23 Builder Pass Member (3x Priority Selection Weight + Full 6-Part Pro Kit)"
         - "🌱 Free Community Submission ($0, 1x Standard Selection Weight + Public Core)"

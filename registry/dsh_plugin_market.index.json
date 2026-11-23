@@ -18,6 +18,8 @@
       "skillUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/07-deepseek-harness-creator-shield/SKILL.md",
       "cordisPatchUrl": "https://raw.githubusercontent.com/WholeTroutMedia/open-source-bounties/main/global-builder-kits/07-deepseek-harness-creator-shield/cordis.patch.yml",
       "x402Tiers": {
+        "tier_0_bot_reputation_usdc": 0.01,
+        "tier_0_constraint_verify_usdc": 0.05,
         "tier_1_atomic_oracle_usdc": 0.23,
         "tier_2_ptc_compound_batch_usdc": 0.75,
         "tier_3_creator_bundle_synthesis_usdc": 1.85,
@@ -25,9 +27,11 @@
       },
       "defaultGps": {
         "builderCodeTag": "IES_SOVEREIGN_V8_0xB40F",
-        "baseFactoryContract": "0xB40F802003284A5793a8D670c9543252A1D105DE",
-        "treasurySettlementWallet": "0x53702A1c37B39B83299A73B30B3c13B52A1D105D",
-        "ashburnFiberRelay": "132.145.159.202"
+        "baseFactoryContract": "0xB40F51866F1efdBd24A1549827e0A4e55d3005DE",
+        "baseMainnetFactoryContract": "0x95Fa85912e718f55454E27202A60D4DC52199F48",
+        "treasurySettlementWallet": "0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee",
+        "ashburnFiberRelay": "https://x402.inceptionengine.systems",
+        "ashburnFailoverRelay": "http://129.80.87.93:11449"
       },
       "versions": [
         {

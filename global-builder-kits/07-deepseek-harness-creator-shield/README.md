@@ -8,7 +8,7 @@
 
 ## Why This Folder Exists
 
-Autonomous trading and coding agents routinely lose execution edge to four failure modes: malicious or unverified tool inputs, upstream fork drift when tuning third-party plugins, truncated `SKILL.md` capability instructions above 8,192 characters, and high-latency multi-turn tool loops. This care package ships `@inception/agent-shield-sdk` v8.0.0 as a hot-loadable Cordis v4 `dsh-plugin` and Python SDK with monotonic `ctx.tools.guard` safety, zero-code `cordis.patch.yml` overrides, `TypeRT` runtime schema reflection, Ashburn 3.5ms fiber routing (`IES_SOVEREIGN_V8_0xB40F`), and 4-tier `x402` USDC verification.
+Autonomous trading and coding agents routinely lose execution edge to four failure modes: malicious or unverified tool inputs, upstream fork drift when tuning third-party plugins, truncated `SKILL.md` capability instructions above 8,192 characters, and high-latency multi-turn tool loops. This care package ships `@inception/agent-shield-sdk` v8.0.0 as a hot-loadable Cordis v4 `dsh-plugin` and Python SDK with monotonic `ctx.tools.guard` safety, zero-code `cordis.patch.yml` overrides, `TypeRT` runtime schema reflection, Ashburn 3.5ms fiber routing (`IES_SOVEREIGN_V8_0xB40F`), and 6-endpoint tiered `x402` USDC verification.
 
 ## 1-Command Verification (`Exit Code 0`)
 
@@ -17,14 +17,16 @@ python3 kit_engine.py --self-test
 python3 inception_agent_shield.py
 ```
 
-## The 4 Deterministic `x402` Verification Tiers
+## Verification Tiers
 
-| Tier | Endpoint | Fee (USDC) | Turn Profile | Primary Guarantee |
-| :--- | :--- | :---: | :---: | :--- |
-| **Tier 1** | `POST /x402/oracle` | `$0.23 - $0.35` | `1-turn` | Honeypot, OFAC wallet, 44-skill Bio/FDA wire, and resolution-clause parity pre-check |
-| **Tier 2** | `POST /x402/ptc-batch` | `$0.75` | `6-in-1 (83.33% compression)` | Compound `PTC` `fd-3` pass combining Carbon CWE, rule parity, sizing, spread, FOK, and `ERC-8021` rebate |
-| **Tier 3** | `POST /x402/creator-bundle` | `$1.85` | `Synthesis pass` | On-demand verified Cordis v4 + MCP hot-bundle synthesis with `TypeRT` schema and `<8,192`-char `SKILL.md` |
-| **Tier 4** | `POST /x402/mcp-ui-bundle` | `$3.25` | `Dual-face bundle` | Certified Host MCP contract + Browser `client.js` UI dock widget locked to `100dvh` zero-scroll safety |
+| Tier | Endpoint | Fee (USDC) | Primary Guarantee |
+| :--- | :--- | :---: | :--- |
+| **Tier 0a** | `POST /x402/bot-reputation` | `$0.01` | Privacy-preserving SHA-256 automated PR-spam and bot-syndicate reputation lookup |
+| **Tier 0b** | `POST /x402/constraint-verify` | `$0.05` | Deterministic RBAC isolation, double-entry ledger balance, and cross-venue spread verification |
+| **Tier 1** | `POST /x402/oracle` | `$0.23 - $0.35` | Honeypot, OFAC wallet, bio/regulatory wire, and resolution-clause parity pre-check |
+| **Tier 2** | `POST /x402/ptc-batch` | `$0.75` | Compound `PTC` `fd-3` pass combining Carbon CWE, rule parity, sizing, spread, FOK, and `ERC-8021` rebate |
+| **Tier 3** | `POST /x402/creator-bundle` | `$1.85` | On-demand verified Cordis v4 + MCP hot-bundle synthesis with `TypeRT` schema |
+| **Tier 4** | `POST /x402/mcp-ui-bundle` | `$3.25` | Certified Host MCP contract + Browser `client.js` UI dock widget locked to zero-scroll safety |
 
 ## Files in This Folder
 

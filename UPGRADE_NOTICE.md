@@ -8,8 +8,7 @@ If you previously cloned **`WholeTroutMedia/open-source-bounties`**, run `git pu
    - Added **[`kits/stir-iescs-agent-protocol/stir_iescs.py`](./kits/stir-iescs-agent-protocol/stir_iescs.py)** alongside our 6 domain verification kits (`asgi-lifespan-state-shield`, `utf8-sse-boundary-guard`, `graphql-relay-cursor-coalescer`, `sqlalchemy-nested-savepoint-guard`, `go-slice-pointer-merge-guard`, and `zod-iso-offset-validator`).
    - Full standalone SDK also available at **[`WholeTroutMedia/open-source-micro-tools/apps/000-stir-iescs-protocol-sdk`](https://github.com/WholeTroutMedia/open-source-micro-tools/tree/main/apps/000-stir-iescs-protocol-sdk)**.
 3. **Unified Single-Home Creative Liberation Engine**:
-   - **[`WholeTroutMedia/creative-liberation-engine`](https://github.com/WholeTroutMedia/creative-liberation-engine)** is the sole canonical home for the Creative Liberation Engine and its 7 community gifts.
-
+   
 ## Quick Upgrade Commands for Existing Clones
 ```bash
 git fetch --all --tags

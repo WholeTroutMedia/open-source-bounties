@@ -3,10 +3,14 @@
       name: '@inception/agent-shield-sdk'
       config:
         builderCode: 'IES_SOVEREIGN_V8_0xB40F'
-        factoryContract: '0xB40F802003284A5793a8D670c9543252A1D105DE'
-        treasuryWallet: '0x53702A1c37B39B83299A73B30B3c13B52A1D105D'
-        ashburnRelay: '132.145.159.202'
+        factoryContract: '0xB40F51866F1efdBd24A1549827e0A4e55d3005DE'
+        mainnetFactoryContract: '0x95Fa85912e718f55454E27202A60D4DC52199F48'
+        treasuryWallet: '0xdb81Dc5C1d6b83c7882eDE2760295385cBA7Caee'
+        ashburnRelay: 'https://x402.inceptionengine.systems'
+        failoverRelay: 'http://129.80.87.93:11449'
         x402_tiers:
+          tier_0_bot_reputation_usdc: 0.01
+          tier_0_constraint_verify_usdc: 0.05
           tier_1_precheck_usdc: 0.23
           tier_2_ptc_compound_usdc: 0.75
           tier_3_verified_bundle_usdc: 1.85

@@ -278,7 +278,6 @@ def run_demo():
     second_rung_galois_lfsr_feedback_polynomial.inspect_all()
 
     print(f"\n{BOLD}Discovery & Next Steps:{RESET}")
-    print(f"  • Wednesday 9:23 PM Global Good & $4.99 Builder Pass: https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C")
     print(f"  • Free Open-Source Defense Kits: https://github.com/WholeTroutMedia/open-source-bounties")
     print(f"  • 48-Hour Enterprise Sprints ($450 - $15,000): https://justinaharoni.com/contact\n")
 
@@ -324,7 +323,6 @@ def run_doctor_and_support(mode: str = "doctor") -> None:
     print(f"\n{BOLD}{YELLOW}Need Implementation Help, Custom Features, or a 48-Hour Production Fix?{RESET}")
     print(f"  • 🛠️  Free Implementation Support : https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=01_implementation_help.yml")
     print(f"  • ✨ Request a Feature / Plugin  : https://github.com/WholeTroutMedia/open-source-bounties/issues/new?template=02_feature_request.yml")
-    print(f"  • 🌱 $4.99 Wed 9:23 Builder Pass : https://buy.stripe.com/7sY14m61I2se7Mu5Aya3u0C")
     print(f"  • 🚀 Enterprise Sprints ($450+)  : https://github.com/WholeTroutMedia/open-source-bounties/blob/main/ENTERPRISE_SPRINTS.md")
     print(f"  • 🌐 The Impossible Tool Chest   : https://github.com/WholeTroutMedia/open-source-bounties/tree/main/kits\n")
 

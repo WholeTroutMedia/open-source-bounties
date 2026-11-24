@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T05:52:12.159455+00:00",
+  "updated_at": "2026-11-24T12:52:30.297529+00:00",
   "public_service_mission": "Free community blocklist and split-horizon SHA-256 cryptographic evidence feed protecting open-source maintainers from unattended AI PR-spam rings without leaking searchable cleartext handles or allowing bot operators to self-test probation sockpuppet accounts.",
   "hash_algorithm": "sha256(github_login.lower()) + sha256('v2-ci-gate::' + github_login.lower())",
   "blocked_actor_sha256_hashes": [
@@ -52,6 +52,7 @@
     "490b2ccfd3166af65112bfd6928d99c90861828cfb3961fd643da5027af0bd5e",
     "60c4619c1f3cbc62966cee1548a0e2f1cacd2b6c00c0a49f33405fb93c172c9b",
     "31ecf3f99411631416129b9616ca0703e809d792054a4ac5e29f6d97a57b55ee",
+    "9ab4abac5f9a9c8dc1c413978c6677ab3aab91da7844aaf1505f380d0e9ab2c5",
     "1a1bf6f6b395094b311094e2a5c02e88856950ac4c3cc784a7374b59a238ead2",
     "6c701073468c8e4cf97184ea7390d954fd19c84ef8fc44256911f67649b7fcbe",
     "c5db7107b80148d87e5930b42fb966a723ee05bb67d51bc579f4aa880d5e453f",
@@ -113,6 +114,7 @@
     "490b2ccfd3166af65112bfd6928d99c90861828cfb3961fd643da5027af0bd5e",
     "60c4619c1f3cbc62966cee1548a0e2f1cacd2b6c00c0a49f33405fb93c172c9b",
     "31ecf3f99411631416129b9616ca0703e809d792054a4ac5e29f6d97a57b55ee",
+    "9ab4abac5f9a9c8dc1c413978c6677ab3aab91da7844aaf1505f380d0e9ab2c5",
     "1a1bf6f6b395094b311094e2a5c02e88856950ac4c3cc784a7374b59a238ead2",
     "6c701073468c8e4cf97184ea7390d954fd19c84ef8fc44256911f67649b7fcbe",
     "c5db7107b80148d87e5930b42fb966a723ee05bb67d51bc579f4aa880d5e453f",
@@ -134,7 +136,7 @@
     "2a941f06e40dabf643ba3a9b2562eb88cb3beaa25d1986c5e19741be6c33aedb",
     "f8e2686106fdee11a04386d0646d15cddaf596ae1e221fb6cc9dd29a7bb492cf"
   ],
-  "total_protected_bot_signatures": 67,
+  "total_protected_bot_signatures": 68,
   "operator_rings_blinded": [
     {
       "actor_blinded_id": "ACTOR-SHA256-6B9D6AE3F55A",
@@ -872,6 +874,25 @@
       ],
       "confirmed_evidence": true,
       "public_summary": "Verified automated solver ring (RING-ALGO-BOUNTY) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
+    },
+    {
+      "actor_blinded_id": "ACTOR-SHA256-9AB4ABAC5F9A",
+      "handle_sha256": "9ab4abac5f9a9c8dc1c413978c6677ab3aab91da7844aaf1505f380d0e9ab2c5",
+      "status": "ACTIVE_WILD_RING_CONFIRMED",
+      "ring_id": "RING-FEDERATED-WILD-SPAM",
+      "global_spam_prs": 141,
+      "identity_commitment": "sha256:1df6687a2afa6c61e315120e",
+      "framework_commitment": "sha256:d0aa407b9bd77d413c5b7aa5",
+      "victim_repos": [
+        "bad-antics/lateralus-lang",
+        "highlight/highlight",
+        "lablab-ai/community-content",
+        "OphirPay/OphirPay",
+        "tscircuit/core",
+        "tscircuit/cli"
+      ],
+      "confirmed_evidence": true,
+      "public_summary": "Verified automated solver ring (RING-FEDERATED-WILD-SPAM) matched via cryptographic conformance watermark; cleartext identity sealed in private forensic vault."
     },
     {
       "actor_blinded_id": "ACTOR-SHA256-1A1BF6F6B395",
